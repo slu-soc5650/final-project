@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: section
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><strong><a href="https://slu-soc5650.github.io/final-project/">SOC 4615 & 5650 Final Project</a></strong></li>
+      after: |
+        <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+    edit: null
+    download: null
+    sharing:
+      facebook: no
+      twitter: no
+      google: no
+      weibo: no
+      instapaper: no
+      vk: no
+      all: null
