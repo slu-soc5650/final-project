@@ -1,0 +1,712 @@
+# (PART) Initial Steps {-}
+
+# Topic & Data Selection
+
+<div class="rmdgoal">
+<p><strong>Goal:</strong> Identify a data set and appropriate variables of interest.</p>
+</div>
+
+<div class="rmdpersonnel">
+<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
+</div>
+
+<div class="rmdpre">
+<p><strong>Pre-requisties:</strong> There are no pre-requisites for this vignette.</p>
+</div>
+
+<div class="rmdskills">
+<p><strong>Skills:</strong> There are no course-specific skills for this vignette.</p>
+</div>
+
+<div class="rmddue">
+<p><strong>Required Due Date:</strong> Lecture 4 (February 4<sup>th</sup>)</p>
+</div>
+
+<div class="rmddeliver">
+<p><strong>Deliverables:</strong> A <a href="/the-memo.html">short memo</a> detailing your data and the specific topic you’ll be exploring.</p>
+</div>
+
+## Crafting a Research Question
+The process of conducting a research project starts with defining a research question to explore. For many students, this can be daunting. Yale University Sociology's <a href="https://sociology.yale.edu/sites/default/files/files/Writing_Sociology_Senior_Thesis_Guide_Final_Latest_Update.pdf" target="_blank">Handbook for Undergraduate Thesis research</a> usefully breaks down the types of questions sociologists answer into three broad categories. I've provided these three categories below along with some sample research questions on undocumented immigration:
+
+* "Questions about the meaning of certain activities, practices, or experiences for particular social groups."
+    - "How do classmates respond when a student discloses that they are an undocumented immigrant?"
+    - "How does participation in an immigrant advocacy group effect undocumented immigrants?"
+    - "How does disclosing undocumented status change the treatment of immigrants in social services settings?"
+* "Questions about the ways that identification with larger social categories – race, ethnicity, religion, political identification, gender – affect aspects of social life."
+    - "What is the relationship between political conservatism and beliefs about immigration?"
+    - "How do views of immigration vary based on gender identity?"
+    - "What is the relationship between religiosity and support for undocumented immigrants?"
+* "Questions about the influence of particular variables on other variables or outcomes, including questions that compare groups and track trends across a broader scale."
+    - "What is the relationship between levels of education and employment for undocumented immigrants?"
+    - "How does racial segregation impact the outcomes of undocumented immigrants in cities?"
+    - "What is the effect of DREAMer status on educational attainment?"
+
+Each student should think about the overarching category they want to conduct research in. Like the research process as a whole (see "[Data Analysis is not Linear]"), you may find that crafting a research question is an iterative process. You'll start with a broad topic, make a first attempt at narrowing it down, and then subsequently update the question as you find some related sources (and, if you are in SOC 5650, conduct a full-fledged literature review). Research questions for this course will be necessarily *descriptive* - "what is the spatial distribution of *x*?"
+
+## The Crime Data
+
+
+
+The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+
+### License
+These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.
+
+### Topic Categories
+If you want to select a topic from these data, you should pick **one** crime category below. For example, you might pick `Arson` or `Vandalism`.
+
+#### Part 1 Crimes
+According to the FBI, Part 1 crimes are serious crimes:
+
+> These offenses were chosen because they are serious crimes, they occur with regularity in all areas of the country, and they are likely to be reported to police.
+
+With the exception of arson, data on these crimes has regularly been collected and reported by the FBI on a national basis since 1930. Arson was added to the list of Part 1 crimes (also known as "Index" crimes) in 1979.
+
+
+ ucr  category            
+----  --------------------
+   1  Homicide            
+   2  Rape                
+   3  Robbery             
+   4  Aggravated Assault  
+   5  Burgalry            
+   6  Larceny             
+   7  Motor Vehicle Theft 
+   8  Arson               
+
+#### Part 2 Offenses
+Crimes that are so-called "Part 2" offenses are typically less serious and may not be felonies. 
+
+
+ ucr  category                                   
+----  -------------------------------------------
+   9  Other Assaults                             
+  10  Forgery and Counterfeiting                 
+  11  Fraud                                      
+  12  Embezzlement                               
+  13  Stolen Property                            
+  14  Vandalism                                  
+  15  Weapons                                    
+  16  Prostitution and Commercialized Vice       
+  17  Sex Offenses                               
+  18  Drug Abuse Violations                      
+  19  Gambling                                   
+  20  Offenses Against the Family and Children   
+  21  Liquor Laws                                
+  22  Drunkeness                                 
+  23  Disorderly Conduct                         
+  24  Vagrancy                                   
+  25  All Other Offenses                         
+  26  Suspicion                                  
+  27  Curfew and Loitering Laws-Persons under 18 
+  28  Runaways-Persons under 18                  
+
+## The Citizens' Service Bureau Data
+
+
+
+The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+
+### License
+All of the data that the City of St. Louis makes public, including the CSB data, are available under the following [license](http://data.stlouis-mo.gov/terms.cfm):
+
+***Description** *The City of St. Louis strives to enhance public access
+to and use of data that it collects and publishes. As part of an
+initiative to improve the accessibility, transparency, and
+accountability of City government, this catalog offers access to a
+repository of government-produced, machine-readable data sets. The
+datasets are organized by originating department. The City provides
+access to the information free of charge subject to the terms of this
+agreement. Use of data derived from the datasets, which may appear in
+formats such as tables and charts, is also subject to these terms.*
+
+***Terms** *The City of St. Louis reserves the right at any time to
+update, modify, or discontinue the release of the datasets. The City
+does not warranty the completeness, accuracy, content, or fitness for
+any particular purpose or use of any public dataset made available, nor
+are any such warranties to be implied or inferred with respect to the
+public datasets furnished therein. The City shall not be responsible or
+liable for the accuracy, usefulness or availability of any data in the
+datasets.*
+
+***Accountability** *When working with the datasets, be aware that these
+files are raw extracts derived from various data sources. The City of
+St. Louis is aware that errors exist in these datasets. Contact the
+originating department if questions/issues arise.*
+
+### Topic Categories
+If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
+
+#### Animal Related Calls
+
+|cat_animal           |
+|:--------------------|
+|Animal Abuse         |
+|Animal Bite          |
+|Animal(s) Surrender  |
+|Bats                 |
+|Bed Bugs             |
+|Birds-Food Cntrl     |
+|Carriage Horses      |
+|Dangerous Animal     |
+|Dangerous Dog        |
+|Dead Animal          |
+|Dead Animal, Ext     |
+|Dead Dog-ACC         |
+|Injured Animal       |
+|Injured/Sick Animal  |
+|Leash Law            |
+|Misc-Animal Care     |
+|Mosquito Breeding    |
+|Mosquito Spraying    |
+|Over 4 Pets          |
+|Over 4 Pets, Ext     |
+|PEST CONTROL         |
+|Pets in restaurant   |
+|Prohibited Animal    |
+|Stray Animal         |
+|Stray Animal Cntnd   |
+|Stray Cat            |
+|Stray Dog At Large   |
+|Stray Dog Cntnd-ACC  |
+|Stray Dog Contained  |
+|StRes referl to ACC  |
+|Surrender Cat        |
+|Surrender Dog        |
+|Surrender Pet        |
+|Unsanitary Pets, Ext |
+
+#### Construction Calls
+
+|cat_construction     |
+|:--------------------|
+|CHK-JOBSITE          |
+|Const Hist No Permit |
+|Const No Permit-Ext  |
+|Const No Permit-Int  |
+|Construction         |
+|Contract Bridge Work |
+|Contract Park Work   |
+|Contract Pub Bldg Wk |
+|Contract Street Work |
+|Demo Blowing Dust    |
+|Demolition No Permit |
+|Dust/Dirt Emission   |
+|Electrical Insp      |
+|ELECTRICAL INSTALL   |
+|ELECTRICAL TRACE     |
+|Lead Insp            |
+|Mechanical Insp      |
+|Misc-Building Div    |
+|NEW CONSTRUCTION     |
+|PmtApp_Excavation    |
+|Renovation           |
+|RENOVATIONS          |
+|ROOF/TUCKPOINTING    |
+|Spray Painting       |
+
+#### Debries Related Calls
+
+|cat_debris           |
+|:--------------------|
+|Bagged Leaf Pickup   |
+|Bulky items missed   |
+|Debris - Street      |
+|Debris-alley/street  |
+|Debris-Occupied Bldg |
+|Debris-Vacant Bldg   |
+|Debris-Vacant Lot    |
+|Move cont/debrs dump |
+
+#### Degredation Related Calls
+
+|cat_degrade          |
+|:--------------------|
+|APPEARANCE           |
+|Bad Condition        |
+|Bad Condition ROW    |
+|Building Collapse    |
+|Cave-Ins             |
+|Graffiti-Park Equip  |
+|Graffiti-Private     |
+|Graffiti-Prvt Dmpstr |
+|Graffiti-Public      |
+|LRA Board up         |
+|Misc-LRA             |
+|Misc-Op Brightside   |
+|MISSING-COVER        |
+|PAINT/PLASTER        |
+|Ppty Maint Code-Ext  |
+|Ppty Maint Code-Int  |
+|Property Damage-FIRE |
+|Property Damage-FOR  |
+|Property Damage-LRA  |
+|Property Damage-PRK  |
+|Property Damage-REF  |
+|Property Damage-SDP  |
+|Property Damage-SDV  |
+|Property Damage-TLD  |
+|Property Damage-TOW  |
+|STREET-CAVEIN        |
+|Traffic Graffiti     |
+|VACANT BLDG INITIV   |
+|Vacnt Bldg Unsecured |
+|Vcnt weed check-web  |
+
+#### Disturbance Related Calls
+
+|cat_disturbance     |
+|:-------------------|
+|ALARM               |
+|CIVIL UNREST        |
+|Noise               |
+|Public Nuisance Rpt |
+
+#### Health Related Calls
+
+|cat_health           |
+|:--------------------|
+|Affordable Care Act  |
+|Asbestos             |
+|Check Welfare        |
+|Child Center         |
+|Child Center, Ext    |
+|Child Center, Int    |
+|Day Care/Childcare   |
+|Fire Escapes-Exits   |
+|Fire Exit Insp       |
+|Food Estab. Problem  |
+|Food worker ill      |
+|Foodbourne Illness   |
+|Foodbrne Ill - Tweet |
+|Foodbrne Ill - Yelp  |
+|Fumes/Smells/Odors   |
+|HAZ MAT              |
+|Health Center, Int   |
+|Idling               |
+|Illegal Food Estbt   |
+|Industrial Facility  |
+|Industrial Haz, Ext  |
+|Industrial Haz, Int  |
+|Insects Food Ctrl    |
+|Insp Hotel, Int      |
+|Insufficient Heat    |
+|Mice Infstation, Int |
+|Misc-Air Pollution   |
+|Misc-Dept Human Svc  |
+|Misc-Fire/EMS Dept   |
+|Misc-Food Control    |
+|Misc-Health Dir Ofc  |
+|Misc-Public Safety   |
+|Mold - Food Cntrl    |
+|Mold, Interior       |
+|No Heat, Int         |
+|No Hep A - Food Ctrl |
+|No Hot Water, Int    |
+|No Smoke Detectors   |
+|No tub, shower, sink |
+|No Water - Food Ctrl |
+|Open Burning/Smoke   |
+|Overcrowding         |
+|Problem with food    |
+|Rat Bite             |
+|Rat Infestation, Int |
+|Rats (Exterior)      |
+|Rats/Mice Food Ctrl  |
+|Roach Infestn, Int   |
+|Sirens Not Heard     |
+|Smoke Detectors      |
+|Smoke/CO Alarm Req   |
+|Swim Pool Insp, Ext  |
+|Swim Pool Insp, Int  |
+|Swine Flu Call       |
+|Swine Flu Psntn      |
+|TASTE/ODOR           |
+|Unsanitary Cond, Ext |
+|Unsanitary Cond, Int |
+
+#### Landscaping Related Calls
+
+|cat_landscape        |
+|:--------------------|
+|Broken/Hanging Limb  |
+|City Tree Down       |
+|City Tree Limb Down  |
+|Cut FnceLine/TreeLwn |
+|Cut Median-Pkwy      |
+|Dead Limbs in Park   |
+|Inspect City Tree    |
+|Inspect Private Tree |
+|LAWN-CAVEIN          |
+|LRA Tree             |
+|Misc-Forestry Debris |
+|Misc-Forestry Trees  |
+|Misc-PRF Dir Ofc     |
+|Missed Cut - V Lot   |
+|Missed Cut - VBldg   |
+|PmtApp_Tree          |
+|Reminder to Trim     |
+|Root Removal         |
+|Stump Removal        |
+|Tree Inquiry         |
+|Tree Planting requst |
+|Unsatisfy Cut - VLot |
+|Unsatisfy Cut -VBldg |
+|Weeds-Occupied Ppty  |
+|Weeds-Vacant Bldg    |
+|Weeds-Vacant Lot     |
+
+#### Legal Related Calls
+
+|cat_law              |
+|:--------------------|
+|Actvt Court Warrant  |
+|Alter Hist No Permit |
+|Employment Discrim   |
+|Enforce Ordinace     |
+|Evictions            |
+|Housing Discrim      |
+|HVAC Justice Ctr     |
+|Illegal dumpg report |
+|Illegal Use          |
+|Illegal Use in ROW   |
+|Illegl Use-Opn Storg |
+|Illgal Estbt-Com San |
+|Incorrect Bill       |
+|Incorrect Bill test  |
+|Inmate Complaint     |
+|Litter Toss frm Veh  |
+|Misc-Corrections     |
+|Pub Accmdtn Discrim  |
+|Pull Illegal Sign    |
+|SLMPD Referral       |
+|Smkng Ban Issue      |
+
+#### Maintainence Related Calls
+
+|cat_maintenance      |
+|:--------------------|
+|A/C REPAIRS          |
+|Athletic Fields      |
+|ATHLETIC LIGHTS      |
+|BACKFLOW PREVENTOR   |
+|BALLAST              |
+|Ballfield Benches    |
+|Billboard Inspection |
+|BOILER/FURNACE/RADIA |
+|BREAKER              |
+|Camera Malfunction   |
+|Camera Out           |
+|CLEAN AREA           |
+|Clean Picnic Tables  |
+|CLOCK                |
+|COMPRESSOR           |
+|DOOR REPAIR          |
+|ELEVATOR REPAIRS     |
+|EXHAUST              |
+|FH-MAINTENANCE       |
+|FH-RUNNING           |
+|Fill Dirt Request    |
+|FLAGS                |
+|FLOOR/WALL/CEILING   |
+|Fountains            |
+|FURNITURE REPAIR     |
+|GATE/FENCE           |
+|GENERATOR            |
+|GLASS/WINDOW         |
+|High Grass in Park   |
+|HYDRANT-HIT          |
+|ICE MACH./APPLIANCE  |
+|ICE MACHINE          |
+|Install Camera Equip |
+|Leaves in Park       |
+|Light Damaged        |
+|Light(s) Out         |
+|Lights ON Daytime    |
+|LOCK/KEYS            |
+|Maintain Bike Trail  |
+|Misc-Facilities Mgmt |
+|MISC. REPAIRS        |
+|MOVE                 |
+|Move Camera Equip    |
+|OVERHEAD DOOR        |
+|Park Lake            |
+|Park Restrooms       |
+|Playground Equipment |
+|POWER OUTAGE         |
+|PREVENTATIVE MAINTEN |
+|PROC FRAMING         |
+|Public Swim Pool     |
+|Rec Bldg Maintenance |
+|Rec Equipment        |
+|Rec Housekeeping     |
+|Rec-Athletic Lights  |
+|RECEPTACLE/SWITCH    |
+|RELAMP/REPAIR        |
+|SIGN INSTALLATION    |
+|SIGN/PICTURES        |
+|SPRINKLER REPAIR     |
+|STEAM REPAIRS        |
+|TRANSFORMER REPAIR/R |
+|UPS REPAIR/REPLACEME |
+|WATER COOLER         |
+|Whole Blk Lights Out |
+
+#### Nature Related Calls
+
+|cat_nature           |
+|:--------------------|
+|07-21-2010 Flood     |
+|12-28-2015 Flood     |
+|No Don't Plow Residn |
+|Snow blkg dsabl acs  |
+|Snow/Ice - Major St  |
+|Snow/Ice - Residnl   |
+|Wildlife             |
+|Wildlife Issue       |
+|Yes Plow Residnl     |
+
+#### Roadway Related Calls
+
+|cat_road             |
+|:--------------------|
+|14th - Tucker Median |
+|BicycleRackApp       |
+|Bike Lane Issues     |
+|CONCRETE             |
+|Cons/Traffic Concern |
+|Curb Painting        |
+|Curb Repair          |
+|KINGSHIGHWAY CLOSURE |
+|Misc-Street Dept     |
+|Misc-Street Div      |
+|MODOT Referral       |
+|Other Alley Repair   |
+|Other Street Repair  |
+|PmtApp_Blocking      |
+|PmtApp_Busker        |
+|PmtApp_Driveway      |
+|PmtApp_mutli         |
+|PmtApp_Overdimnsnl   |
+|PmtApp_ResBlockParty |
+|PmtApp_Run-Ride      |
+|PmtApp_Sidewalk      |
+|PmtApp_SvcOps        |
+|PmtApp_ValetStand    |
+|PmtApp_Walk-in       |
+|Potholes - Alley     |
+|Potholes - Major St  |
+|Potholes - Resid'l   |
+|Potholes - Residnl   |
+|Run                  |
+|Sidewalk Ramp        |
+|Sidewalk Repair      |
+|Speed Bump Project   |
+|Street Cleaning      |
+|Street Painting Requ |
+
+#### Sewer Related Calls
+
+|cat_sewer            |
+|:--------------------|
+|Bad Drain/Sewer, Ext |
+|Bad Drain/Sewer, Int |
+|CLOGGED DRAIN        |
+|Defective Plumbing   |
+|Defective Toilet     |
+|HOLE-DEPRESSION      |
+|LEAK                 |
+|LEAKING-METER        |
+|LOOSE-COVER          |
+|Misc-Water Div       |
+|No Water Supply, Int |
+|NOWATER              |
+|Park Sewer Problem   |
+|PLUMBING FIXTURE REP |
+|Plumbing Insp        |
+|PRESSURE             |
+|Sewer Lateral Defect |
+|Sprinkler Systems    |
+|Stagnant Water       |
+|SUMP PUMP            |
+|WALK-CAVEIN          |
+|Wastewater, Basement |
+|Wastewater, Ext      |
+|Water Leak, Int      |
+|WATER-CITZN-PROP-DAM |
+|WTR-COMING-UP        |
+|WTR-VACANT-BLDG      |
+|WTRNBLDG-PIPE-REM    |
+
+#### Traffic Related Calls
+
+|cat_traffic          |
+|:--------------------|
+|Critical Sign        |
+|Derelict-Privt Ppty  |
+|Derelict-Rt of Way   |
+|Derelict-Veh PP      |
+|Derelict-Veh ROW     |
+|Disabled Parking     |
+|Handicapped Parking  |
+|Misc - TLD           |
+|Misc-Tow Lot         |
+|Misc-Traffic Div     |
+|Parking Lot Cndition |
+|Parking Meter        |
+|Parking Ticket       |
+|PmtApp_IntlPrkgDay   |
+|PmtApp_LoadingZone   |
+|PmtApp_Parking       |
+|Sign needs attention |
+|Signal Bulb Out      |
+|Signal Damaged       |
+|Signal Dark          |
+|Signal Stuck         |
+|Signals Flashing     |
+|Signals out of sync  |
+|Single Light Out     |
+|Traffic Ticket       |
+|Vehicle Towing       |
+|Vehicle-Rt of Way    |
+
+#### Vacancy Related Calls
+
+|cat_vacant           |
+|:--------------------|
+|Vacant Unit Appeal   |
+|Vacant Unit Appeal t |
+|Debris-Vacant Bldg   |
+|Debris-Vacant Lot    |
+|Missed Cut - V Lot   |
+|Missed Cut - VBldg   |
+|Unsatisfy Cut - VLot |
+|Unsatisfy Cut -VBldg |
+|Weeds-Vacant Bldg    |
+|Weeds-Vacant Lot     |
+|WTR-VACANT-BLDG      |
+|VACANT BLDG INITIV   |
+|Vacnt Bldg Unsecured |
+|Vcnt weed check-web  |
+|LRA Board up         |
+|Misc-LRA             |
+|Misc-Op Brightside   |
+|Building Collapse    |
+|Property Damage-LRA  |
+
+#### Waste Related Calls
+
+|cat_waste            |
+|:--------------------|
+|Blitz Items          |
+|Cart dumped incomplt |
+|Cntainr near window  |
+|Cntainr too heavy    |
+|Cntnr blocking       |
+|Cntnr knocking wires |
+|Cntnr out of postion |
+|Cntnr overflow/bulky |
+|Cntnr turned         |
+|Comml Dumpster, Ext  |
+|Containr damaged     |
+|Containr not level   |
+|Containr smells bad  |
+|Did not get cart     |
+|Hazrds Waste         |
+|Hazrds Waste, Ext    |
+|Hazrds Waste, Int    |
+|Hole-bottom of cont  |
+|Hsehld Wst Disposal  |
+|Impropr resdnt displ |
+|Instructn hshld/blky |
+|Leaf pick up         |
+|Litter Warning       |
+|Misc-Comm Sanitation |
+|Misc-Recycle Sectn   |
+|Misc-Refuse Div      |
+|Misc-Trash Task Frc  |
+|Move container       |
+|No comml dumpster    |
+|Not enough cntnrs    |
+|Ovrflwng littr barel |
+|Privt Hauler Cnfirmd |
+|Raw Garbage, Ext     |
+|Rcy curb bin damage  |
+|Rcy curb bin missed  |
+|Rcy curb bin missing |
+|Rcy curb new address |
+|Rcy curbbin no deliv |
+|Rcy Curbside Cancel  |
+|Rcy curbside new add |
+|Rcy curbside new svc |
+|Rcy Delivery Missed  |
+|Rcy dropoff dumping  |
+|Rcy dropoff litter   |
+|Rcy dropoff no sign  |
+|Rcy dropoff overflow |
+|Recycling not collec |
+|Refuse not collected |
+|Rehab-roll off cntnr |
+|Remove cntnr         |
+|Residnl Prvt Dmpstr  |
+|Rollcart stolen/misg |
+|Special Event Recycl |
+|Tire Storage, Ext    |
+|Too many cntnrs      |
+|Trash in the Park    |
+|Trash/Grbage Fd Ctrl |
+|Truck dropped litter |
+|Unauthrz use contain |
+|Yrd Wste Not Collect |
+
+### Variables
+
+The following are some basic descriptions of what each variable in the Citizens Service Bureau data are supposed to measure:
+
+-   `requestid` - CSB assigned identification number for each request
+-   `problemcode` - general description of the problem associated with
+    the request
+-   `description` - (sometimes) more detailed description of the problem
+    associated with the request
+-   `probaddress` - address where problem is located
+-   `probcity` - city where address is located
+-   `probzip` - zipcode where address is located
+-   `datetimeinit` - date request made
+-   `srx` - x coordinate for address
+-   `sry` - y coordinate for address
+-   `status` - status of request
+-   `prjcompletedate` - date request completed
+-   `reqyear` - year request made
+
+## Another Data Set
+If the crime and non-emergency call data do not interest you, you are welcome to choose a topic of your own provided you can find appropriate data.
+
+### Characteristics of an Appropriate Data Set
+Data sets for your final project will have a number of salient characteristics: 
+
+1. They should be *spatial* data.
+2. They should numerous - there should be at least several hundred observations that vary over space and, ideally, over time as well. Several thousand observations will be ideal. 
+3. They must be countable - the number of 9-1-1 calls, resturants, or terrorist attacks, for example.
+4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, resturant locations across a city, state, or province, and crime scene locations.
+5. They should be able to be aggregated up to some sort of higher order construct. Think about how resturant locations could be aggregated up to neighborhoods, municipalities, or counties.
+
+### Other Considerations
+There are a few other considerations to take into account. If you are a graduate student and have already identified a possible thesis topic, you may want pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).
+
+### Finding an Appropriate Data Set
+In general, you are free to use any resource to identify a suitable data set that meets the above criteria with a couple of caveats:
+
+1. There is **not** time for you to collect your own data.
+2. There is **not** time for you to go through the IRB process to gain access to confidential data (either data that is not publicly available or data collected by a thesis adviser or other faculty member).
+3. The data you use should be licensed for re-use (it cannot be proprietary or otherwise restrictively licensed).
+4. The data should be well documented - you want to be very sure what each variable represents. If there is no code book or documentation, the data set is probably not appropriate for this project. *See Chris if you have questions about this.*
+
+## The Memo
+Once you have completed **all** of the steps for identifying a suitable data set, outcome variable, and possible independent variables, you should create a new [issue](https://help.github.com/articles/about-issues/) on your **final project repository**. In your issue: 
+
+1. State what your research question is, 
+2. identify the data you are using to address that question, 
+3. and the main category within the data you would like to map.
+
+Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris and Branson for review.

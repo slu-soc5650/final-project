@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>1.2 The Crime Data | SOC 4615 &amp; 5650: Quantitative Analysis Final Project</title>
+  <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="1.2 The Crime Data | SOC 4615 &amp; 5650: Quantitative Analysis Final Project" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650." />
+  <meta name="github-repo" content="slu-soc5650/syllabus" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1.2 The Crime Data | SOC 4615 &amp; 5650: Quantitative Analysis Final Project" />
+  
+  <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650." />
+  
+
+<meta name="author" content="Christopher Prener, Ph.D.">
+
+
+<meta name="date" content="2019-02-01">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="crafting-a-research-question.html">
+<link rel="next" href="the-citizens-service-bureau-data.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><strong><a href="https://slu-soc5650.github.io/final-project/">SOC 4615 & 5650 Final Project</a></strong></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
+<li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="part"><span><b>I Initial Steps</b></span></li>
+<li class="chapter" data-level="1" data-path="topic-data-selection.html"><a href="topic-data-selection.html"><i class="fa fa-check"></i><b>1</b> Topic &amp; Data Selection</a><ul>
+<li class="chapter" data-level="1.1" data-path="crafting-a-research-question.html"><a href="crafting-a-research-question.html"><i class="fa fa-check"></i><b>1.1</b> Crafting a Research Question</a></li>
+<li class="chapter" data-level="1.2" data-path="the-crime-data.html"><a href="the-crime-data.html"><i class="fa fa-check"></i><b>1.2</b> The Crime Data</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="the-crime-data.html"><a href="the-crime-data.html#license-1"><i class="fa fa-check"></i><b>1.2.1</b> License</a></li>
+<li class="chapter" data-level="1.2.2" data-path="the-crime-data.html"><a href="the-crime-data.html#topic-categories"><i class="fa fa-check"></i><b>1.2.2</b> Topic Categories</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="the-citizens-service-bureau-data.html"><a href="the-citizens-service-bureau-data.html"><i class="fa fa-check"></i><b>1.3</b> The Citizens’ Service Bureau Data</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="the-citizens-service-bureau-data.html"><a href="the-citizens-service-bureau-data.html#license-2"><i class="fa fa-check"></i><b>1.3.1</b> License</a></li>
+<li class="chapter" data-level="1.3.2" data-path="the-citizens-service-bureau-data.html"><a href="the-citizens-service-bureau-data.html#topic-categories-1"><i class="fa fa-check"></i><b>1.3.2</b> Topic Categories</a></li>
+<li class="chapter" data-level="1.3.3" data-path="the-citizens-service-bureau-data.html"><a href="the-citizens-service-bureau-data.html#variables"><i class="fa fa-check"></i><b>1.3.3</b> Variables</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="another-data-set.html"><a href="another-data-set.html"><i class="fa fa-check"></i><b>1.4</b> Another Data Set</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="another-data-set.html"><a href="another-data-set.html#characteristics-of-an-appropriate-data-set"><i class="fa fa-check"></i><b>1.4.1</b> Characteristics of an Appropriate Data Set</a></li>
+<li class="chapter" data-level="1.4.2" data-path="another-data-set.html"><a href="another-data-set.html#other-considerations"><i class="fa fa-check"></i><b>1.4.2</b> Other Considerations</a></li>
+<li class="chapter" data-level="1.4.3" data-path="another-data-set.html"><a href="another-data-set.html#finding-an-appropriate-data-set"><i class="fa fa-check"></i><b>1.4.3</b> Finding an Appropriate Data Set</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="the-memo.html"><a href="the-memo.html"><i class="fa fa-check"></i><b>1.5</b> The Memo</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SOC 4615 &amp; 5650: Quantitative Analysis Final Project</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-crime-data" class="section level2">
+<h2><span class="header-section-number">1.2</span> The Crime Data</h2>
+<p>The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.</p>
+<div id="license-1" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> License</h3>
+<p>These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.</p>
+</div>
+<div id="topic-categories" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Topic Categories</h3>
+<p>If you want to select a topic from these data, you should pick <strong>one</strong> crime category below. For example, you might pick <code>Arson</code> or <code>Vandalism</code>.</p>
+<div id="part-1-crimes" class="section level4">
+<h4><span class="header-section-number">1.2.2.1</span> Part 1 Crimes</h4>
+<p>According to the FBI, Part 1 crimes are serious crimes:</p>
+<blockquote>
+<p>These offenses were chosen because they are serious crimes, they occur with regularity in all areas of the country, and they are likely to be reported to police.</p>
+</blockquote>
+<p>With the exception of arson, data on these crimes has regularly been collected and reported by the FBI on a national basis since 1930. Arson was added to the list of Part 1 crimes (also known as “Index” crimes) in 1979.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">ucr</th>
+<th align="left">category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Homicide</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Rape</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">Robbery</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">Aggravated Assault</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">Burgalry</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">Larceny</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">Motor Vehicle Theft</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">Arson</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="part-2-offenses" class="section level4">
+<h4><span class="header-section-number">1.2.2.2</span> Part 2 Offenses</h4>
+<p>Crimes that are so-called “Part 2” offenses are typically less serious and may not be felonies.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">ucr</th>
+<th align="left">category</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">Other Assaults</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">Forgery and Counterfeiting</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">Fraud</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="left">Embezzlement</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">Stolen Property</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="left">Vandalism</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="left">Weapons</td>
+</tr>
+<tr class="even">
+<td align="right">16</td>
+<td align="left">Prostitution and Commercialized Vice</td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="left">Sex Offenses</td>
+</tr>
+<tr class="even">
+<td align="right">18</td>
+<td align="left">Drug Abuse Violations</td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">Gambling</td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">Offenses Against the Family and Children</td>
+</tr>
+<tr class="odd">
+<td align="right">21</td>
+<td align="left">Liquor Laws</td>
+</tr>
+<tr class="even">
+<td align="right">22</td>
+<td align="left">Drunkeness</td>
+</tr>
+<tr class="odd">
+<td align="right">23</td>
+<td align="left">Disorderly Conduct</td>
+</tr>
+<tr class="even">
+<td align="right">24</td>
+<td align="left">Vagrancy</td>
+</tr>
+<tr class="odd">
+<td align="right">25</td>
+<td align="left">All Other Offenses</td>
+</tr>
+<tr class="even">
+<td align="right">26</td>
+<td align="left">Suspicion</td>
+</tr>
+<tr class="odd">
+<td align="right">27</td>
+<td align="left">Curfew and Loitering Laws-Persons under 18</td>
+</tr>
+<tr class="even">
+<td align="right">28</td>
+<td align="left">Runaways-Persons under 18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="crafting-a-research-question.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-citizens-service-bureau-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": null
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

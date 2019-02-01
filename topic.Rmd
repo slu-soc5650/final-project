@@ -42,11 +42,208 @@ The process of conducting a research project starts with defining a research que
     - "How does racial segregation impact the outcomes of undocumented immigrants in cities?"
     - "What is the effect of DREAMer status on educational attainment?"
 
-Each student should think about the overarching category they want to conduct research in. Like the research process as a whole (see "[Data Analysis is not Linear]"), you may find that crafting a research question is an iterative process. You'll start with a broad topic, make a first attempt at narrowing it down, and then subsequently update the question as you find some related sources (and, if you are in SOC 5050, conduct a full-fledged literature review). Research questions for this course will be necessarily *descriptive* - "what is the spatial distribution of *x*?"
+Each student should think about the overarching category they want to conduct research in. Like the research process as a whole (see "[Data Analysis is not Linear]"), you may find that crafting a research question is an iterative process. You'll start with a broad topic, make a first attempt at narrowing it down, and then subsequently update the question as you find some related sources (and, if you are in SOC 5650, conduct a full-fledged literature review). Research questions for this course will be necessarily *descriptive* - "what is the spatial distribution of *x*?"
 
 ## The Crime Data
 
+```{r load-crime, include=FALSE}
+library(dplyr)
+library(knitr)
+```
+
+The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+
+### License
+These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.
+
+### Topic Categories
+If you want to select a topic from these data, you should pick **one** crime category below. For example, you might pick `Arson` or `Vandalism`.
+
+#### Part 1 Crimes
+According to the FBI, Part 1 crimes are serious crimes:
+
+> These offenses were chosen because they are serious crimes, they occur with regularity in all areas of the country, and they are likely to be reported to police.
+
+With the exception of arson, data on these crimes has regularly been collected and reported by the FBI on a national basis since 1930. Arson was added to the list of Part 1 crimes (also known as "Index" crimes) in 1979.
+
+```{r crimes, echo=FALSE}
+crimes <- data.frame(
+    ucr = c(1:8),
+    category = c("Homicide", "Rape", "Robbery", "Aggravated Assault", 
+                 "Burgalry", "Larceny", "Motor Vehicle Theft", "Arson")
+    )
+
+as_tibble(crimes) %>%
+    kable()
+```
+
+#### Part 2 Offenses
+Crimes that are so-called "Part 2" offenses are typically less serious and may not be felonies. 
+
+```{r offenses, echo=FALSE}
+offenses <- data.frame(
+    ucr = c(9:28),
+    category = c("Other Assaults", "Forgery and Counterfeiting", "Fraud",
+                 "Embezzlement", "Stolen Property", "Vandalism", "Weapons",
+                 "Prostitution and Commercialized Vice", "Sex Offenses",
+                 "Drug Abuse Violations", "Gambling",
+                 "Offenses Against the Family and Children", "Liquor Laws",
+                 "Drunkeness", "Disorderly Conduct", "Vagrancy", 
+                 "All Other Offenses", "Suspicion",
+                 "Curfew and Loitering Laws-Persons under 18",
+                 "Runaways-Persons under 18")
+    )
+
+as_tibble(offenses) %>%
+    kable()
+```
+
 ## The Citizens' Service Bureau Data
+
+```{r load-stlcsb, include=FALSE}
+library(stlcsb)
+```
+
+The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+
+### License
+All of the data that the City of St. Louis makes public, including the CSB data, are available under the following [license](http://data.stlouis-mo.gov/terms.cfm):
+
+***Description** *The City of St. Louis strives to enhance public access
+to and use of data that it collects and publishes. As part of an
+initiative to improve the accessibility, transparency, and
+accountability of City government, this catalog offers access to a
+repository of government-produced, machine-readable data sets. The
+datasets are organized by originating department. The City provides
+access to the information free of charge subject to the terms of this
+agreement. Use of data derived from the datasets, which may appear in
+formats such as tables and charts, is also subject to these terms.*
+
+***Terms** *The City of St. Louis reserves the right at any time to
+update, modify, or discontinue the release of the datasets. The City
+does not warranty the completeness, accuracy, content, or fitness for
+any particular purpose or use of any public dataset made available, nor
+are any such warranties to be implied or inferred with respect to the
+public datasets furnished therein. The City shall not be responsible or
+liable for the accuracy, usefulness or availability of any data in the
+datasets.*
+
+***Accountability** *When working with the datasets, be aware that these
+files are raw extracts derived from various data sources. The City of
+St. Louis is aware that errors exist in these datasets. Contact the
+originating department if questions/issues arise.*
+
+### Topic Categories
+If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
+
+#### Animal Related Calls
+```{r animal, echo=FALSE}
+as_tibble(data.frame(cat_animal)) %>% 
+    kable()
+```
+
+#### Construction Calls
+```{r construction, echo=FALSE}
+as_tibble(data.frame(cat_construction)) %>% 
+    kable()
+```
+
+#### Debries Related Calls
+```{r debris, echo=FALSE}
+as_tibble(data.frame(cat_debris)) %>% 
+    kable()
+```
+
+#### Degredation Related Calls
+```{r degrade, echo=FALSE}
+as_tibble(data.frame(cat_degrade)) %>% 
+    kable()
+```
+
+#### Disturbance Related Calls
+```{r distrub, echo=FALSE}
+as_tibble(data.frame(cat_disturbance)) %>% 
+    kable()
+```
+
+#### Health Related Calls
+```{r health, echo=FALSE}
+as_tibble(data.frame(cat_health)) %>% 
+    kable()
+```
+
+#### Landscaping Related Calls
+```{r landscape, echo=FALSE}
+as_tibble(data.frame(cat_landscape)) %>% 
+    kable()
+```
+
+#### Legal Related Calls
+```{r legal, echo=FALSE}
+as_tibble(data.frame(cat_law)) %>% 
+    kable()
+```
+
+#### Maintainence Related Calls
+```{r maintain, echo=FALSE}
+as_tibble(data.frame(cat_maintenance)) %>% 
+    kable()
+```
+
+#### Nature Related Calls
+```{r nature, echo=FALSE}
+as_tibble(data.frame(cat_nature)) %>% 
+    kable()
+```
+
+#### Roadway Related Calls
+```{r road, echo=FALSE}
+as_tibble(data.frame(cat_road)) %>% 
+    kable()
+```
+
+#### Sewer Related Calls
+```{r sewer, echo=FALSE}
+as_tibble(data.frame(cat_sewer)) %>% 
+    kable()
+```
+
+#### Traffic Related Calls
+```{r traffic, echo=FALSE}
+as_tibble(data.frame(cat_traffic)) %>% 
+    kable()
+```
+
+#### Vacancy Related Calls
+```{r vacant, echo=FALSE}
+as_tibble(data.frame(cat_vacant)) %>% 
+    kable()
+```
+
+#### Waste Related Calls
+```{r waste, echo=FALSE}
+as_tibble(data.frame(cat_waste)) %>% 
+    kable()
+```
+
+### Variables
+
+The following are some basic descriptions of what each variable in the Citizens Service Bureau data are supposed to measure:
+
+-   `requestid` - CSB assigned identification number for each request
+-   `problemcode` - general description of the problem associated with
+    the request
+-   `description` - (sometimes) more detailed description of the problem
+    associated with the request
+-   `probaddress` - address where problem is located
+-   `probcity` - city where address is located
+-   `probzip` - zipcode where address is located
+-   `datetimeinit` - date request made
+-   `srx` - x coordinate for address
+-   `sry` - y coordinate for address
+-   `status` - status of request
+-   `prjcompletedate` - date request completed
+-   `reqyear` - year request made
 
 ## Another Data Set
 If the crime and non-emergency call data do not interest you, you are welcome to choose a topic of your own provided you can find appropriate data.
@@ -55,12 +252,13 @@ If the crime and non-emergency call data do not interest you, you are welcome to
 Data sets for your final project will have a number of salient characteristics: 
 
 1. They should be *spatial* data.
-2. They should numerous - there should be at least several hundred observations that vary over space and, ideally, over time as well. Several thousand observations will be ideal.
-3. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, resturant locations across a city, state, or province, and crime scene locations.
-4. They should be able to be aggregated up to some sort of higher order construct. Think about how resturant locations could be aggregated up to neighborhoods, municipalities, or counties.
+2. They should numerous - there should be at least several hundred observations that vary over space and, ideally, over time as well. Several thousand observations will be ideal. 
+3. They must be countable - the number of 9-1-1 calls, resturants, or terrorist attacks, for example.
+4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, resturant locations across a city, state, or province, and crime scene locations.
+5. They should be able to be aggregated up to some sort of higher order construct. Think about how resturant locations could be aggregated up to neighborhoods, municipalities, or counties.
 
 ### Other Considerations
-For those of you enrolled in SOC 5050, there are a few other considerations to take into account. If you have already identified a possible thesis topic, pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).
+There are a few other considerations to take into account. If you are a graduate student and have already identified a possible thesis topic, you may want pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).
 
 ### Finding an Appropriate Data Set
 In general, you are free to use any resource to identify a suitable data set that meets the above criteria with a couple of caveats:
@@ -77,4 +275,4 @@ Once you have completed **all** of the steps for identifying a suitable data set
 2. identify the data you are using to address that question, 
 3. and the main category within the data you would like to map.
 
-Once you have your memo drafted, open an issue in your *final project* repository and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris for review.
+Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris and Branson for review.
