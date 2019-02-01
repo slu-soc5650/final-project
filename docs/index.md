@@ -1,5 +1,5 @@
 ---
-title: "SOC 4615 & 5650: Quantitative Analysis Final Project"
+title: "SOC 4615 & 5650: Intro to GIS Final Project"
 author: "Christopher Prener, Ph.D."
 date: "2019-02-01"
 site: bookdown::bookdown_site
