@@ -1,0 +1,37 @@
+# (PART) Mapping {-}
+
+# Map 1 - Overview Inset Map
+
+```{block, type = "rmdgoal"}
+**Goal:** Create an overview inset map.
+```
+
+```{block, type = "rmdpersonnel"}
+**Personnel:** This vignette should be completed by **all** students. 
+```
+
+```{block, type = "rmdpre"}
+**Pre-requisites:** This vignette should be started _after_ Vignette 6's initial completion.
+```
+
+```{block, type = "rmdskills"}
+**Skills:** Lectures 3 through 6
+```
+
+```{block, type = "rmddue"}
+**_Suggested_ Due Date:** Lecture 13 (April 13^th^)
+```
+
+```{block, type = "rmddeliver"}
+**Deliverables:** An output image file for the map.
+```
+
+## Overview Inset Map
+This map should be included with your introductory text box. It should be a small scale map that shows the location of St. Louis in Missouri relative to other major cities and the state's largest interstate highways. This is helpful information to include on research posters that are designed primarily for consumption by an audience not familiar with your topic, such as the audience you would typically have at a research conference.
+
+**Design Guidelines:** There should not be any ground layers outside of the extent of the Missouri boundary.
+
+```{block, type = "rmdwarning"}
+**For projects using a non-standard data set:**
+Think about the larger context of your research site. For example, a project for Japan would want to show where in the world Japan is located.
+```

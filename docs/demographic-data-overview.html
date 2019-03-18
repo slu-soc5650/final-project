@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project</title>
+  <title>5.1 Demographic Data Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="5.1 Demographic Data Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="5.1 Demographic Data Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="another-data-set.html">
-<link rel="next" href="analysis-development.html">
+<link rel="prev" href="demographic-data.html">
+<link rel="next" href="spatial-data-access.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -165,15 +165,19 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-memo" class="section level2">
-<h2><span class="header-section-number">1.5</span> The Memo</h2>
-<p>Once you have completed <strong>all</strong> of the steps for identifying a suitable data set, outcome variable, and possible independent variables, you should create a new <a href="https://help.github.com/articles/about-issues/">issue</a> on your <strong>final project repository</strong>. In your issue:</p>
-<ol style="list-style-type: decimal">
-<li>State what your research question is,</li>
-<li>identify the data you are using to address that question,</li>
-<li>and the main category within the data you would like to map.</li>
-</ol>
-<p>Once you have your memo drafted, open the issue and <a href="https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/">assign it</a> to Chris and Branson for review.</p>
+<div id="demographic-data-overview" class="section level2">
+<h2><span class="header-section-number">5.1</span> Demographic Data Overview</h2>
+<p>You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the <code>tidycensus</code> package’s <code>load_variables()</code> function (see the <a href="https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables"><code>tidycensus</code> website</a> and the <a href="https://slu-soc5650.github.io/docs/lecture-09/">lecture-09</a> materials for details) to search for the relevant concepts.</p>
+<p>Each demographic data point (i.e. population density or median income or poverty rate) should be exported as its own shapefile from <code>R</code> (so you should have a total of two shapefiles for this vignette). These shapefiles should be created in the same coordinate system used Vignette 4. Creating these shapefiles will also necessitate identifying the appropriate geometric data using the <code>tigris</code> package so that the demographic data can be joined with the relevant geometries. Make sure you have a measurement of the square miles for each feature to use for normalization.</p>
+<p>Once you have the shapefiles created, they should be imported into your project’s geodatabase.</p>
+<div class="rmdwarning">
+<p>
+<strong>For projects using a non-standard data set:</strong> Ideally, the level of aggregation you choose here should match the level of aggregation applied to your point data in Vignette 4 (i.e. if you have demographic data at the census tract level, aggregate your point data in Vignette 4 to the tract level as well). See Chris if you have qustions about this.
+</p>
+<p>
+In terms of identifying demographic data, most countries have some form of annual census that can be used to obtain the needed demographic data. Again, see Chris if you have trouble finding these data.
+</p>
+</div>
 
 </div>
 <!-- </div> -->
@@ -182,8 +186,8 @@
           </div>
         </div>
       </div>
-<a href="another-data-set.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="analysis-development.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="demographic-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spatial-data-access.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

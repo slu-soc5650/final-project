@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project</title>
+  <title>4.1 Data Cleaning Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="4.1 Data Cleaning Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1.5 The Memo | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="4.1 Data Cleaning Overview | SOC 4615 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4615 and 5650." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="another-data-set.html">
-<link rel="next" href="analysis-development.html">
+<link rel="prev" href="data-cleaning.html">
+<link rel="next" href="spatial-data-creation.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -165,25 +165,58 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-memo" class="section level2">
-<h2><span class="header-section-number">1.5</span> The Memo</h2>
-<p>Once you have completed <strong>all</strong> of the steps for identifying a suitable data set, outcome variable, and possible independent variables, you should create a new <a href="https://help.github.com/articles/about-issues/">issue</a> on your <strong>final project repository</strong>. In your issue:</p>
-<ol style="list-style-type: decimal">
-<li>State what your research question is,</li>
-<li>identify the data you are using to address that question,</li>
-<li>and the main category within the data you would like to map.</li>
-</ol>
-<p>Once you have your memo drafted, open the issue and <a href="https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/">assign it</a> to Chris and Branson for review.</p>
-
+<div id="data-cleaning-overview" class="section level2">
+<h2><span class="header-section-number">4.1</span> Data Cleaning Overview</h2>
+<div id="analysis-development-2" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Analysis Development</h3>
+<p>All data cleaning should be done in a single notebook that you clarify and expand over time. Use <code>dplyr</code>, <code>janitor</code>, and <code>sf</code> for data cleaning in short, well-organized pipelines. Your final data sets should be stored as <code>.shp</code> files in the <code>data/</code> folder along with the original raw data.</p>
 </div>
-<!-- </div> -->
+<div id="general-approach" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> General Approach</h3>
+<p>The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no “one size fits all” instructions for cleaning your data. In general, you will want to focus on making sure a number of criteria are met:</p>
+<ol style="list-style-type: decimal">
+<li>Variables should have short, clear, intuitive names.</li>
+<li>All missing data have been recoded to <code>NA</code> values (if they were not already coded that way).</li>
+<li>If your data set does not include identification numbers for each row, you will need to create them. The <code>tibble</code> package’s <a href="https://tibble.tidyverse.org/reference/rownames.html"><code>rowid_to_column()</code></a> function can be used for this.</li>
+<li>Only columns necessary for mapping should be included - subset out all other columns.</li>
+<li>Only observations necessary for mapping should be included - subset out all other observations (i.e. if you are using the crime data, subset out all crimes not in the category you are working with).</li>
+<li>Identify and subset out data missing spatial references. In the crime data set, these will either be missing already (<code>NA</code> values) or have values of <code>0</code>. In the CSB data set, these will either be missing already (<code>NA</code> values) or have values less than <code>800000</code> in the <code>x</code> coordinate and less than <code>980000</code> in the <code>y</code> coordinate.
+<ul>
+<li>If you are using another data source, make sure there are no missing data. The indicators above are similar to the indicators you should look for.</li>
+</ul></li>
+<li>Remove observations in the crime data where the count is <code>-1</code> and in the CSB data where there is a stats of <code>CANCEL</code>.
+<ul>
+<li>If you are using another data, make sure there are no observations for invalid data, as in calls for service that were cancelled or crimes that were removed from the data set.</li>
+</ul></li>
+<li>Clean and modify the values of specific observations as needed.
+<ul>
+<li>For example if you have a category variable - which both the crime and CSB data do, make sure it returns short, clear values. If you have multiple categories in such a variable, create a new categorical variable that simply differentiates between the relevant codes. For instance, the following values are the focus of a sample project using the CSB data. These nine categories could be summarized as (1) <code>stray animal, loose</code>, (2) <code>stray animal</code>, contained, (3) <code>animal surrender</code>.</li>
+</ul></li>
+</ol>
+<pre><code>                Stray Animal |      4,102        0.57       83.25
+          Stray Animal Cntnd |        118        0.02       83.27
+                   Stray Cat |      1,623        0.22       83.49
+          Stray Dog At Large |      9,036        1.25       84.75
+         Stray Dog Cntnd-ACC |      1,416        0.20       84.94
+         Stray Dog Contained |        939        0.13       85.07
+               Surrender Cat |         18        0.00       85.84
+               Surrender Dog |         23        0.00       85.84
+               Surrender Pet |        151        0.02       85.86</code></pre>
+<p>Your data cleaning process should follow the <a href="https://github.com/slu-soc5650/lecture-07/blob/master/handouts/wranglingWorkflow.pdf">data wrangling workflow</a> discussed during <a href="https://slu-soc5650.github.io/docs/lecture-07/">lecture-07</a>.</p>
+<div class="rmdwarning">
+<p>
+<strong>For projects using a non-standard data set:</strong> You want to follow the same general process as above. You should have point data, though they may come as <code>.csv</code> or <code>.shp</code> data. If they were obtained from a geodatabase, export them to <code>.shp</code> and then import them into <code>R</code>. If you need to geocode the data (i.e. you have address or city identifiers but no spatial data for them), see Chris to discuss this process.
+</p>
+</div>
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="another-data-set.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="analysis-development.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-cleaning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="spatial-data-creation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -253,6 +253,7 @@ If you want to select a topic from these data, you should pick several call type
 |VACANT BLDG INITIV   |
 |Vacnt Bldg Unsecured |
 |Vcnt weed check-web  |
+|Graffiti-Illegal     |
 
 #### Disturbance Related Calls
 

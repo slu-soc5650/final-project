@@ -9,5 +9,17 @@ output_dir: "docs"
 rmd_files: [
   "index.Rmd",
   
-  "topic.Rmd"
+  "topic.Rmd",
+  "development.Rmd",
+  "bibliography.Rmd",
+  
+  "cleaning.Rmd",
+  "demographics.Rmd",
+  "spatial.Rmd",
+  
+  "map1.Rmd",
+  "map2.Rmd",
+  "map3.Rmd",
+  
+  "poster.Rmd"
 ]
