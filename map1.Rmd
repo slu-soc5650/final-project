@@ -19,7 +19,7 @@
 ```
 
 ```{block, type = "rmddue"}
-**_Suggested_ Due Date:** Lecture 13 (April 13^th^)
+**_Suggested_ Due Date:** Lecture 13 (April 6^th^)
 ```
 
 ```{block, type = "rmddeliver"}

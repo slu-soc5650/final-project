@@ -19,8 +19,8 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Draft Due Date:</strong> Lecture 13 (April 13<sup>th</sup>) with, at a minimum, your wireframe.</p>
-<p><strong>Final Due Date:</strong> Final Presentations (May 13<sup>th</sup>)</p>
+<p><strong><em>Draft</em> Due Date:</strong> Lecture 13 (April 6<sup>th</sup>) with, at a minimum, your wireframe.</p>
+<p><strong>Final Due Date:</strong> Final Presentations (May 11<sup>th</sup>)</p>
 </div>
 
 <div class="rmddeliver">

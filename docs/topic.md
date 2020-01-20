@@ -19,7 +19,7 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> Lecture 4 (February 4<sup>th</sup>)</p>
+<p><strong>Required Due Date:</strong> Lecture 4 (February 3<sup>rd</sup>)</p>
 </div>
 
 <div class="rmddeliver">
@@ -52,6 +52,9 @@ The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcem
 
 ### License
 These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.
+
+### Download
+You can download these data from [GitHub](https://github.com/slu-soc5650/crime-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick **one** crime category below. For example, you might pick `Arson` or `Vandalism`.
@@ -134,6 +137,10 @@ datasets.*
 files are raw extracts derived from various data sources. The City of
 St. Louis is aware that errors exist in these datasets. Contact the
 originating department if questions/issues arise.*
+
+
+### Download
+You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
@@ -710,4 +717,4 @@ Once you have completed **all** of the steps for identifying a suitable data set
 2. identify the data you are using to address that question, 
 3. and the main category within the data you would like to map.
 
-Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris and Branson for review.
+Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris and Carter for review.

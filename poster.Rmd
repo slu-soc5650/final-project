@@ -19,9 +19,9 @@
 ```
 
 ```{block, type = "rmddue"}
-**Draft Due Date:** Lecture 13 (April 13^th^) with, at a minimum, your wireframe.
+**_Draft_ Due Date:** Lecture 13 (April 6^th^) with, at a minimum, your wireframe.
 
-**Final Due Date:** Final Presentations (May 13^th^)
+**Final Due Date:** Final Presentations (May 11^th^)
 ```
 
 ```{block, type = "rmddeliver"}

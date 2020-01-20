@@ -17,9 +17,9 @@
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date 1:** Lecture 11 (March 25^th^)
+**Required Due Date 1:** Lecture 11 (March 23^rd^)
 
-**Required Due Date 2:** Final Presentations (May 13^th^)
+**Required Due Date 2:** Final Presentations (May 11^th^)
 ```
 
 ```{block, type = "rmddeliver"}
@@ -35,8 +35,7 @@ If subfolders are empty, they will not be tracked by GitHub. If you are using on
 
 Since you will be storing this repository on GitHub, you will be default be using version control for this project. You should make commits (like voting in Chicago!) early and often. Make sure that your commit messages are informative and clear. Remember, if you have to go back to an earlier version of your work, you will want to make it as easy as possible to do so.
 
-Also make sure that you are pushing to GitHub often and not just saving the work locally on your computer. This is *part* of your insurance against a catastrophic loss of your computer or a lab computer where you are working. You are strongly encouraged to use a more comprehesive backup solution, which you can lean more about in [*Sociospatial Data Science*](https://chris-prener.github.io/SSDSBook/backing-up-your-data.html).
-
+Also make sure that you are pushing to GitHub often and not just saving the work locally on your computer. This is *part* of your insurance against a catastrophic loss of your computer or a lab computer where you are working. You are strongly encouraged to use a more comprehesive backup solution!
 ## Project Planning
 Use GitHub’s "Project Board" feature on your final project's GitHub repository to plan out the tasks you need to complete. Create a new project and assign each vignette to a column. Then assign specific tasks and deliverables related to that vignette to individual notes in that column. As you progress through the project, keep this updated so that you can track your progress. You can read more about [managing projects](https://help.github.com/articles/managing-project-boards-in-your-repository-or-organization/) and [tracking progress with a project board](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/) in GitHub's documentation.
 

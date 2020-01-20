@@ -17,7 +17,7 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> March 20<sup>th</sup></p>
+<p><strong>Required Due Date:</strong> March 23<sup>rd</sup></p>
 </div>
 
 <div class="rmddeliver">

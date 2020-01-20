@@ -17,7 +17,7 @@
 ```
 
 ```{block, type = "rmddue"}
-**Due Date:** Final Presentations (May 13^th^)
+**Due Date:** Final Presentations (May 11^th^)
 ```
 
 ```{block, type = "rmddeliver"}

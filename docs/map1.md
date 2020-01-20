@@ -19,7 +19,7 @@
 </div>
 
 <div class="rmddue">
-<p><strong><em>Suggested</em> Due Date:</strong> Lecture 13 (April 13<sup>th</sup>)</p>
+<p><strong><em>Suggested</em> Due Date:</strong> Lecture 13 (April 6<sup>th</sup>)</p>
 </div>
 
 <div class="rmddeliver">
