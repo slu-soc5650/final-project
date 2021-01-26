@@ -15,11 +15,11 @@
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> Lectures 7, 8, 10, and 11</p>
+<p><strong>Skills:</strong> TBA</p>
 </div>
 
 <div class="rmddue">
-<p><strong><em>Suggested</em> Due Date:</strong> Lecture 13 (April 6<sup>th</sup>)</p>
+<p><strong><em>Suggested</em> Due Date:</strong> Meeting 06 (March 8th) as part of Waypoint 2</p>
 </div>
 
 <div class="rmddeliver">

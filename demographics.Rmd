@@ -13,11 +13,11 @@
 ```
 
 ```{block, type = "rmdskills"}
-**Skills:** Lectures 7, 8, 9, and 10
+**Skills:** TBA
 ```
 
 ```{block, type = "rmddue"}
-**_Suggested_ Due Date:** Lecture 13 (April 13^th^)
+**Required Due Date:** Meeting 07 (March 15th) as part of Waypoint 3
 ```
 
 ```{block, type = "rmddeliver"}

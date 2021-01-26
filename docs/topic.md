@@ -19,7 +19,7 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> Lecture 4 (February 3<sup>rd</sup>)</p>
+<p><strong>Required Due Date:</strong> Meeting 02 (February 8th) as part of Waypoint 1</p>
 </div>
 
 <div class="rmddeliver">
@@ -67,43 +67,43 @@ According to the FBI, Part 1 crimes are serious crimes:
 With the exception of arson, data on these crimes has regularly been collected and reported by the FBI on a national basis since 1930. Arson was added to the list of Part 1 crimes (also known as "Index" crimes) in 1979.
 
 
- ucr  category            
-----  --------------------
-   1  Homicide            
-   2  Rape                
-   3  Robbery             
-   4  Aggravated Assault  
-   5  Burgalry            
-   6  Larceny             
-   7  Motor Vehicle Theft 
-   8  Arson               
+| ucr|category            |
+|---:|:-------------------|
+|   1|Homicide            |
+|   2|Rape                |
+|   3|Robbery             |
+|   4|Aggravated Assault  |
+|   5|Burgalry            |
+|   6|Larceny             |
+|   7|Motor Vehicle Theft |
+|   8|Arson               |
 
 #### Part 2 Offenses
 Crimes that are so-called "Part 2" offenses are typically less serious and may not be felonies. 
 
 
- ucr  category                                   
-----  -------------------------------------------
-   9  Other Assaults                             
-  10  Forgery and Counterfeiting                 
-  11  Fraud                                      
-  12  Embezzlement                               
-  13  Stolen Property                            
-  14  Vandalism                                  
-  15  Weapons                                    
-  16  Prostitution and Commercialized Vice       
-  17  Sex Offenses                               
-  18  Drug Abuse Violations                      
-  19  Gambling                                   
-  20  Offenses Against the Family and Children   
-  21  Liquor Laws                                
-  22  Drunkeness                                 
-  23  Disorderly Conduct                         
-  24  Vagrancy                                   
-  25  All Other Offenses                         
-  26  Suspicion                                  
-  27  Curfew and Loitering Laws-Persons under 18 
-  28  Runaways-Persons under 18                  
+| ucr|category                                   |
+|---:|:------------------------------------------|
+|   9|Other Assaults                             |
+|  10|Forgery and Counterfeiting                 |
+|  11|Fraud                                      |
+|  12|Embezzlement                               |
+|  13|Stolen Property                            |
+|  14|Vandalism                                  |
+|  15|Weapons                                    |
+|  16|Prostitution and Commercialized Vice       |
+|  17|Sex Offenses                               |
+|  18|Drug Abuse Violations                      |
+|  19|Gambling                                   |
+|  20|Offenses Against the Family and Children   |
+|  21|Liquor Laws                                |
+|  22|Drunkeness                                 |
+|  23|Disorderly Conduct                         |
+|  24|Vagrancy                                   |
+|  25|All Other Offenses                         |
+|  26|Suspicion                                  |
+|  27|Curfew and Loitering Laws-Persons under 18 |
+|  28|Runaways-Persons under 18                  |
 
 ## The Citizens' Service Bureau Data
 
@@ -688,7 +688,7 @@ The following are some basic descriptions of what each variable in the Citizens 
 -   `reqyear` - year request made
 
 ## Another Data Set
-If the crime and non-emergency call data do not interest you, you are welcome to choose a topic of your own provided you can find appropriate data.
+If the crime and non-emergency call data do not interest you, you may petition to choose a topic of your own provided you can find appropriate data.
 
 ### Characteristics of an Appropriate Data Set
 Data sets for your final project will have a number of salient characteristics: 
@@ -702,6 +702,9 @@ Data sets for your final project will have a number of salient characteristics:
 ### Other Considerations
 There are a few other considerations to take into account. If you are a graduate student and have already identified a possible thesis topic, you may want pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).
 
+### Pandemic Considerations
+I am normally flexible about accepting other data sets for the final project. However, because of the nature of the Spring 2021 semester, I am going to be more stringent in approving these. If you want to petition use an outside data set, you may. However, you need to be prepared to do some of the leg work on your own without the benefit of in-person support from Chris. 
+
 ### Finding an Appropriate Data Set
 In general, you are free to use any resource to identify a suitable data set that meets the above criteria with a couple of caveats:
 
@@ -711,10 +714,12 @@ In general, you are free to use any resource to identify a suitable data set tha
 4. The data should be well documented - you want to be very sure what each variable represents. If there is no code book or documentation, the data set is probably not appropriate for this project. *See Chris if you have questions about this.*
 
 ## The Memo
-Once you have completed **all** of the steps for identifying a suitable data set, outcome variable, and possible independent variables, you should create a new [issue](https://help.github.com/articles/about-issues/) on your **final project repository**. In your issue: 
+Once you have completed **all** of the steps for identifying a suitable data set and outcome variable, you should create a new [issue](https://help.github.com/articles/about-issues/) on your **final project repository**. In your issue: 
 
 1. State what your research question is, 
 2. identify the data you are using to address that question, 
 3. and the main category within the data you would like to map.
 
-Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris and Carter for review.
+If you are petitioning to use a different data set, please clearly note this in your memo and we can discuss your proposal in greater detail.
+
+Once you have your memo drafted, open the issue and [assign it](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/) to Chris for review.

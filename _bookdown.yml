@@ -15,11 +15,5 @@ rmd_files: [
   
   "cleaning.Rmd",
   "demographics.Rmd",
-  "spatial.Rmd",
-  
-  "map1.Rmd",
-  "map2.Rmd",
-  "map3.Rmd",
-  
-  "poster.Rmd"
+  "spatial.Rmd"
 ]

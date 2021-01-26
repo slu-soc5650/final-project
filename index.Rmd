@@ -17,7 +17,7 @@ The final project corresponds to the fifth course learning outcome, which is des
 
 > 5. *Research synthesis*: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.
 
-All students will select a data set and perform an original data analysis culminating in a series of maps displayed on a research poster. Each student will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. This process and project mirrors the steps taken to author a conference presentation (for all students) and a digital companion that would appear alongside a more formal journal article (for SOC 5650 students)..
+All students will select a data set and perform an original data analysis culminating in a series of maps displayed on a research poster. Each student will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. SOC 5650 students will have to also author a companion paper in the form of an empirical journal article.
 
 ### How are these instructions organized? {-}
 These instructions are organized into **vignettes** (pronounced `vin'yets`). These are meant to create "bite sized" modules that break down the final project into discrete phases. Each vignette has a set of indicators on the top-level page for the vignette that provide you with some general information about what the vignette entails. These indicators will help you quickly navigate the instructions.

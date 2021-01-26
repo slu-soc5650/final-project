@@ -17,7 +17,7 @@
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date:** March 23^rd^
+**Required Due Date:** Meeting 05 (March 1st) 
 ```
 
 ```{block, type = "rmddeliver"}

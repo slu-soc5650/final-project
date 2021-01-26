@@ -13,11 +13,11 @@
 ```
 
 ```{block, type = "rmdskills"}
-**Skills:** Lecture 10
+**Skills:** TBA
 ```
 
 ```{block, type = "rmddue"}
-**_Suggested_ Due Date:** Lecture 13 (April 6^th^)
+**Required Due Date:** Meeting 08 (March 22nd) as part of Waypoint 4
 ```
 
 ```{block, type = "rmddeliver"}
@@ -27,7 +27,7 @@
 ## General Notes
 Think carefully about what other spatial data would be useful for mapping (bodies of water, building footprints, parks, etc.). This will vary based on the geographic scale for your project, but use the Brewer cartography book and the other course materials as inspiration - think about what ground features and contextual layers you might want to see along side your project-specific data.
 
-All data you download should be catalogued in your `RESEARCH_LOG.md` and stored in a well-organized manner within the `data/` subdirectory. Each file should be projected in the same coordinate system as you have used in the previous two vignettes. The only exception here would be data at a different geographic scale that would be used in an inset map. Once you have re-projected the data, they should be imported into your project's geodatabase.
+All data you download should be catalogued in your `RESEARCH_LOG.md` and stored in a well-organized manner within the `data/` subdirectory. Each file should be projected in the same coordinate system as you have used in the previous two vignettes. The only exception here would be data at a different geographic scale that would be used in an inset map.
 
 ## St. Louis Specific Sources
 These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your projet and the scale you are mapping. Most St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles.

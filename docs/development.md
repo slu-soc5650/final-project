@@ -17,8 +17,8 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Lecture 11 (March 23<sup>rd</sup>)</p>
-<p><strong>Required Due Date 2:</strong> Final Presentations (May 11<sup>th</sup>)</p>
+<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part of Waypoint 2</p>
+<p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
@@ -28,13 +28,14 @@
 ## Data Storage
 You will have a separate GitHub repository that is dedicated to the final project. This will facilitate some of the peer evaluation tasks you will be asked to complete over the course of the semester, allowing you to share a repository with a colleague without exposing all of your other work and grades in the process. 
 
-All final project materials should be stored in this repository, and it should be organized following the [project organization principles we've used this semester](https://slu-soc5650.github.io/docs/protecting-work/). This means that it should have subfolders for `data/`, `docs/`, `results/`, and `source/` as well as a `.Rproj` file and an ArcGIS project file. Make sure you move your default geodatabase into the `data/` folder as well.
+All final project materials should be stored in this repository, and it should be organized following the [project organization principles we've used this semester](https://slu-soc5650.github.io/docs/protecting-work/). This means that it should have subfolders for `data/`, `docs/`, `results/`, and `source/` as well as a `.Rproj` file.
 
 If subfolders are empty, they will not be tracked by GitHub. If you are using only one computer, the folder will remain visible locally and Git will start tracking it once you begin adding materials. If you are using multiple computers, you can create empty text files named `.gitkeep` using RStudio (`File > New File > Text File`) and keep one in each subfolder.
 
 Since you will be storing this repository on GitHub, you will be default be using version control for this project. You should make commits (like voting in Chicago!) early and often. Make sure that your commit messages are informative and clear. Remember, if you have to go back to an earlier version of your work, you will want to make it as easy as possible to do so.
 
 Also make sure that you are pushing to GitHub often and not just saving the work locally on your computer. This is *part* of your insurance against a catastrophic loss of your computer or a lab computer where you are working. You are strongly encouraged to use a more comprehesive backup solution!
+
 ## Project Planning
 Use GitHub’s "Project Board" feature on your final project's GitHub repository to plan out the tasks you need to complete. Create a new project and assign each vignette to a column. Then assign specific tasks and deliverables related to that vignette to individual notes in that column. As you progress through the project, keep this updated so that you can track your progress. You can read more about [managing projects](https://help.github.com/articles/managing-project-boards-in-your-repository-or-organization/) and [tracking progress with a project board](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/) in GitHub's documentation.
 
