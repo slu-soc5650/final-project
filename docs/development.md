@@ -17,7 +17,7 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part of Waypoint 2</p>
+<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part of <a href="index.html#waypoints">Waypoint 2</a></p>
 <p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 

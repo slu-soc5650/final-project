@@ -17,7 +17,20 @@ The final project corresponds to the fifth course learning outcome, which is des
 
 > 5. *Research synthesis*: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.
 
-All students will select a data set and perform an original data analysis culminating in a series of maps displayed on a research poster. Each student will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. SOC 5650 students will have to also author a companion paper in the form of an empirical journal article.
+All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS story map. 
+
+### Overview {-}
+Broadly speaking, all students will create an ArcGIS story map to present a series of interactive maps about their chosen topic as well as approximately 1,000 to 1,5000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. Your story map will have, at a minimum, the following five maps:
+
+  1. A map of your main topic displayed as point data
+  2. A map of your main topic aggregated to census tracts
+  3. Two maps showing relevant demographic data for the same census tracts
+  4. A detailed map showing a smaller slice of your data for a specific region
+  
+You should also plan to include at least two photos, videos, or other relevant media embedded in your story map.
+
+### Article for SOC 5650 {-}
+Students entrolled in SOC 5650 will also write a 3,000 to 4,000 word final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from the map.
 
 ### How are these instructions organized? {-}
 These instructions are organized into **vignettes** (pronounced `vin'yets`). These are meant to create "bite sized" modules that break down the final project into discrete phases. Each vignette has a set of indicators on the top-level page for the vignette that provide you with some general information about what the vignette entails. These indicators will help you quickly navigate the instructions.
@@ -45,13 +58,13 @@ If the instructions are only for one of the sections, they will look like this:
 Some of the vignettes can be worked on in parallel while others require that a prior vignette has been completed. If there is a pre-requisite vignette that must be completed first, this indicator will include pertinent details about ordering:
 
 ```{block, type = "rmdpre"}
-**Pre-requisties:** This vignette should be completed *after* Vignette 6.
+**Pre-requisites:** This vignette should be completed *after* Vignette 6.
 ```
 
 Otherwise you will see this indicator:
 
 ```{block, type = "rmdpre"}
-**Pre-requisties:** There are no pre-requisites for this vignette.
+**Pre-requisites:** There are no pre-requisites for this vignette.
 ```
 
 #### What do I need to know how to do? {-}
@@ -85,15 +98,24 @@ All of the vignettes require you to produce *something*. A quick description of 
 The organization of these instructions implies a linear path - complete one vignette and then go on to the next. You'll notice that the pre-requisite vignette box for most vignettes look something like this:
 
 ```{block, type = "rmdpre"}
-**Pre-requisties:** This vignette should be started _after_ Vignette 5's initial completion.
+**Pre-requisites:** This vignette should be started _after_ Vignette 5's initial completion.
 ```
 
 This wording is meant to remind you that data analysis is never a linear process. You are going to have to iterate over vignettes, often several times. You'll perhaps do some initial data cleaning, calculate descriptive statistics, and notice that the frequency of a particular category is too small. So you'll have to go back, re-code that particular variable, and recalculate your descriptive statistics. This process of iteration is the norm for statistical analysis. Even the most experienced statisticians do this - it is not a function of inexperience so much as it is the nature of doing analytic work. 
 
 One of the reasons that a plain-text approach to programming and statistics is so powerful is that this iteration becomes easy. You won't have to remember the series of menu selections and check boxes you chose to produce a particular output as you would with a GUI-driven statistical application. Rather, recalculating descriptive statistics is as easy as making a small change to the source code for the data cleaning notebook, knitting that notebook, and then re-knitting the descriptive statistics notebook. Working in this way gives you the freedom to explore and experiment as much as you'd like!
 
+### Waypoints {-}
+Despite the non-linearity of data analysis, there are points during the semester where we will need to check-in. I call these "waypoints." They will cover different facets of various vignettes. [Please see the syllabus for waypoint due dates](https://slu-soc5650.github.io/syllabus/assignments.html#final-project). Below are the waypoints and my general expectations for them:
+
+  1. **Waypoint 1 - Topic Selection**
+      * Submit [the memo](the-memo.html) as described in [Vignette 1](topic-data-selection.html)
+  2. **Waypoint 2 - Initial Data Cleaning** 
+      * Create the necessary project analysis development components described in [Vignette 2](analysis-development.html)
+      * Begin the data cleaning process described in [Vignette 4](data-cleaning.html), focusing specifically on [Section 4.1](data-cleaning-overview.html). My expectation here is that each student loads their main data set (e.g., crime data, CSB data, or some other data set you have selected), and applies the [data cleaning workflow](https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf) to it. It does not have to be complete, and there may be additional work left to do, but I do want to see that each step of the workflow has been addressed in some way. You do not need to address [Section 4.2](spatial-data-creation.html) for this waypoint.
+
 ## License {-}
-Copyright © 2016-2019 [Christopher G. Prener](https://chris-prener.github.io)
+Copyright © 2016-2021 [Christopher G. Prener](https://chris-prener.github.io)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 

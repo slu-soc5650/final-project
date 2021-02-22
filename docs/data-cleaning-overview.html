@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-01-26" />
+<meta name="date" content="2021-02-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -72,8 +72,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#article-for-soc-5650"><i class="fa fa-check"></i>Article for SOC 5650</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
@@ -166,24 +169,24 @@
 <h2><span class="header-section-number">4.1</span> Data Cleaning Overview</h2>
 <div id="analysis-development-2" class="section level3" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Analysis Development</h3>
-<p>All data cleaning should be done in a single notebook that you clarify and expand over time. Use <code>dplyr</code>, <code>janitor</code>, and <code>sf</code> for data cleaning in short, well-organized pipelines. Your final data sets should be stored as <code>.shp</code> files in the <code>data/</code> folder along with the original raw data.</p>
+<p>All data cleaning should be done in a single notebook that you clarify and expand over time. Use <code>dplyr</code>, <code>naniar</code>, <code>janitor</code>, and <code>sf</code> for data cleaning in short, well-organized pipelines. Your final data sets should be stored as <code>.shp</code> files in the <code>data/</code> folder along with the original raw data.</p>
 </div>
 <div id="general-approach" class="section level3" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> General Approach</h3>
-<p>The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no “one size fits all” instructions for cleaning your data. In general, you will want to focus on making sure a number of criteria are met:</p>
+<p>The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no “one size fits all” instructions for cleaning your data, though you should follow the <a href="https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf">data cleaning workflow</a> we discussed in class. In general, you will want to focus on making sure a number of criteria are met:</p>
 <ol style="list-style-type: decimal">
 <li>Variables should have short, clear, intuitive names.</li>
 <li>All missing data have been recoded to <code>NA</code> values (if they were not already coded that way).</li>
 <li>If your data set does not include identification numbers for each row, you will need to create them. The <code>tibble</code> package’s <a href="https://tibble.tidyverse.org/reference/rownames.html"><code>rowid_to_column()</code></a> function can be used for this.</li>
 <li>Only columns necessary for mapping should be included - subset out all other columns.</li>
-<li>Only observations necessary for mapping should be included - subset out all other observations (i.e. if you are using the crime data, subset out all crimes not in the category you are working with).</li>
+<li>Only observations necessary for mapping should be included - subset out all other observations (i.e. if you are using the crime data, subset out all crimes not in the category you are working with). You will also want to remove all duplicate observations.</li>
 <li>Identify and subset out data missing spatial references. In the crime data set, these will either be missing already (<code>NA</code> values) or have values of <code>0</code>. In the CSB data set, these will either be missing already (<code>NA</code> values) or have values less than <code>800000</code> in the <code>x</code> coordinate and less than <code>980000</code> in the <code>y</code> coordinate.
 <ul>
 <li>If you are using another data source, make sure there are no missing data. The indicators above are similar to the indicators you should look for.</li>
 </ul></li>
 <li>Remove observations in the crime data where the count is <code>-1</code> and in the CSB data where there is a stats of <code>CANCEL</code>.
 <ul>
-<li>If you are using another data, make sure there are no observations for invalid data, as in calls for service that were cancelled or crimes that were removed from the data set.</li>
+<li>If you are using another data, make sure there are no observations for invalid data, as in calls for service that were canceled or crimes that were removed from the data set.</li>
 </ul></li>
 <li>Clean and modify the values of specific observations as needed.
 <ul>
@@ -199,7 +202,6 @@
                Surrender Cat |         18        0.00       85.84
                Surrender Dog |         23        0.00       85.84
                Surrender Pet |        151        0.02       85.86</code></pre>
-<p>Your data cleaning process should follow the <a href="https://github.com/slu-soc5650/lecture-07/blob/master/handouts/wranglingWorkflow.pdf">data wrangling workflow</a> discussed during <a href="https://slu-soc5650.github.io/docs/lecture-07/">lecture-07</a>.</p>
 <div class="rmdwarning">
 <p>
 <strong>For projects using a non-standard data set:</strong> You want to follow the same general process as above. You should have point data, though they may come as <code>.csv</code> or <code>.shp</code> data. If they were obtained from a geodatabase, export them to <code>.shp</code> and then import them into <code>R</code>. If you need to geocode the data (i.e. you have address or city identifiers but no spatial data for them), see Chris to discuss this process.

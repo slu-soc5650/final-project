@@ -15,11 +15,15 @@
 ```
 
 ```{block, type = "rmdskills"}
-**Skills:** TBA
+**Skills:** This vignette requires skills from both Module 2 (especially Meeting 04) and Module 3 (especially Meetings 06 and 07)
 ```
 
 ```{block, type = "rmddue"}
-**_Suggested_ Due Date:** Meeting 06 (March 8th) as part of Waypoint 2
+**Required Due Date 1:** Meeting 06 (March 8th) as part of [Waypoint 2](index.html#waypoints), specifically Section 4.1
+
+**Required Due Date 2:** Meeting 08 (March 22nd) as part of [Waypoint 4](index.html#waypoints), specifically Section 4.2
+
+**Required Due Date 3:** Final Submission (May 17th)
 ```
 
 ```{block, type = "rmddeliver"}
@@ -30,21 +34,21 @@
 
 ### Analysis Development
 
-All data cleaning should be done in a single notebook that you clarify and expand over time. Use `dplyr`, `janitor`, and `sf` for data cleaning in short, well-organized pipelines. Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
+All data cleaning should be done in a single notebook that you clarify and expand over time. Use `dplyr`, `naniar`, `janitor`, and `sf` for data cleaning in short, well-organized pipelines. Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
 
 ### General Approach
 
-The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no "one size fits all" instructions for cleaning your data. In general, you will want to focus on making sure a number of criteria are met:
+The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no "one size fits all" instructions for cleaning your data, though you should follow the [data cleaning workflow](https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf) we discussed in class. In general, you will want to focus on making sure a number of criteria are met:
 
 1. Variables should have short, clear, intuitive names.
 2. All missing data have been recoded to `NA` values (if they were not already coded that way).
 3. If your data set does not include identification numbers for each row, you will need to create them. The `tibble` package's [`rowid_to_column()`](https://tibble.tidyverse.org/reference/rownames.html) function can be used for this.
 4. Only columns necessary for mapping should be included - subset out all other columns.
-5. Only observations necessary for mapping should be included - subset out all other observations (i.e. if you are using the crime data, subset out all crimes not in the category you are working with).
+5. Only observations necessary for mapping should be included - subset out all other observations (i.e. if you are using the crime data, subset out all crimes not in the category you are working with). You will also want to remove all duplicate observations.
 6. Identify and subset out data missing spatial references. In the crime data set, these will either be missing already (`NA` values) or have values of `0`. In the CSB data set, these will either be missing already (`NA` values) or have values less than `800000` in the `x` coordinate and less than `980000` in the `y` coordinate.
     * If you are using another data source, make sure there are no missing data. The indicators above are similar to the indicators you should look for.
 7. Remove observations in the crime data where the count is `-1` and in the CSB data where there is a stats of `CANCEL`. 
-    * If you are using another data, make sure there are no observations for invalid data, as in calls for service that were cancelled or crimes that were removed from the data set.
+    * If you are using another data, make sure there are no observations for invalid data, as in calls for service that were canceled or crimes that were removed from the data set.
 8. Clean and modify the values of specific observations as needed. 
     * For example if you have a category variable - which both the crime and CSB data do, make sure it returns short, clear values. If you have multiple categories in such a variable, create a new categorical variable that simply differentiates between the relevant codes. For instance, the following values are the focus of a sample project using the CSB data. These nine categories could be summarized as (1) `stray animal, loose`, (2) `stray animal`, contained, (3) `animal surrender`.
 
@@ -60,8 +64,6 @@ The amount of data cleaning needed will vary significantly based on the data set
                Surrender Pet |        151        0.02       85.86
 ```
 
-Your data cleaning process should follow the [data wrangling workflow](https://github.com/slu-soc5650/lecture-07/blob/master/handouts/wranglingWorkflow.pdf) discussed during [lecture-07](https://slu-soc5650.github.io/docs/lecture-07/).
-
 ```{block, type = "rmdwarning"}
 **For projects using a non-standard data set:**
 You want to follow the same general process as above. You should have point data, though they may come as `.csv` or `.shp` data. If they were obtained from a geodatabase, export them to `.shp` and then import them into `R`. If you need to geocode the data (i.e. you have address or city identifiers but no spatial data for them), see Chris to discuss this process.
@@ -73,7 +75,7 @@ Once you have cleaned your data, you will want to project it as an `sf` object a
 You will need two forms of your data: 
 
 1. The first should be a shapefile that contains the cleaned point data (i.e. all crimes that you have left after data cleaning, or all CSB calls). 
-2. The second should be these points aggregated to the census block group. You will need to use the `tigris` package to download these data, and then perform a spatial join and aggregate the points (this is covered in lecture-11). Make sure you have a measurement of the square miles for each feature to use for normalization.
+2. The second should be these points aggregated to the census tract. You will need to use the `tigris` package to download these data, and then perform a spatial join and aggregate the points. Make sure you have a measurement of the square miles for each feature to use for normalization.
 
 Once you have the shapefiles created, they should be imported into your project's geodatabase.
 

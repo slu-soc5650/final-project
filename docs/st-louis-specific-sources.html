@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-01-26" />
+<meta name="date" content="2021-02-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -72,8 +72,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#article-for-soc-5650"><i class="fa fa-check"></i>Article for SOC 5650</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
@@ -164,7 +167,7 @@
             <section class="normal" id="section-">
 <div id="st.-louis-specific-sources" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> St. Louis Specific Sources</h2>
-<p>These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your projet and the scale you are mapping. Most St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles.</p>
+<p>These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your projet and the scale you are mapping. Many St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles.</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>City of St. Louis Boundary</strong> - this can be obtained via the <code>tigris</code> package - download the county data for the State of Missouri, and subset out the City of St. Louis (our FIPS code is <code>510</code>).</p></li>
 <li><p><strong>Illinois Hydrology</strong> - The Census TIGER hydrology data is released by county, so bodies of water that lie between jurisdictions end up split. This shapefile contains data on the extent of the Mississippi River in Madison and St. Clair counties for the length of the City of St. Louis. You can obtain the shapefile <a href="https://github.com/slu-openGIS/IL_HYDRO_Mississippi">here</a>.</p></li>

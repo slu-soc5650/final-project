@@ -13,7 +13,7 @@
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> TBA</p>
+<p><strong>Skills:</strong> This vignette requires skills from both Module 2 (especially Meeting 5)</p>
 </div>
 
 <div class="rmddue">

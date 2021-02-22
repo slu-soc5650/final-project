@@ -29,10 +29,12 @@ variables
 another-data-set
 characteristics-of-an-appropriate-data-set
 other-considerations
+pandemic-considerations
 finding-an-appropriate-data-set
 the-memo
 analysis-development
 data-storage
+project-planning
 project-documentation
 readme.md
 research_log.md
@@ -53,5 +55,3 @@ demographic-data-overview
 spatial-data-access
 general-notes
 st.-louis-specific-sources
-project-planning
-pandemic-considerations

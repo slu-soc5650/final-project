@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-01-26" />
+<meta name="date" content="2021-02-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -72,8 +72,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#article-for-soc-5650"><i class="fa fa-check"></i>Article for SOC 5650</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
@@ -97,7 +100,8 @@
 <ul>
 <li class="chapter" data-level="1.4.1" data-path="another-data-set.html"><a href="another-data-set.html#characteristics-of-an-appropriate-data-set"><i class="fa fa-check"></i><b>1.4.1</b> Characteristics of an Appropriate Data Set</a></li>
 <li class="chapter" data-level="1.4.2" data-path="another-data-set.html"><a href="another-data-set.html#other-considerations"><i class="fa fa-check"></i><b>1.4.2</b> Other Considerations</a></li>
-<li class="chapter" data-level="1.4.3" data-path="another-data-set.html"><a href="another-data-set.html#finding-an-appropriate-data-set"><i class="fa fa-check"></i><b>1.4.3</b> Finding an Appropriate Data Set</a></li>
+<li class="chapter" data-level="1.4.3" data-path="another-data-set.html"><a href="another-data-set.html#pandemic-considerations"><i class="fa fa-check"></i><b>1.4.3</b> Pandemic Considerations</a></li>
+<li class="chapter" data-level="1.4.4" data-path="another-data-set.html"><a href="another-data-set.html#finding-an-appropriate-data-set"><i class="fa fa-check"></i><b>1.4.4</b> Finding an Appropriate Data Set</a></li>
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="the-memo.html"><a href="the-memo.html"><i class="fa fa-check"></i><b>1.5</b> The Memo</a></li>
 </ul></li>
@@ -164,7 +168,7 @@
 <div id="header">
 <h1 class="title">SOC 4615 &amp; 5650: Intro to GIS Final Project</h1>
 <p class="author"><em>Christopher Prener, Ph.D.</em></p>
-<p class="date"><em>2021-01-26</em></p>
+<p class="date"><em>2021-02-22</em></p>
 </div>
 <div id="basics" class="section level1 unnumbered">
 <h1>Basics</h1>
@@ -174,7 +178,22 @@
 <li><em>Research synthesis</em>: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.</li>
 </ol>
 </blockquote>
-<p>All students will select a data set and perform an original data analysis culminating in a series of maps displayed on a research poster. Each student will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. SOC 5650 students will have to also author a companion paper in the form of an empirical journal article.</p>
+<p>All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS story map.</p>
+<div id="overview" class="section level3 unnumbered">
+<h3>Overview</h3>
+<p>Broadly speaking, all students will create an ArcGIS story map to present a series of interactive maps about their chosen topic as well as approximately 1,000 to 1,5000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. Your story map will have, at a minimum, the following five maps:</p>
+<ol style="list-style-type: decimal">
+<li>A map of your main topic displayed as point data</li>
+<li>A map of your main topic aggregated to census tracts</li>
+<li>Two maps showing relevant demographic data for the same census tracts</li>
+<li>A detailed map showing a smaller slice of your data for a specific region</li>
+</ol>
+<p>You should also plan to include at least two photos, videos, or other relevant media embedded in your story map.</p>
+</div>
+<div id="article-for-soc-5650" class="section level3 unnumbered">
+<h3>Article for SOC 5650</h3>
+<p>Students entrolled in SOC 5650 will also write a 3,000 to 4,000 word final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from the map.</p>
+</div>
 <div id="how-are-these-instructions-organized" class="section level3 unnumbered">
 <h3>How are these instructions organized?</h3>
 <p>These instructions are organized into <strong>vignettes</strong> (pronounced <code>vin'yets</code>). These are meant to create “bite sized” modules that break down the final project into discrete phases. Each vignette has a set of indicators on the top-level page for the vignette that provide you with some general information about what the vignette entails. These indicators will help you quickly navigate the instructions.</p>
@@ -204,13 +223,13 @@
 <p>Some of the vignettes can be worked on in parallel while others require that a prior vignette has been completed. If there is a pre-requisite vignette that must be completed first, this indicator will include pertinent details about ordering:</p>
 <div class="rmdpre">
 <p>
-<strong>Pre-requisties:</strong> This vignette should be completed <em>after</em> Vignette 6.
+<strong>Pre-requisites:</strong> This vignette should be completed <em>after</em> Vignette 6.
 </p>
 </div>
 <p>Otherwise you will see this indicator:</p>
 <div class="rmdpre">
 <p>
-<strong>Pre-requisties:</strong> There are no pre-requisites for this vignette.
+<strong>Pre-requisites:</strong> There are no pre-requisites for this vignette.
 </p>
 </div>
 </div>
@@ -253,11 +272,26 @@
 <p>The organization of these instructions implies a linear path - complete one vignette and then go on to the next. You’ll notice that the pre-requisite vignette box for most vignettes look something like this:</p>
 <div class="rmdpre">
 <p>
-<strong>Pre-requisties:</strong> This vignette should be started <em>after</em> Vignette 5’s initial completion.
+<strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 5’s initial completion.
 </p>
 </div>
 <p>This wording is meant to remind you that data analysis is never a linear process. You are going to have to iterate over vignettes, often several times. You’ll perhaps do some initial data cleaning, calculate descriptive statistics, and notice that the frequency of a particular category is too small. So you’ll have to go back, re-code that particular variable, and recalculate your descriptive statistics. This process of iteration is the norm for statistical analysis. Even the most experienced statisticians do this - it is not a function of inexperience so much as it is the nature of doing analytic work.</p>
 <p>One of the reasons that a plain-text approach to programming and statistics is so powerful is that this iteration becomes easy. You won’t have to remember the series of menu selections and check boxes you chose to produce a particular output as you would with a GUI-driven statistical application. Rather, recalculating descriptive statistics is as easy as making a small change to the source code for the data cleaning notebook, knitting that notebook, and then re-knitting the descriptive statistics notebook. Working in this way gives you the freedom to explore and experiment as much as you’d like!</p>
+</div>
+<div id="waypoints" class="section level3 unnumbered">
+<h3>Waypoints</h3>
+<p>Despite the non-linearity of data analysis, there are points during the semester where we will need to check-in. I call these “waypoints.” They will cover different facets of various vignettes. <a href="https://slu-soc5650.github.io/syllabus/assignments.html#final-project">Please see the syllabus for waypoint due dates</a>. Below are the waypoints and my general expectations for them:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Waypoint 1 - Topic Selection</strong>
+<ul>
+<li>Submit <a href="the-memo.html">the memo</a> as described in <a href="topic-data-selection.html">Vignette 1</a></li>
+</ul></li>
+<li><strong>Waypoint 2 - Initial Data Cleaning</strong>
+<ul>
+<li>Create the necessary project analysis development components described in <a href="analysis-development.html">Vignette 2</a></li>
+<li>Begin the data cleaning process described in <a href="data-cleaning.html">Vignette 4</a>, focusing specifically on <a href="data-cleaning-overview.html">Section 4.1</a>. My expectation here is that each student loads their main data set (e.g., crime data, CSB data, or some other data set you have selected), and applies the <a href="https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf">data cleaning workflow</a> to it. It does not have to be complete, and there may be additional work left to do, but I do want to see that each step of the workflow has been addressed in some way. You do not need to address <a href="spatial-data-creation.html">Section 4.2</a> for this waypoint.</li>
+</ul></li>
+</ol>
 </div>
 </div>
             </section>

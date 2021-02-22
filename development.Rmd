@@ -17,7 +17,7 @@
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date 1:** Meeting 06 (March 8th) as part of Waypoint 2
+**Required Due Date 1:** Meeting 06 (March 8th) as part of [Waypoint 2](index.html#waypoints)
 
 **Required Due Date 2:** Final Submission (May 17th)
 ```

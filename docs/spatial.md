@@ -13,7 +13,7 @@
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> TBA</p>
+<p><strong>Skills:</strong> This vignette requires skills from both Module 2 (especially Meeting 5) and Module 3 (especially Meeting 6)</p>
 </div>
 
 <div class="rmddue">
@@ -29,8 +29,10 @@ Think carefully about what other spatial data would be useful for mapping (bodie
 
 All data you download should be catalogued in your `RESEARCH_LOG.md` and stored in a well-organized manner within the `data/` subdirectory. Each file should be projected in the same coordinate system as you have used in the previous two vignettes. The only exception here would be data at a different geographic scale that would be used in an inset map.
 
+Many of you will need to utilize the `tigris` package to download spatial data from the Census Bureau.
+
 ## St. Louis Specific Sources
-These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your projet and the scale you are mapping. Most St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles.
+These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your projet and the scale you are mapping. Many St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles.
 
 1.  **City of St. Louis Boundary** - this can be obtained via the `tigris` package - download the county data for the State of Missouri, and subset out the City of St. Louis (our FIPS code is `510`).
 

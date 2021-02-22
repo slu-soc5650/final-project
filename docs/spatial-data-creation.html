@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-01-26" />
+<meta name="date" content="2021-02-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -72,8 +72,11 @@
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Basics</a>
 <ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#article-for-soc-5650"><i class="fa fa-check"></i>Article for SOC 5650</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
@@ -168,7 +171,7 @@
 <p>You will need two forms of your data:</p>
 <ol style="list-style-type: decimal">
 <li>The first should be a shapefile that contains the cleaned point data (i.e. all crimes that you have left after data cleaning, or all CSB calls).</li>
-<li>The second should be these points aggregated to the census block group. You will need to use the <code>tigris</code> package to download these data, and then perform a spatial join and aggregate the points (this is covered in lecture-11). Make sure you have a measurement of the square miles for each feature to use for normalization.</li>
+<li>The second should be these points aggregated to the census tract. You will need to use the <code>tigris</code> package to download these data, and then perform a spatial join and aggregate the points. Make sure you have a measurement of the square miles for each feature to use for normalization.</li>
 </ol>
 <p>Once you have the shapefiles created, they should be imported into your project’s geodatabase.</p>
 <div class="rmdwarning">
