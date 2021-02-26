@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-02-22" />
+<meta name="date" content="2021-02-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,8 +168,7 @@
 <div id="general-notes" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> General Notes</h2>
 <p>Think carefully about what other spatial data would be useful for mapping (bodies of water, building footprints, parks, etc.). This will vary based on the geographic scale for your project, but use the Brewer cartography book and the other course materials as inspiration - think about what ground features and contextual layers you might want to see along side your project-specific data.</p>
-<p>All data you download should be catalogued in your <code>RESEARCH_LOG.md</code> and stored in a well-organized manner within the <code>data/</code> subdirectory. Each file should be projected in the same coordinate system as you have used in the previous two vignettes. The only exception here would be data at a different geographic scale that would be used in an inset map.</p>
-<p>Many of you will need to utilize the <code>tigris</code> package to download spatial data from the Census Bureau.</p>
+<p>All data you download should be cataloged in your <code>RESEARCH_LOG.md</code> and stored in a well-organized manner within the <code>data/</code> subdirectory. Each file should be projected in the same coordinate system as you have used in the previous two vignettes, and should be cleaned to remove unncessary columns. Raw data can be stored in <code>data/raw/</code> as part of your project folder system. At least one data source should be downloaded using <code>tigris</code>. Different projects will have different data needs, though <a href="index.html#waypoints">Waypoint 4</a> does ask for a minimum of five layers. There is no other defined minimum or maximum value for the number of data sources you need to work with.</p>
 </div>
             </section>
 

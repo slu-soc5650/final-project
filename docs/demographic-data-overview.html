@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-02-22" />
+<meta name="date" content="2021-02-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -167,12 +167,11 @@
             <section class="normal" id="section-">
 <div id="demographic-data-overview" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Demographic Data Overview</h2>
-<p>You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the <code>tidycensus</code> package’s <code>load_variables()</code> function (see the <a href="https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables"><code>tidycensus</code> website</a> and the <a href="https://slu-soc5650.github.io/docs/lecture-09/">lecture-09</a> materials for details) to search for the relevant concepts.</p>
-<p>Each demographic data point (i.e. population density or median income or poverty rate) should be exported as its own shapefile from <code>R</code> (so you should have a total of two shapefiles for this vignette). These shapefiles should be created in the same coordinate system used Vignette 4. Creating these shapefiles will also necessitate identifying the appropriate geometric data using the <code>tigris</code> package so that the demographic data can be joined with the relevant geometries. Make sure you have a measurement of the square miles for each feature to use for normalization.</p>
-<p>Once you have the shapefiles created, they should be imported into your project’s geodatabase.</p>
+<p>You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the <code>tidycensus</code> package’s <code>load_variables()</code> function (see the <a href="https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables"><code>tidycensus</code> website</a> and the <a href="https://slu-soc5650.github.io/docs/meeting-05/">Meeting 05</a> materials for details) to search for the relevant concepts.</p>
+<p>Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior to export as either a shapefile or a <code>.geojson</code> file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a <code>demographics.geojson</code> file. This file should be created in the same coordinate system used Vignette 4. Creating these shapefiles will also necessitate identifying the appropriate geometric data using the <code>tigris</code> package so that the demographic data can be joined with the relevant geometries. Make sure you have a measurement of the square miles for each feature to use for normalization.</p>
 <div class="rmdwarning">
 <p>
-<strong>For projects using a non-standard data set:</strong> Ideally, the level of aggregation you choose here should match the level of aggregation applied to your point data in Vignette 4 (i.e. if you have demographic data at the census tract level, aggregate your point data in Vignette 4 to the tract level as well). See Chris if you have qustions about this.
+<strong>For projects using a non-standard data set:</strong> Ideally, the level of aggregation you choose here should match the level of aggregation applied to your point data in Vignette 4 (i.e. if you have demographic data at the census tract level, aggregate your point data in Vignette 4 to the tract level as well). For most projects, then, these data will be collected at the census tract level. See Chris if you have questions about this.
 </p>
 <p>
 In terms of identifying demographic data, most countries have some form of annual census that can be used to obtain the needed demographic data. Again, see Chris if you have trouble finding these data.

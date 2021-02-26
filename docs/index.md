@@ -1,7 +1,7 @@
 ---
 title: "SOC 4615 & 5650: Intro to GIS Final Project"
 author: "Christopher Prener, Ph.D."
-date: "2021-02-22"
+date: "2021-02-26"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -30,7 +30,7 @@ Broadly speaking, all students will create an ArcGIS story map to present a seri
 You should also plan to include at least two photos, videos, or other relevant media embedded in your story map.
 
 ### Article for SOC 5650 {-}
-Students entrolled in SOC 5650 will also write a 3,000 to 4,000 word final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from the map.
+Students enrolled in SOC 5650 will also write a 3,000 to 4,000 word final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from the map.
 
 ### How are these instructions organized? {-}
 These instructions are organized into **vignettes** (pronounced `vin'yets`). These are meant to create "bite sized" modules that break down the final project into discrete phases. Each vignette has a set of indicators on the top-level page for the vignette that provide you with some general information about what the vignette entails. These indicators will help you quickly navigate the instructions.
@@ -113,6 +113,15 @@ Despite the non-linearity of data analysis, there are points during the semester
   2. **Waypoint 2 - Initial Data Cleaning** 
       * Create the necessary project analysis development components described in [Vignette 2](analysis-development.html)
       * Begin the data cleaning process described in [Vignette 4](data-cleaning.html), focusing specifically on [Section 4.1](data-cleaning-overview.html). My expectation here is that each student loads their main data set (e.g., crime data, CSB data, or some other data set you have selected), and applies the [data cleaning workflow](https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf) to it. It does not have to be complete, and there may be additional work left to do, but I do want to see that each step of the workflow has been addressed in some way. You do not need to address [Section 4.2](spatial-data-creation.html) for this waypoint.
+  3. **Waypoint 3 - Combining Data Sources**
+      * Continue to update the necessary project analysis development components described in [Vignette 2](analysis-development.html) 
+      * Use `tidycensus` to access a minimum of two sets of demographic data that you want to map along side your main data set. These should be created following [Vignette 5](demographics.html). For now, you do not need to worry about the projected coordinate system these data are stored in. We'll come back to this point for a later waypoint.
+  4. **Waypoint 4 - Projecting Data**
+      * Continue to update the necessary project analysis development components described in [Vignette 2](analysis-development.html) 
+      * Select a projected coordinate system that is appropriate for your project's scale.
+      * Project your cleaned data set created as part of [Vignette 4](demographics.html)'s [Section 4.2](spatial-data-creation.html). You do not need to aggregate these points at this stage of the project, only project them. You should add to the notebook you created specifically for [Vignette 4](demographics.html) and re-knit it.
+      * Re-project your demographic data created as part of [Vignette 5](demographics.html) for Waypoint 3. You should add to the notebook you created specifically for [Vignette 5](demographics.html) and re-knit it.
+      * Begin to address [Vignette 6](https://slu-soc5650.github.io/final-project/spatial-data-access.html) by identifying at least five additional spatial data layers you may want to include in your maps. At least one of these layers should be downloaded from the U.S. Census Bureau's TIGER/Line database via the `tigris` package. For each layer, load it into your notebook, re-project it, and store in as a `.shp` or `.geojson` file in your `data/` folder. Raw data can be stored in `data/raw/` as part of your project folder system.
 
 ## License {-}
 Copyright © 2016-2021 [Christopher G. Prener](https://chris-prener.github.io)

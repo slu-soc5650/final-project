@@ -43,7 +43,7 @@ Use GitHub’s "Project Board" feature on your final project's GitHub repository
 There are two project-level documentation files that you will need to create and keep updated throughout the semester.
 
 ### README.md
-You will need a read-me file in the top-level of your assignment repository. You can create it in RStudio (`File > New File > Text File`). This file should describe the goal of the repository and, at a high level, how various elements of the project repository fit together. This file should be saved as a markdown file (`.md`) and should use markdown formatting appropriately.
+You will need a read-me file in the top-level of your assignment repository. There will already be a file named `README.md` in the top-level of your repository. Please edit this and modify it as needed!
 
 ### RESEARCH_LOG.md
 You will need to maintain a research log throughout the final project process. Before proceeding with the vignettes, create a well-formatted and organized research log in RStudio (`File > New File > Text File`) that is organized chronologically. The research log should use markdown syntax and be saved as a markdown file (`.md`). Keep this file updated and have it saved in the top-level of your assignment repository.
