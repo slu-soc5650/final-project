@@ -1,7 +1,7 @@
 ---
 title: "SOC 4615 & 5650: Intro to GIS Final Project"
 author: "Christopher Prener, Ph.D."
-date: "2021-02-26"
+date: "2021-03-04"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

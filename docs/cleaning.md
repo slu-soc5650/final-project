@@ -32,7 +32,7 @@
 
 ### Analysis Development
 
-All data cleaning should be done in a single notebook that you clarify and expand over time. Use `dplyr`, `naniar`, `janitor`, and `sf` for data cleaning in short, well-organized pipelines. Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
+All data cleaning should be done in a single notebook that you clarify and expand over time. Use `dplyr`, `naniar`, `janitor`, and `sf` for data cleaning in short, well-organized pipelines.
 
 ### General Approach
 
@@ -74,7 +74,7 @@ You will need two forms of your data:
 1. The first should be a shapefile that contains the cleaned point data (i.e. all crimes that you have left after data cleaning, or all CSB calls). 
 2. The second should be these points aggregated to the census tract. You will need to use the `tigris` package to download these data, and then perform a spatial join and aggregate the points. Make sure you have a measurement of the square miles for each feature to use for normalization.
 
-Once you have the shapefiles created, they should be imported into your project's geodatabase.
+ Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
 
 <div class="rmdwarning">
 <p><strong>For projects using a non-standard data set:</strong> If you are using data that cover more than one city in the United States, you may want to aggregate the data to a different areal unit. Chat with Chris about the appropriate level of aggregation for your research question.</p>
