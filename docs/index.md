@@ -1,14 +1,14 @@
 ---
-title: "SOC 4615 & 5650: Intro to GIS Final Project"
+title: "SOC 4650 & 5650: Intro to GIS Final Project"
 author: "Christopher Prener, Ph.D."
-date: "2021-03-22"
+date: "2021-04-05"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: slu-soc5650/syllabus
-description: "These are the final project instructions for Chris's sections of SOC 4615 and 5650."
+description: "These are the final project instructions for Chris's sections of SOC 4650 and 5650."
 ---
 
 # Basics {-}
@@ -17,19 +17,11 @@ The final project corresponds to the fifth course learning outcome, which is des
 
 > 5. *Research synthesis*: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.
 
-All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS story map. 
+All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS StoryMap. 
 
 ### Overview {-}
-Broadly speaking, all students will create an ArcGIS story map to present a series of interactive maps about their chosen topic as well as approximately 1,000 to 1,5000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. Your story map will have, at a minimum, the following five maps:
+Broadly speaking, all students will create an ArcGIS StoryMap to present a series of interactive maps about their chosen topic as well as approximately 800 to 1,000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. 
 
-  1. A map of your main topic displayed as point data
-  2. A map of your main topic aggregated to census tracts
-  3. Two maps showing relevant demographic data for the same census tracts
-  4. A detailed map showing a smaller slice of your data for a specific region
-  
-You should also plan to include at least two photos, videos, or other relevant media embedded in your story map.
-
-### Article for SOC 5650 {-}
 Students enrolled in SOC 5650 will also write a 3,000 final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from your maps.
 
 ### How are these instructions organized? {-}
@@ -125,6 +117,8 @@ Despite the non-linearity of data analysis, there are points during the semester
   5. **Waypoint 5 - Geoprocessing Data**
       * Continue to update the necessary project analysis development components described in [Vignette 2](analysis-development.html) 
       * Create counts per census tract of your main outcome variable (for example, if you are mapping homicides in St. Louis, you should create counts of homicides per census tract)
+  6. **Waypoint 6 - Draft StoryMap**
+      * Complete [Vignette 8](storymap.html) - you should have all required elements and draft text at this stage, though the text can be rough (i.e. does not need to be polished at this stage). Open an issue in your final project repository to submit this waypoint, and include a few sentences of self reflection about what you still need to work on before the final submission.
 
 ## License {-}
 Copyright © 2016-2021 [Christopher G. Prener](https://chris-prener.github.io)
