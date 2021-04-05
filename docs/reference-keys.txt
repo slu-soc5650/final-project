@@ -55,3 +55,12 @@ demographic-data-overview
 spatial-data-access
 general-notes
 st.-louis-specific-sources
+arcgis-storymap
+web-maps
+storymap
+research-note
+overview-1
+outline
+formatting
+tables-and-figures
+draft-submission
