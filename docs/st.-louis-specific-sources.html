@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Vignette 2 Analysis Development | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
+  <title>6.2 St. Louis Specific Sources | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Vignette 2 Analysis Development | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="6.2 St. Louis Specific Sources | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Vignette 2 Analysis Development | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="6.2 St. Louis Specific Sources | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-memo.html"/>
-<link rel="next" href="data-storage.html"/>
+<link rel="prev" href="general-notes.html"/>
+<link rel="next" href="arcgis-storymap.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -180,58 +180,46 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="analysis-development" class="section level1" number="2">
-<h1><span class="header-section-number">Vignette 2</span> Analysis Development</h1>
-<div class="rmdgoal">
-<p>
-<strong>Goal:</strong> Create the basic folder structure and
-documentation files needed for a well-organized project.
-</p>
+<div id="st.-louis-specific-sources" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> St. Louis Specific Sources</h2>
+<p>These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your project and the scale you are mapping. Many St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shapefiles. <strong>This list is not exhaustive, but is meant to be inspirational.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>City of St. Louis Boundary</strong> - this can be obtained via the <code>tigris</code> package - download the county data for the State of Missouri, and subset out the City of St. Louis (our FIPS code is <code>510</code>).</p></li>
+<li><p><strong>Illinois Hydrology</strong> - The Census TIGER hydrology data is released by county, so bodies of water that lie between jurisdictions end up split. This shapefile contains data on the extent of the Mississippi River in Madison and St. Clair counties for the length of the City of St. Louis. You can obtain the shapefile <a href="https://github.com/slu-openGIS/IL_HYDRO_Mississippi">here</a>.</p></li>
+<li><p><strong>Illinois River Islands</strong> - The north side of the City sits opposite a group of islands on the Illinois side of the Mississippi, some of which are included in the <strong>Illinois Hydrology</strong> layer. The largest of these islands, Mosenthein Island, is described by <a href="https://github.com/slu-openGIS/IL_HYDRO_Islands">this shapefile</a>.</p></li>
+<li><p><strong>St. Louis Hydrology</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>Regional Hydrology</strong> - Combine the Illinois Hydrology and St. Louis Hydrology data together, and merge the Mississippi River features into a single Mississippi River feature.</p></li>
+<li><p><strong>City of St. Louis Neighborhoods</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>Belfontaine/Calvary Cemetery</strong> - Using your re-projected neighborhood data (see #6 above), select neighborhood <code>86</code>, which covers two large cemeteries in North St. Louis - the Belfontaine Cemetery and the Calvary Cemetery. These are park-like areas that should be noted on any maps of the city as a whole. Export only this feature to a feature class in your geodatabase.</p></li>
+<li><p><strong>Missouri Botanical Garden</strong> - Using your re-projected neighborhood data (see #6 above), select neighborhood <code>87</code>, which covers MOBOT. Export only this feature to a feature class in your geodatabase.</p></li>
+<li><p><strong>City of St. Louis Street Centerlines</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>City of St. Louis Blocks</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>. They’re useful for very local-level maps of neighborhoods since they outline the sides of streets instead of their centerlines.</p></li>
+<li><p><strong>Gateway Arch National Park</strong> - Using the National Park Service’s <a href="https://irma.nps.gov/DataStore/">Data Store website</a>, download the park boundary data and extra only the features for Gateway Arch National <em>on the west side of the Mississippi River</em>. These data may be identified as Jefferson Expansion National Memorial as well. Export only this feature.</p></li>
+<li><p><strong>City of St. Louis Landmarks</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>City of St. Louis Railroad Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>Illinois Railroad Bridges</strong> - Using the same data as step 13, geoprocess them so that railroads that do not overlap with the Illinois Hydrology data are removed.</p></li>
+<li><p><strong>City of St. Louis Parks</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>State of Missouri Boundary</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>State of Missouri Interstate Highway Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>City of St. Louis Interstate Highway Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>Illinois Street Bridges</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed to isolate specific bridges. For Madison County, this should include three bridges (from north to south) for I-270 (New Chain of Rocks Bridge), the Chain of Rocks Pedestrian Bridge, and McKinley Street (McKinley Bridge). For St. Clair County, this should include four bridges (from north to south) for I-70 (Stan Musial Veterans Memorial Bridge), the Martin Luther King Bridge, Washington Avenue (the Eads Bridge), and I-64/I-55 (Poplar Street Bridge).</p></li>
+<li><p><strong>Illinois Interstate Highway Bridges</strong> this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed to isolate specific bridges: I-270 (New Chain of Rocks Bridge), I-70 (Stan Musial Veterans Memorial Bridge), and I-64/I-55 (Poplar Street Bridge).</p></li>
+<li><p><strong>City of St. Louis Precincts</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>City of St. Louis Wards</strong> - These can be geoprocessed from the City of St. Louis’s precinct data, which is available on their <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+</ol>
+
 </div>
-<div class="rmdpersonnel">
-<p>
-<strong>Personnel:</strong> This vignette should be completed by
-<strong>all</strong> students.
-</p>
-</div>
-<div class="rmdpre">
-<p>
-<strong>Pre-requisties:</strong> There are no pre-requisites for this
-vignette.
-</p>
-</div>
-<div class="rmdskills">
-<p>
-<strong>Skills:</strong> Lectures 1 and 3
-</p>
-</div>
-<div class="rmddue">
-<p>
-<strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part
-of <a href="index.html#waypoints">Waypoint 2</a>
-</p>
-<p>
-<strong>Required Due Date 2:</strong> Final Submission (May 17th)
-</p>
-</div>
-<div class="rmddeliver">
-<p>
-<strong>Deliverables:</strong> A well organized project repository
-with an appropriate folder structure, a plan implemented with GitHub
-Projects, a <code>README.md</code>, a <code>RESEARCH_LOG.md</code>, and
-a <code>.Rproj</code> file. These should all be <em>created</em> by the
-first due date. Your documentation files should be <em>completed</em> by
-the second due date.
-</p>
-</div>
-</div>
+<!-- </div> -->
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-memo.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-storage.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="general-notes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="arcgis-storymap.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

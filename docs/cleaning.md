@@ -1,31 +1,43 @@
 # (PART) Data Access and Preparation {-}
 
-# Data Cleaning
+# WP-2 - Data Cleaning
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Create main analysis data sets for mapping.</p>
+<p><strong>Goal:</strong> Create main analysis data sets for
+mapping.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+<strong>all</strong> students.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 2’s initial completion.</p>
+<p><strong>Pre-requisites:</strong> This vignette should be started
+<em>after</em> Vignette 2’s initial completion.</p>
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> This vignette requires skills from both Module 2 (especially Meeting 04) and Module 3 (especially Meetings 06 and 07)</p>
+<p><strong>Skills:</strong> This vignette requires skills from both
+Module 2 (especially Meeting 04) and Module 3 (especially Meetings 06
+and 07)</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part of <a href="index.html#waypoints">Waypoint 2</a>, specifically Section 4.1</p>
-<p><strong>Required Due Date 2:</strong> Meeting 08 (March 22nd) as part of <a href="index.html#waypoints">Waypoint 4</a>, specifically Section 4.2</p>
+<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part
+of <a href="index.html#waypoints">Waypoint 2</a>, specifically Section
+4.1</p>
+<p><strong>Required Due Date 2:</strong> Meeting 08 (March 22nd) as part
+of <a href="index.html#waypoints">Waypoint 4</a>, specifically Section
+4.2</p>
 <p><strong>Required Due Date 3:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A well-formatted notebook in the <code>docs/</code> folder that uses literate programming to produce a clean data set saved as two <code>.shp</code> files in the <code>data/</code> folder.</p>
+<p><strong>Deliverables:</strong> A well-formatted notebook in the
+<code>docs/</code> folder that uses literate programming to produce a
+clean data set saved as two <code>.shp</code> files in the
+<code>data/</code> folder.</p>
 </div>
 
 ## Data Cleaning Overview
@@ -63,7 +75,13 @@ The amount of data cleaning needed will vary significantly based on the data set
 ```
 
 <div class="rmdwarning">
-<p><strong>For projects using a non-standard data set:</strong> You want to follow the same general process as above. You should have point data, though they may come as <code>.csv</code> or <code>.shp</code> data. If they were obtained from a geodatabase, export them to <code>.shp</code> and then import them into <code>R</code>. If you need to geocode the data (i.e. you have address or city identifiers but no spatial data for them), see Chris to discuss this process.</p>
+<p><strong>For projects using a non-standard data set:</strong> You want
+to follow the same general process as above. You should have point data,
+though they may come as <code>.csv</code> or <code>.shp</code> data. If
+they were obtained from a geodatabase, export them to <code>.shp</code>
+and then import them into <code>R</code>. If you need to geocode the
+data (i.e. you have address or city identifiers but no spatial data for
+them), see Chris to discuss this process.</p>
 </div>
 
 ## Spatial Data Creation
@@ -77,7 +95,19 @@ You will need two forms of your data:
  Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
 
 <div class="rmdwarning">
-<p><strong>For projects using a non-standard data set:</strong> If you are using data that cover more than one city in the United States, you may want to aggregate the data to a different areal unit. Chat with Chris about the appropriate level of aggregation for your research question.</p>
-<p>If you are using data that are not for the United States, you will want to aggregate them to a logical areal unit. For some projects, this may be the state or province. For others, it may be the local equivalent of Census geography. Chat with Chris about the appropriate level of aggregation for your research question.</p>
-<p>Ideally, the level of aggregation you select should be the <strong>same</strong> level of aggregation that census data are available for (see Vignette 5; i.e. if you have demographic data at the census tract level, aggregate your point data in Vignette 4 to the tract level as well). Again see Chris if you have questions about this.</p>
+<p><strong>For projects using a non-standard data set:</strong> If you
+are using data that cover more than one city in the United States, you
+may want to aggregate the data to a different areal unit. Chat with
+Chris about the appropriate level of aggregation for your research
+question.</p>
+<p>If you are using data that are not for the United States, you will
+want to aggregate them to a logical areal unit. For some projects, this
+may be the state or province. For others, it may be the local equivalent
+of Census geography. Chat with Chris about the appropriate level of
+aggregation for your research question.</p>
+<p>Ideally, the level of aggregation you select should be the
+<strong>same</strong> level of aggregation that census data are
+available for (see Vignette 5; i.e. if you have demographic data at the
+census tract level, aggregate your point data in Vignette 4 to the tract
+level as well). Again see Chris if you have questions about this.</p>
 </div>

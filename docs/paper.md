@@ -1,24 +1,29 @@
 # Research Note
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Create a short paper in the style of a “research note”</p>
+<p><strong>Goal:</strong> Create a short paper in the style of a
+“research note”</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed <strong>only</strong> by students in SOC 5650.</p>
+<p><strong>Personnel:</strong> This vignette should be completed
+<strong>only</strong> by students in SOC 5650.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 6’s initial completion.</p>
+<p><strong>Pre-requisites:</strong> This vignette should be started
+<em>after</em> Vignette 6’s initial completion.</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 11 (April 12<sup>th</sup>)</p>
+<p><strong>Required Due Date 1:</strong> Meeting 11 (April
+12<sup>th</sup>)</p>
 <p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A <code>.pdf</code> article manuscript</p>
+<p><strong>Deliverables:</strong> A <code>.pdf</code> article
+manuscript</p>
 </div>
 
 ## Overview

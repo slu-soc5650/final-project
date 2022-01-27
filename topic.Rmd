@@ -1,6 +1,6 @@
 # (PART) Initial Steps {-}
 
-# Topic & Data Selection
+# WP-1 - Topic & Data Selection
 
 ```{block, type = "rmdgoal"}
 **Goal:** Identify a data set and appropriate variables of interest.
@@ -10,16 +10,12 @@
 **Personnel:** This vignette should be completed by **all** students.
 ```
 
-```{block, type = "rmdpre"}
-**Pre-requisties:** There are no pre-requisites for this vignette.
-```
-
 ```{block, type = "rmdskills"}
 **Skills:** There are no course-specific skills for this vignette.
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date:** Meeting 02 (February 8th) as part of Waypoint 1
+**Due Date:** Meeting 1-2
 ```
 
 ```{block, type = "rmddeliver"}
@@ -51,13 +47,13 @@ library(dplyr)
 library(knitr)
 ```
 
-The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a five year period between 2015 and 2019.
 
 ### License
 These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.
 
 ### Download
-You can download these data from [GitHub](https://github.com/slu-soc5650/crime-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
+You can download these data from [GitHub](https://github.com/slu-soc5650/crime-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick **one** crime category below. For example, you might pick `Arson` or `Vandalism`.
@@ -107,7 +103,7 @@ as_tibble(offenses) %>%
 library(stlcsb)
 ```
 
-The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a five year period between 2015 and 2019.
 
 ### License
 All of the data that the City of St. Louis makes public, including the CSB data, are available under the following [license](http://data.stlouis-mo.gov/terms.cfm):
@@ -138,7 +134,7 @@ originating department if questions/issues arise.*
 
 
 ### Download
-You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
+You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.

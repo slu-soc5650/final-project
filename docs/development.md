@@ -1,15 +1,18 @@
 # Analysis Development
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Create the basic folder structure and documentation files needed for a well-organized project.</p>
+<p><strong>Goal:</strong> Create the basic folder structure and
+documentation files needed for a well-organized project.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+<strong>all</strong> students.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisties:</strong> There are no pre-requisites for this vignette.</p>
+<p><strong>Pre-requisties:</strong> There are no pre-requisites for this
+vignette.</p>
 </div>
 
 <div class="rmdskills">
@@ -17,12 +20,18 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part of <a href="index.html#waypoints">Waypoint 2</a></p>
+<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part
+of <a href="index.html#waypoints">Waypoint 2</a></p>
 <p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A well organized project repository with an appropriate folder structure, a plan implemented with GitHub Projects, a <code>README.md</code>, a <code>RESEARCH_LOG.md</code>, and a <code>.Rproj</code> file. These should all be <em>created</em> by the first due date. Your documentation files should be <em>completed</em> by the second due date.</p>
+<p><strong>Deliverables:</strong> A well organized project repository
+with an appropriate folder structure, a plan implemented with GitHub
+Projects, a <code>README.md</code>, a <code>RESEARCH_LOG.md</code>, and
+a <code>.Rproj</code> file. These should all be <em>created</em> by the
+first due date. Your documentation files should be <em>completed</em> by
+the second due date.</p>
 </div>
 
 ## Data Storage

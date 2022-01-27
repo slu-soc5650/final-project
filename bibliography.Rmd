@@ -1,4 +1,4 @@
-# Annotated Bibliography
+# WP-G1 - Annotated Bibliography
 
 ```{block, type = "rmdgoal"}
 **Goal:** Identify the state of the literature on your topic.

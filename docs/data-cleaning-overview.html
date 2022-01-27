@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
+  <title>3.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="3.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="3.1 Data Cleaning Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   
@@ -24,17 +24,18 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-04-05" />
+<meta name="date" content="2022-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-cleaning.html"/>
+<link rel="prev" href="wp-2---data-cleaning.html"/>
 <link rel="next" href="spatial-data-creation.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -75,11 +78,10 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
-<li class="chapter" data-level="1" data-path="topic-data-selection.html"><a href="topic-data-selection.html"><i class="fa fa-check"></i><b>1</b> Topic &amp; Data Selection</a>
+<li class="chapter" data-level="1" data-path="wp-1---topic-data-selection.html"><a href="wp-1---topic-data-selection.html"><i class="fa fa-check"></i><b>1</b> WP-1 - Topic &amp; Data Selection</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="crafting-a-research-question.html"><a href="crafting-a-research-question.html"><i class="fa fa-check"></i><b>1.1</b> Crafting a Research Question</a></li>
 <li class="chapter" data-level="1.2" data-path="the-crime-data.html"><a href="the-crime-data.html"><i class="fa fa-check"></i><b>1.2</b> The Crime Data</a>
@@ -104,59 +106,26 @@
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="the-memo.html"><a href="the-memo.html"><i class="fa fa-check"></i><b>1.5</b> The Memo</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="analysis-development.html"><a href="analysis-development.html"><i class="fa fa-check"></i><b>2</b> Analysis Development</a>
+<li class="chapter" data-level="2" data-path="wp-g1---annotated-bibliography.html"><a href="wp-g1---annotated-bibliography.html"><i class="fa fa-check"></i><b>2</b> WP-G1 - Annotated Bibliography</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i><b>2.1</b> Data Storage</a></li>
-<li class="chapter" data-level="2.2" data-path="project-planning.html"><a href="project-planning.html"><i class="fa fa-check"></i><b>2.2</b> Project Planning</a></li>
-<li class="chapter" data-level="2.3" data-path="project-documentation.html"><a href="project-documentation.html"><i class="fa fa-check"></i><b>2.3</b> Project Documentation</a>
+<li class="chapter" data-level="2.1" data-path="what-is-an-annotated-bibliography.html"><a href="what-is-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>2.1</b> What is an Annotated Bibliography?</a></li>
+<li class="chapter" data-level="2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html"><i class="fa fa-check"></i><b>2.2</b> Conducting the Literature Search</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="project-documentation.html"><a href="project-documentation.html#readme.md"><i class="fa fa-check"></i><b>2.3.1</b> README.md</a></li>
-<li class="chapter" data-level="2.3.2" data-path="project-documentation.html"><a href="project-documentation.html#research_log.md"><i class="fa fa-check"></i><b>2.3.2</b> RESEARCH_LOG.md</a></li>
+<li class="chapter" data-level="2.2.1" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#analysis-development"><i class="fa fa-check"></i><b>2.2.1</b> Analysis Development</a></li>
+<li class="chapter" data-level="2.2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#process"><i class="fa fa-check"></i><b>2.2.2</b> Process</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="annotated-bibliography.html"><a href="annotated-bibliography.html"><i class="fa fa-check"></i><b>3</b> Annotated Bibliography</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="what-is-an-annotated-bibliography.html"><a href="what-is-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>3.1</b> What is an Annotated Bibliography?</a></li>
-<li class="chapter" data-level="3.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html"><i class="fa fa-check"></i><b>3.2</b> Conducting the Literature Search</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#analysis-development-1"><i class="fa fa-check"></i><b>3.2.1</b> Analysis Development</a></li>
-<li class="chapter" data-level="3.2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#process"><i class="fa fa-check"></i><b>3.2.2</b> Process</a></li>
-</ul></li>
-<li class="chapter" data-level="3.3" data-path="evaluating-sources.html"><a href="evaluating-sources.html"><i class="fa fa-check"></i><b>3.3</b> Evaluating Sources</a></li>
-<li class="chapter" data-level="3.4" data-path="writing-an-annotated-bibliography.html"><a href="writing-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>3.4</b> Writing an Annotated Bibliography</a></li>
+<li class="chapter" data-level="2.3" data-path="evaluating-sources.html"><a href="evaluating-sources.html"><i class="fa fa-check"></i><b>2.3</b> Evaluating Sources</a></li>
+<li class="chapter" data-level="2.4" data-path="writing-an-annotated-bibliography.html"><a href="writing-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>2.4</b> Writing an Annotated Bibliography</a></li>
 </ul></li>
 <li class="part"><span><b>II Data Access and Preparation</b></span></li>
-<li class="chapter" data-level="4" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>4</b> Data Cleaning</a>
+<li class="chapter" data-level="3" data-path="wp-2---data-cleaning.html"><a href="wp-2---data-cleaning.html"><i class="fa fa-check"></i><b>3</b> WP-2 - Data Cleaning</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html"><i class="fa fa-check"></i><b>4.1</b> Data Cleaning Overview</a>
+<li class="chapter" data-level="3.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html"><i class="fa fa-check"></i><b>3.1</b> Data Cleaning Overview</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#analysis-development-2"><i class="fa fa-check"></i><b>4.1.1</b> Analysis Development</a></li>
-<li class="chapter" data-level="4.1.2" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#general-approach"><i class="fa fa-check"></i><b>4.1.2</b> General Approach</a></li>
+<li class="chapter" data-level="3.1.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#analysis-development-1"><i class="fa fa-check"></i><b>3.1.1</b> Analysis Development</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#general-approach"><i class="fa fa-check"></i><b>3.1.2</b> General Approach</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="spatial-data-creation.html"><a href="spatial-data-creation.html"><i class="fa fa-check"></i><b>4.2</b> Spatial Data Creation</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="demographic-data.html"><a href="demographic-data.html"><i class="fa fa-check"></i><b>5</b> Demographic Data</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="demographic-data-overview.html"><a href="demographic-data-overview.html"><i class="fa fa-check"></i><b>5.1</b> Demographic Data Overview</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="spatial-data-access.html"><a href="spatial-data-access.html"><i class="fa fa-check"></i><b>6</b> Spatial Data Access</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="general-notes.html"><a href="general-notes.html"><i class="fa fa-check"></i><b>6.1</b> General Notes</a></li>
-<li class="chapter" data-level="6.2" data-path="st-louis-specific-sources.html"><a href="st-louis-specific-sources.html"><i class="fa fa-check"></i><b>6.2</b> St. Louis Specific Sources</a></li>
-</ul></li>
-<li class="part"><span><b>III Deliverables</b></span></li>
-<li class="chapter" data-level="7" data-path="arcgis-storymap.html"><a href="arcgis-storymap.html"><i class="fa fa-check"></i><b>7</b> ArcGIS StoryMap</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="web-maps.html"><a href="web-maps.html"><i class="fa fa-check"></i><b>7.1</b> Web Maps</a></li>
-<li class="chapter" data-level="7.2" data-path="storymap.html"><a href="storymap.html"><i class="fa fa-check"></i><b>7.2</b> StoryMap</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="research-note.html"><a href="research-note.html"><i class="fa fa-check"></i><b>8</b> Research Note</a>
-<ul>
-<li class="chapter" data-level="8.1" data-path="overview-1.html"><a href="overview-1.html"><i class="fa fa-check"></i><b>8.1</b> Overview</a></li>
-<li class="chapter" data-level="8.2" data-path="outline.html"><a href="outline.html"><i class="fa fa-check"></i><b>8.2</b> Outline</a></li>
-<li class="chapter" data-level="8.3" data-path="formatting.html"><a href="formatting.html"><i class="fa fa-check"></i><b>8.3</b> Formatting</a></li>
-<li class="chapter" data-level="8.4" data-path="tables-and-figures.html"><a href="tables-and-figures.html"><i class="fa fa-check"></i><b>8.4</b> Tables and Figures</a></li>
-<li class="chapter" data-level="8.5" data-path="draft-submission.html"><a href="draft-submission.html"><i class="fa fa-check"></i><b>8.5</b> Draft Submission</a></li>
+<li class="chapter" data-level="3.2" data-path="spatial-data-creation.html"><a href="spatial-data-creation.html"><i class="fa fa-check"></i><b>3.2</b> Spatial Data Creation</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -178,14 +147,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-cleaning-overview" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Data Cleaning Overview</h2>
-<div id="analysis-development-2" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Analysis Development</h3>
+<div id="data-cleaning-overview" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Data Cleaning Overview</h2>
+<div id="analysis-development-1" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Analysis Development</h3>
 <p>All data cleaning should be done in a single notebook that you clarify and expand over time. Use <code>dplyr</code>, <code>naniar</code>, <code>janitor</code>, and <code>sf</code> for data cleaning in short, well-organized pipelines.</p>
 </div>
-<div id="general-approach" class="section level3" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> General Approach</h3>
+<div id="general-approach" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> General Approach</h3>
 <p>The amount of data cleaning needed will vary significantly based on the data set you are using and the measures you have selected. Thus there are no “one size fits all” instructions for cleaning your data, though you should follow the <a href="https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf">data cleaning workflow</a> we discussed in class. In general, you will want to focus on making sure a number of criteria are met:</p>
 <ol style="list-style-type: decimal">
 <li>Variables should have short, clear, intuitive names.</li>
@@ -217,7 +186,13 @@
                Surrender Pet |        151        0.02       85.86</code></pre>
 <div class="rmdwarning">
 <p>
-<strong>For projects using a non-standard data set:</strong> You want to follow the same general process as above. You should have point data, though they may come as <code>.csv</code> or <code>.shp</code> data. If they were obtained from a geodatabase, export them to <code>.shp</code> and then import them into <code>R</code>. If you need to geocode the data (i.e. you have address or city identifiers but no spatial data for them), see Chris to discuss this process.
+<strong>For projects using a non-standard data set:</strong> You want
+to follow the same general process as above. You should have point data,
+though they may come as <code>.csv</code> or <code>.shp</code> data. If
+they were obtained from a geodatabase, export them to <code>.shp</code>
+and then import them into <code>R</code>. If you need to geocode the
+data (i.e. you have address or city identifiers but no spatial data for
+them), see Chris to discuss this process.
 </p>
 </div>
 </div>
@@ -227,12 +202,11 @@
           </div>
         </div>
       </div>
-<a href="data-cleaning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="wp-2---data-cleaning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="spatial-data-creation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -251,6 +225,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": null,
 "google": false
 },
@@ -269,6 +244,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

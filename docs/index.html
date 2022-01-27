@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Christopher Prener, Ph.D." />
 
 
-<meta name="date" content="2021-04-05" />
+<meta name="date" content="2022-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +33,9 @@
   
 
 <link rel="next" href="license.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -75,11 +78,10 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#overview"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-are-these-instructions-organized"><i class="fa fa-check"></i>How are these instructions organized?</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-analysis-is-not-linear"><i class="fa fa-check"></i>Data Analysis is not Linear</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#waypoints"><i class="fa fa-check"></i>Waypoints</a></li>
 <li class="chapter" data-level="" data-path="license.html"><a href="license.html"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
 <li class="part"><span><b>I Initial Steps</b></span></li>
-<li class="chapter" data-level="1" data-path="topic-data-selection.html"><a href="topic-data-selection.html"><i class="fa fa-check"></i><b>1</b> Topic &amp; Data Selection</a>
+<li class="chapter" data-level="1" data-path="wp-1---topic-data-selection.html"><a href="wp-1---topic-data-selection.html"><i class="fa fa-check"></i><b>1</b> WP-1 - Topic &amp; Data Selection</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="crafting-a-research-question.html"><a href="crafting-a-research-question.html"><i class="fa fa-check"></i><b>1.1</b> Crafting a Research Question</a></li>
 <li class="chapter" data-level="1.2" data-path="the-crime-data.html"><a href="the-crime-data.html"><i class="fa fa-check"></i><b>1.2</b> The Crime Data</a>
@@ -104,59 +106,26 @@
 </ul></li>
 <li class="chapter" data-level="1.5" data-path="the-memo.html"><a href="the-memo.html"><i class="fa fa-check"></i><b>1.5</b> The Memo</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="analysis-development.html"><a href="analysis-development.html"><i class="fa fa-check"></i><b>2</b> Analysis Development</a>
+<li class="chapter" data-level="2" data-path="wp-g1---annotated-bibliography.html"><a href="wp-g1---annotated-bibliography.html"><i class="fa fa-check"></i><b>2</b> WP-G1 - Annotated Bibliography</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-storage.html"><a href="data-storage.html"><i class="fa fa-check"></i><b>2.1</b> Data Storage</a></li>
-<li class="chapter" data-level="2.2" data-path="project-planning.html"><a href="project-planning.html"><i class="fa fa-check"></i><b>2.2</b> Project Planning</a></li>
-<li class="chapter" data-level="2.3" data-path="project-documentation.html"><a href="project-documentation.html"><i class="fa fa-check"></i><b>2.3</b> Project Documentation</a>
+<li class="chapter" data-level="2.1" data-path="what-is-an-annotated-bibliography.html"><a href="what-is-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>2.1</b> What is an Annotated Bibliography?</a></li>
+<li class="chapter" data-level="2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html"><i class="fa fa-check"></i><b>2.2</b> Conducting the Literature Search</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="project-documentation.html"><a href="project-documentation.html#readme.md"><i class="fa fa-check"></i><b>2.3.1</b> README.md</a></li>
-<li class="chapter" data-level="2.3.2" data-path="project-documentation.html"><a href="project-documentation.html#research_log.md"><i class="fa fa-check"></i><b>2.3.2</b> RESEARCH_LOG.md</a></li>
+<li class="chapter" data-level="2.2.1" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#analysis-development"><i class="fa fa-check"></i><b>2.2.1</b> Analysis Development</a></li>
+<li class="chapter" data-level="2.2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#process"><i class="fa fa-check"></i><b>2.2.2</b> Process</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="annotated-bibliography.html"><a href="annotated-bibliography.html"><i class="fa fa-check"></i><b>3</b> Annotated Bibliography</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="what-is-an-annotated-bibliography.html"><a href="what-is-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>3.1</b> What is an Annotated Bibliography?</a></li>
-<li class="chapter" data-level="3.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html"><i class="fa fa-check"></i><b>3.2</b> Conducting the Literature Search</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#analysis-development-1"><i class="fa fa-check"></i><b>3.2.1</b> Analysis Development</a></li>
-<li class="chapter" data-level="3.2.2" data-path="conducting-the-literature-search.html"><a href="conducting-the-literature-search.html#process"><i class="fa fa-check"></i><b>3.2.2</b> Process</a></li>
-</ul></li>
-<li class="chapter" data-level="3.3" data-path="evaluating-sources.html"><a href="evaluating-sources.html"><i class="fa fa-check"></i><b>3.3</b> Evaluating Sources</a></li>
-<li class="chapter" data-level="3.4" data-path="writing-an-annotated-bibliography.html"><a href="writing-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>3.4</b> Writing an Annotated Bibliography</a></li>
+<li class="chapter" data-level="2.3" data-path="evaluating-sources.html"><a href="evaluating-sources.html"><i class="fa fa-check"></i><b>2.3</b> Evaluating Sources</a></li>
+<li class="chapter" data-level="2.4" data-path="writing-an-annotated-bibliography.html"><a href="writing-an-annotated-bibliography.html"><i class="fa fa-check"></i><b>2.4</b> Writing an Annotated Bibliography</a></li>
 </ul></li>
 <li class="part"><span><b>II Data Access and Preparation</b></span></li>
-<li class="chapter" data-level="4" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>4</b> Data Cleaning</a>
+<li class="chapter" data-level="3" data-path="wp-2---data-cleaning.html"><a href="wp-2---data-cleaning.html"><i class="fa fa-check"></i><b>3</b> WP-2 - Data Cleaning</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html"><i class="fa fa-check"></i><b>4.1</b> Data Cleaning Overview</a>
+<li class="chapter" data-level="3.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html"><i class="fa fa-check"></i><b>3.1</b> Data Cleaning Overview</a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#analysis-development-2"><i class="fa fa-check"></i><b>4.1.1</b> Analysis Development</a></li>
-<li class="chapter" data-level="4.1.2" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#general-approach"><i class="fa fa-check"></i><b>4.1.2</b> General Approach</a></li>
+<li class="chapter" data-level="3.1.1" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#analysis-development-1"><i class="fa fa-check"></i><b>3.1.1</b> Analysis Development</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-cleaning-overview.html"><a href="data-cleaning-overview.html#general-approach"><i class="fa fa-check"></i><b>3.1.2</b> General Approach</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="spatial-data-creation.html"><a href="spatial-data-creation.html"><i class="fa fa-check"></i><b>4.2</b> Spatial Data Creation</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="demographic-data.html"><a href="demographic-data.html"><i class="fa fa-check"></i><b>5</b> Demographic Data</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="demographic-data-overview.html"><a href="demographic-data-overview.html"><i class="fa fa-check"></i><b>5.1</b> Demographic Data Overview</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="spatial-data-access.html"><a href="spatial-data-access.html"><i class="fa fa-check"></i><b>6</b> Spatial Data Access</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="general-notes.html"><a href="general-notes.html"><i class="fa fa-check"></i><b>6.1</b> General Notes</a></li>
-<li class="chapter" data-level="6.2" data-path="st-louis-specific-sources.html"><a href="st-louis-specific-sources.html"><i class="fa fa-check"></i><b>6.2</b> St. Louis Specific Sources</a></li>
-</ul></li>
-<li class="part"><span><b>III Deliverables</b></span></li>
-<li class="chapter" data-level="7" data-path="arcgis-storymap.html"><a href="arcgis-storymap.html"><i class="fa fa-check"></i><b>7</b> ArcGIS StoryMap</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="web-maps.html"><a href="web-maps.html"><i class="fa fa-check"></i><b>7.1</b> Web Maps</a></li>
-<li class="chapter" data-level="7.2" data-path="storymap.html"><a href="storymap.html"><i class="fa fa-check"></i><b>7.2</b> StoryMap</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="research-note.html"><a href="research-note.html"><i class="fa fa-check"></i><b>8</b> Research Note</a>
-<ul>
-<li class="chapter" data-level="8.1" data-path="overview-1.html"><a href="overview-1.html"><i class="fa fa-check"></i><b>8.1</b> Overview</a></li>
-<li class="chapter" data-level="8.2" data-path="outline.html"><a href="outline.html"><i class="fa fa-check"></i><b>8.2</b> Outline</a></li>
-<li class="chapter" data-level="8.3" data-path="formatting.html"><a href="formatting.html"><i class="fa fa-check"></i><b>8.3</b> Formatting</a></li>
-<li class="chapter" data-level="8.4" data-path="tables-and-figures.html"><a href="tables-and-figures.html"><i class="fa fa-check"></i><b>8.4</b> Tables and Figures</a></li>
-<li class="chapter" data-level="8.5" data-path="draft-submission.html"><a href="draft-submission.html"><i class="fa fa-check"></i><b>8.5</b> Draft Submission</a></li>
+<li class="chapter" data-level="3.2" data-path="spatial-data-creation.html"><a href="spatial-data-creation.html"><i class="fa fa-check"></i><b>3.2</b> Spatial Data Creation</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -181,7 +150,7 @@
 <div id="header">
 <h1 class="title">SOC 4650 &amp; 5650: Intro to GIS Final Project</h1>
 <p class="author"><em>Christopher Prener, Ph.D.</em></p>
-<p class="date"><em>2021-04-05</em></p>
+<p class="date"><em>2022-01-27</em></p>
 </div>
 <div id="basics" class="section level1 unnumbered">
 <h1>Basics</h1>
@@ -199,64 +168,47 @@
 </div>
 <div id="how-are-these-instructions-organized" class="section level3 unnumbered">
 <h3>How are these instructions organized?</h3>
-<p>These instructions are organized into <strong>vignettes</strong> (pronounced <code>vin'yets</code>). These are meant to create “bite sized” modules that break down the final project into discrete phases. Each vignette has a set of indicators on the top-level page for the vignette that provide you with some general information about what the vignette entails. These indicators will help you quickly navigate the instructions.</p>
+<p>These instructions are organized into <strong>waypoints</strong>. These are meant to create “bite sized” modules that break down the final project into discrete phases. Each waypoint has a set of indicators on the top-level page for the waypoint that provide you with some general information about what the waypoint entails. These indicators will help you quickly navigate the instructions.</p>
 <div id="what-do-i-have-to-do" class="section level4 unnumbered">
 <h4>What do I have to do?</h4>
-<p>Each vignette includes an indicator that describes <em>what</em> the goal of the vignette is:</p>
+<p>Each waypoint includes an indicator that describes <em>what</em> the goal of the waypoint is:</p>
 <div class="rmdgoal">
 <p>
-<strong>Goal:</strong> create a quick summary of your project for Chris.
+<strong>Goal:</strong> create a quick summary of your project for
+Chris.
 </p>
 </div>
-<p>The instructions will vary at different points based on whether you are enrolled in SOC 4615 or SOC 5650. Look for this indicator for information about <em>who</em> the vignette is designed for:</p>
+<p>The instructions will vary at different points based on whether you are enrolled in SOC 4615 or SOC 5650. Look for this indicator for information about <em>who</em> the waypoint is designed for:</p>
 <div class="rmdpersonnel">
 <p>
-<strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.
+<strong>Personnel:</strong> This waypoint should be completed by
+<strong>all</strong> students.
 </p>
 </div>
 <p>If the instructions are only for one of the sections, they will look like this:</p>
 <div class="rmdpersonnel">
 <p>
-<strong>Personnel:</strong> This vignette should be completed by students in <strong>SOC 5650</strong> only.
-</p>
-</div>
-</div>
-<div id="what-order-do-i-have-to-do-the-vignettes-in" class="section level4 unnumbered">
-<h4>What order do I have to do the vignettes in?</h4>
-<p>Some of the vignettes can be worked on in parallel while others require that a prior vignette has been completed. If there is a pre-requisite vignette that must be completed first, this indicator will include pertinent details about ordering:</p>
-<div class="rmdpre">
-<p>
-<strong>Pre-requisites:</strong> This vignette should be completed <em>after</em> Vignette 6.
-</p>
-</div>
-<p>Otherwise you will see this indicator:</p>
-<div class="rmdpre">
-<p>
-<strong>Pre-requisites:</strong> There are no pre-requisites for this vignette.
+<strong>Personnel:</strong> This waypoint should be completed by
+students in <strong>SOC 5650</strong> only.
 </p>
 </div>
 </div>
 <div id="what-do-i-need-to-know-how-to-do" class="section level4 unnumbered">
 <h4>What do I need to know how to do?</h4>
-<p>Some of the vignettes require technical skills that will be covered as the semester progresses. If that is the case, those lectures will be identified with this indicator:</p>
+<p>Some of the waypoint require technical skills that will be covered as the semester progresses. If that is the case, those meetings will be identified with this indicator:</p>
 <div class="rmdskills">
 <p>
-<strong>Skills:</strong> Lectures 1 and 2
+<strong>Skills:</strong> Meetings 1-1 and 1-2
 </p>
 </div>
 </div>
 <div id="when-are-vignettes-due" class="section level4 unnumbered">
 <h4>When are vignettes due?</h4>
-<p>Some of the vignettes have hard due dates while others do not. For vignettes without a firm deadline, a <em>suggested</em> deadline will be provided for those of you who appreciate a bit more structure. Firm deadlines will be provided in an indicator at the top of each vignette that looks like this:</p>
+<p>Deadlines will be provided in an indicator at the top of each vignette that looks like this:</p>
 <div class="rmddue">
 <p>
-<strong>Required Due Date:</strong> This vignette must be completed by March 15<sup>th</sup>.
-</p>
-</div>
-<p>Suggested deadlines will look like this:</p>
-<div class="rmddue">
-<p>
-<strong><em>Suggested</em> Completion Date:</strong> This vignette should be completed by March 15<sup>th</sup>.
+<strong>Due Date:</strong> This waypoint must be completed by Meeting
+3-1.
 </p>
 </div>
 </div>
@@ -265,58 +217,18 @@
 <p>All of the vignettes require you to produce <em>something</em>. A quick description of the deliverables associated with the vignette will be included in this indicator:</p>
 <div class="rmddeliver">
 <p>
-<strong>Deliverables:</strong> A knit <code>.Rmd</code> notebook with the appropriate <code>.md</code> output that uses a literate programming approach to document your data cleaning efforts should be included in your final project repository.
+<strong>Deliverables:</strong> A knit <code>.Rmd</code> notebook with
+the appropriate <code>.md</code> output that uses a literate programming
+approach to document your data cleaning efforts should be included in
+your final project repository.
 </p>
 </div>
 </div>
 </div>
 <div id="data-analysis-is-not-linear" class="section level3 unnumbered">
 <h3>Data Analysis is not Linear</h3>
-<p>The organization of these instructions implies a linear path - complete one vignette and then go on to the next. You’ll notice that the pre-requisite vignette box for most vignettes look something like this:</p>
-<div class="rmdpre">
-<p>
-<strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 5’s initial completion.
-</p>
-</div>
-<p>This wording is meant to remind you that data analysis is never a linear process. You are going to have to iterate over vignettes, often several times. You’ll perhaps do some initial data cleaning, calculate descriptive statistics, and notice that the frequency of a particular category is too small. So you’ll have to go back, re-code that particular variable, and recalculate your descriptive statistics. This process of iteration is the norm for statistical analysis. Even the most experienced statisticians do this - it is not a function of inexperience so much as it is the nature of doing analytic work.</p>
+<p>The organization of these instructions implies a linear path - complete one vignette and then go on to the next. I want to remind you that data analysis is never a linear process. You are going to have to iterate over waypoints, often several times. You’ll perhaps do some initial data cleaning and move onto geoprocessing only to discover you need to alter how you’ve cleaned your data. So you’ll have to go back and do some additional cleaning. This process of iteration is the norm for data analysis. Even the most experienced analysts do this - it is not a function of inexperience so much as it is the nature of doing analytic work.</p>
 <p>One of the reasons that a plain-text approach to programming and statistics is so powerful is that this iteration becomes easy. You won’t have to remember the series of menu selections and check boxes you chose to produce a particular output as you would with a GUI-driven statistical application. Rather, recalculating descriptive statistics is as easy as making a small change to the source code for the data cleaning notebook, knitting that notebook, and then re-knitting the descriptive statistics notebook. Working in this way gives you the freedom to explore and experiment as much as you’d like!</p>
-</div>
-<div id="waypoints" class="section level3 unnumbered">
-<h3>Waypoints</h3>
-<p>Despite the non-linearity of data analysis, there are points during the semester where we will need to check-in. I call these “waypoints.” They will cover different facets of various vignettes. <a href="https://slu-soc5650.github.io/syllabus/assignments.html#final-project">Please see the syllabus for waypoint due dates</a>. Below are the waypoints and my general expectations for them:</p>
-<ol style="list-style-type: decimal">
-<li><strong>Waypoint 1 - Topic Selection</strong>
-<ul>
-<li>Submit <a href="the-memo.html">the memo</a> as described in <a href="topic-data-selection.html">Vignette 1</a></li>
-</ul></li>
-<li><strong>Waypoint 2 - Initial Data Cleaning</strong>
-<ul>
-<li>Create the necessary project analysis development components described in <a href="analysis-development.html">Vignette 2</a></li>
-<li>Begin the data cleaning process described in <a href="data-cleaning.html">Vignette 4</a>, focusing specifically on <a href="data-cleaning-overview.html">Section 4.1</a>. My expectation here is that each student loads their main data set (e.g., crime data, CSB data, or some other data set you have selected), and applies the <a href="https://github.com/slu-soc5650/module-2-data-cleaning/blob/master/handouts/wranglingWorkflow.pdf">data cleaning workflow</a> to it. It does not have to be complete, and there may be additional work left to do, but I do want to see that each step of the workflow has been addressed in some way. You do not need to address <a href="spatial-data-creation.html">Section 4.2</a> for this waypoint.</li>
-</ul></li>
-<li><strong>Waypoint 3 - Combining Data Sources</strong>
-<ul>
-<li>Continue to update the necessary project analysis development components described in <a href="analysis-development.html">Vignette 2</a></li>
-<li>Use <code>tidycensus</code> to access a minimum of two sets of demographic data that you want to map along side your main data set. These should be created following <a href="demographics.html">Vignette 5</a>. For now, you do not need to worry about the projected coordinate system these data are stored in. We’ll come back to this point for a later waypoint.</li>
-</ul></li>
-<li><strong>Waypoint 4 - Projecting Data</strong>
-<ul>
-<li>Continue to update the necessary project analysis development components described in <a href="analysis-development.html">Vignette 2</a></li>
-<li>Select a projected coordinate system that is appropriate for your project’s scale.</li>
-<li>Project your cleaned data set created as part of <a href="demographics.html">Vignette 4</a>’s <a href="spatial-data-creation.html">Section 4.2</a>. You do not need to aggregate these points at this stage of the project, only project them. You should add to the notebook you created specifically for <a href="demographics.html">Vignette 4</a> and re-knit it.</li>
-<li>Re-project your demographic data created as part of <a href="demographics.html">Vignette 5</a> for Waypoint 3. You should add to the notebook you created specifically for <a href="demographics.html">Vignette 5</a> and re-knit it.</li>
-<li>Begin to address <a href="https://slu-soc5650.github.io/final-project/spatial-data-access.html">Vignette 6</a> by identifying at least five additional spatial data layers you may want to include in your maps. At least one of these layers should be downloaded from the U.S. Census Bureau’s TIGER/Line database via the <code>tigris</code> package. For each layer, load it into your notebook, re-project it, and store in as a <code>.shp</code> or <code>.geojson</code> file in your <code>data/</code> folder. Raw data can be stored in <code>data/raw/</code> as part of your project folder system.</li>
-</ul></li>
-<li><strong>Waypoint 5 - Geoprocessing Data</strong>
-<ul>
-<li>Continue to update the necessary project analysis development components described in <a href="analysis-development.html">Vignette 2</a></li>
-<li>Create counts per census tract of your main outcome variable (for example, if you are mapping homicides in St. Louis, you should create counts of homicides per census tract)</li>
-</ul></li>
-<li><strong>Waypoint 6 - Draft StoryMap</strong>
-<ul>
-<li>Complete <a href="storymap.html">Vignette 8</a> - you should have all required elements and draft text at this stage, though the text can be rough (i.e. does not need to be polished at this stage). Open an issue in your final project repository to submit this waypoint, and include a few sentences of self reflection about what you still need to work on before the final submission.</li>
-</ul></li>
-</ol>
 </div>
 </div>
             </section>
@@ -329,7 +241,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -348,6 +259,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": null,
 "google": false
 },
@@ -366,6 +278,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

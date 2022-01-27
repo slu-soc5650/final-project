@@ -3,15 +3,18 @@
 # ArcGIS StoryMap
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Create an ArcGIS StoryMap featuring your maps, media, and narrative content</p>
+<p><strong>Goal:</strong> Create an ArcGIS StoryMap featuring your maps,
+media, and narrative content</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+<strong>all</strong> students.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 6’s initial completion.</p>
+<p><strong>Pre-requisites:</strong> This vignette should be started
+<em>after</em> Vignette 6’s initial completion.</p>
 </div>
 
 <div class="rmdskills">
@@ -19,12 +22,15 @@
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 13 (April 26<sup>th</sup>) as part of <a href="index.html#waypoints">Waypoint 6</a></p>
+<p><strong>Required Due Date 1:</strong> Meeting 13 (April
+26<sup>th</sup>) as part of <a href="index.html#waypoints">Waypoint
+6</a></p>
 <p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> An ArcGIS StoryMap, linked to in a GitHub issue</p>
+<p><strong>Deliverables:</strong> An ArcGIS StoryMap, linked to in a
+GitHub issue</p>
 </div>
 
 ## Web Maps
@@ -38,7 +44,9 @@ You will need to create a **minimum** of five web maps to place into your StoryM
 Map four in particular should utilize other data sources that you have accumulated. For students focusing on the City of St. Louis, I recommend focusing on a particular neighborhood or ward where a large number of points are located for your main topic. 
 
 <div class="rmdwarning">
-<p><strong>For projects using a non-standard data set:</strong> For students who are not focusing on St. Louis, your will need to select a smaller geography (such as a specific county or state) to focus on.</p>
+<p><strong>For projects using a non-standard data set:</strong> For
+students who are not focusing on St. Louis, your will need to select a
+smaller geography (such as a specific county or state) to focus on.</p>
 </div>
 
 ## StoryMap

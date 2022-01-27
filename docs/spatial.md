@@ -1,28 +1,38 @@
 # Spatial Data Access
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Obtain additional geometric data to use for mapping.</p>
+<p><strong>Goal:</strong> Obtain additional geometric data to use for
+mapping.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+<strong>all</strong> students.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisites:</strong> This vignette should be started <em>after</em> Vignette 2’s initial completion.</p>
+<p><strong>Pre-requisites:</strong> This vignette should be started
+<em>after</em> Vignette 2’s initial completion.</p>
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> This vignette requires skills from both Module 2 (especially Meeting 5) and Module 3 (especially Meeting 6)</p>
+<p><strong>Skills:</strong> This vignette requires skills from both
+Module 2 (especially Meeting 5) and Module 3 (especially Meeting 6)</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 08 (March 22nd) as part of <a href="index.html#waypoints">Waypoint 4</a></p>
+<p><strong>Required Due Date 1:</strong> Meeting 08 (March 22nd) as part
+of <a href="index.html#waypoints">Waypoint 4</a></p>
 <p><strong>Required Due Date 2:</strong> Final Submission (May 17th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A well organized <code>data/raw/</code> folder with your original data sources, all of which should be re-projected, cleaned, and stored in <code>data/</code>. There should be a corresponding <code>.Rmd</code> file for any data downloaded via the <code>tigris</code> package as well as data cleaning and re-projection.</p>
+<p><strong>Deliverables:</strong> A well organized
+<code>data/raw/</code> folder with your original data sources, all of
+which should be re-projected, cleaned, and stored in <code>data/</code>.
+There should be a corresponding <code>.Rmd</code> file for any data
+downloaded via the <code>tigris</code> package as well as data cleaning
+and re-projection.</p>
 </div>
 
 ## General Notes

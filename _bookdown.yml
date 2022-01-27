@@ -10,13 +10,7 @@ rmd_files: [
   "index.Rmd",
   
   "topic.Rmd",
-  "development.Rmd",
   "bibliography.Rmd",
   
-  "cleaning.Rmd",
-  "demographics.Rmd",
-  "spatial.Rmd",
-  
-  "storymap.Rmd",
-  "paper.Rmd"
+  "cleaning.Rmd"
 ]

@@ -1,19 +1,23 @@
-# Annotated Bibliography
+# WP-G1 - Annotated Bibliography
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Identify the state of the literature on your topic.</p>
+<p><strong>Goal:</strong> Identify the state of the literature on your
+topic.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by students in <strong>SOC 5650</strong> only.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+students in <strong>SOC 5650</strong> only.</p>
 </div>
 
 <div class="rmdpre">
-<p><strong>Pre-requisites:</strong> Complete this vignette after receiving feedback from Chris on vignette 1.</p>
+<p><strong>Pre-requisites:</strong> Complete this vignette after
+receiving feedback from Chris on vignette 1.</p>
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> There are no course-specific skills for this vignette.</p>
+<p><strong>Skills:</strong> There are no course-specific skills for this
+vignette.</p>
 </div>
 
 <div class="rmddue">
@@ -21,7 +25,9 @@
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A markdown file (<code>.md</code>) with properly formatted citations and evaluative assessments of each source; your spreadsheet documenting the search process.</p>
+<p><strong>Deliverables:</strong> A markdown file (<code>.md</code>)
+with properly formatted citations and evaluative assessments of each
+source; your spreadsheet documenting the search process.</p>
 </div>
 
 ## What is an Annotated Bibliography?

@@ -1,29 +1,30 @@
 # (PART) Initial Steps {-}
 
-# Topic & Data Selection
+# WP-1 - Topic & Data Selection
 
 <div class="rmdgoal">
-<p><strong>Goal:</strong> Identify a data set and appropriate variables of interest.</p>
+<p><strong>Goal:</strong> Identify a data set and appropriate variables
+of interest.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by <strong>all</strong> students.</p>
-</div>
-
-<div class="rmdpre">
-<p><strong>Pre-requisties:</strong> There are no pre-requisites for this vignette.</p>
+<p><strong>Personnel:</strong> This vignette should be completed by
+<strong>all</strong> students.</p>
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> There are no course-specific skills for this vignette.</p>
+<p><strong>Skills:</strong> There are no course-specific skills for this
+vignette.</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> Meeting 02 (February 8th) as part of Waypoint 1</p>
+<p><strong>Due Date:</strong> Meeting 1-2</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A <a href="/the-memo.html">short memo</a> detailing your data and the specific topic you’ll be exploring.</p>
+<p><strong>Deliverables:</strong> A <a href="/the-memo.html">short
+memo</a> detailing your data and the specific topic you’ll be
+exploring.</p>
 </div>
 
 ## Crafting a Research Question
@@ -48,13 +49,13 @@ Each student should think about the overarching category they want to conduct re
 
 
 
-The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+The St. Louis Metropolitan Police Department (SLMPD) is the primary law enforcement agency for the City of St. Louis. These data comprise all crimes reported by SLMPD for a five year period between 2015 and 2019.
 
 ### License
 These data have been published without an explicit license. However, since they are the work of a government agency, they are considered in the public domain and are therefore available for reuse.
 
 ### Download
-You can download these data from [GitHub](https://github.com/slu-soc5650/crime-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
+You can download these data from [GitHub](https://github.com/slu-soc5650/crime-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick **one** crime category below. For example, you might pick `Arson` or `Vandalism`.
@@ -109,7 +110,7 @@ Crimes that are so-called "Part 2" offenses are typically less serious and may n
 
 
 
-The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a six year period between 2013 and 2018.
+The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a five year period between 2015 and 2019.
 
 ### License
 All of the data that the City of St. Louis makes public, including the CSB data, are available under the following [license](http://data.stlouis-mo.gov/terms.cfm):
@@ -140,7 +141,7 @@ originating department if questions/issues arise.*
 
 
 ### Download
-You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp19). Please read the `README.md` file carefully to learn which file you should use.
+You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
 
 ### Topic Categories
 If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
