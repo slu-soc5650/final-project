@@ -99,8 +99,8 @@ as_tibble(offenses) %>%
 
 ## The Citizens' Service Bureau Data
 
-```{r load-stlcsb, include=FALSE}
-library(stlcsb)
+```{r load-csb, include=FALSE}
+csb <- readr::read_csv("csb-codes-sp22.csv")
 ```
 
 The Citizens' Service Bureau (CSB) is a clearing house for the City of St. Louis. Requests for service come primarily from residents or business owners in the City through the CSB's website or by phone. Other City agencies also put requests for service into the CSB, and they take requests via fax, email, and Twitter. These data comprise all crimes reported by SLMPD for a five year period between 2015 and 2019.
@@ -139,94 +139,8 @@ You can download these data from [GitHub](https://github.com/slu-soc5650/csb-dat
 ### Topic Categories
 If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
 
-#### Animal Related Calls
-```{r animal, echo=FALSE}
-as_tibble(data.frame(cat_animal)) %>% 
-    kable()
-```
-
-#### Construction Calls
-```{r construction, echo=FALSE}
-as_tibble(data.frame(cat_construction)) %>% 
-    kable()
-```
-
-#### Debries Related Calls
-```{r debris, echo=FALSE}
-as_tibble(data.frame(cat_debris)) %>% 
-    kable()
-```
-
-#### Degredation Related Calls
-```{r degrade, echo=FALSE}
-as_tibble(data.frame(cat_degrade)) %>% 
-    kable()
-```
-
-#### Disturbance Related Calls
-```{r distrub, echo=FALSE}
-as_tibble(data.frame(cat_disturbance)) %>% 
-    kable()
-```
-
-#### Health Related Calls
-```{r health, echo=FALSE}
-as_tibble(data.frame(cat_health)) %>% 
-    kable()
-```
-
-#### Landscaping Related Calls
-```{r landscape, echo=FALSE}
-as_tibble(data.frame(cat_landscape)) %>% 
-    kable()
-```
-
-#### Legal Related Calls
-```{r legal, echo=FALSE}
-as_tibble(data.frame(cat_law)) %>% 
-    kable()
-```
-
-#### Maintainence Related Calls
-```{r maintain, echo=FALSE}
-as_tibble(data.frame(cat_maintenance)) %>% 
-    kable()
-```
-
-#### Nature Related Calls
-```{r nature, echo=FALSE}
-as_tibble(data.frame(cat_nature)) %>% 
-    kable()
-```
-
-#### Roadway Related Calls
-```{r road, echo=FALSE}
-as_tibble(data.frame(cat_road)) %>% 
-    kable()
-```
-
-#### Sewer Related Calls
-```{r sewer, echo=FALSE}
-as_tibble(data.frame(cat_sewer)) %>% 
-    kable()
-```
-
-#### Traffic Related Calls
-```{r traffic, echo=FALSE}
-as_tibble(data.frame(cat_traffic)) %>% 
-    kable()
-```
-
-#### Vacancy Related Calls
-```{r vacant, echo=FALSE}
-as_tibble(data.frame(cat_vacant)) %>% 
-    kable()
-```
-
-#### Waste Related Calls
-```{r waste, echo=FALSE}
-as_tibble(data.frame(cat_waste)) %>% 
-    kable()
+```{r csb, echo=FALSE}
+kable(csb)
 ```
 
 ### Variables
@@ -234,19 +148,90 @@ as_tibble(data.frame(cat_waste)) %>%
 The following are some basic descriptions of what each variable in the Citizens Service Bureau data are supposed to measure:
 
 -   `requestid` - CSB assigned identification number for each request
+-   `datetimeinit` - date request made
+-   `probaddress` - address where problem is located
 -   `problemcode` - general description of the problem associated with
     the request
 -   `description` - (sometimes) more detailed description of the problem
     associated with the request
--   `probaddress` - address where problem is located
--   `probcity` - city where address is located
--   `probzip` - zipcode where address is located
--   `datetimeinit` - date request made
+-   `status` - status of request
+-   `datetimeclosed` - date request completed
 -   `srx` - x coordinate for address
 -   `sry` - y coordinate for address
--   `status` - status of request
--   `prjcompletedate` - date request completed
--   `reqyear` - year request made
+
+## Vacancy Data
+The Vacancy Collaborative is "a coalition of partners dedicated to​reducing the negative impact of vacant property in the city of St. Louis." As part of that work they have spent several years creating a data set of vacant properties that is updated each month. The data are drawn from a variety of public sources, including tax data, data from the Citizens' Service Bureau, and operational data from the Building and Forestry divisions among other sources.
+
+### License
+These data are not available under a specific license, but are provided for download from their [dashboard](https://www.stlvacancytools.com). 
+
+### Variables
+
+-   `Handle` - Handle for parcel (unique ID for joining with other datasets)
+ParcelId
+Parcel ID
+StAddrNum
+Street Address: Number
+
+
+StNameFull
+Street Address, remaining consolidated information: direction, street name, suffix
+
+
+Zip
+Zip Code
+Ward10
+Ward Number (2010 Ward Boundaries)
+NhdName
+Neighborhood Name
+CensTract10
+2010 Census Tract Number
+Lat
+Latitude
+Lng
+Longitude
+Type
+Property Type (e.g. Commercial, Single Family, Vacant Lot, etc.)
+ParcelSqFt
+Square footage of the parcel
+OwnerName
+Name of Owner
+OwnerName2
+Additional names or notes for owner
+OwnerState
+Owner’s Address State
+OwnerZip
+Owner’s Address Zip Code
+BldgAge
+Age of Building
+Vacancy
+Vacancy Score (Number - 10 to 30 is indeterminate, 30 to 70 is possibly vacant, greater than 70 is very likely vacant)
+VacancyCat
+Vacancy Score Category (e.g. Indeterminate, Definitely, etc.)
+Burden
+Burden Score
+BurdenCat
+Burden Score Category (e.g. High, Very High, etc.)
+BoardUp
+Board Up Provided (true) since last ownership change and after 2016 (due to when processes were modernized)
+IsLRA
+Whether the property is owned by LRA or not (true)
+TaxYrsDel
+Number of years the property has been tax delinquent
+VacRegMonths
+Number of months on the Building Division’s Vacant Building Registry
+VioMajor
+Number of major building code violations
+CSBVacancy
+Property has CSB calls for vacancy since last change in ownership (true)
+CSBNuisance
+Property has CSB calls for nuisance since last change in ownership (true)
+Forestry
+Forestry services provided since last change in ownership (true)
+Condemned
+Building has been structurally condemned (true)
+
+
 
 ## Another Data Set
 If the crime and non-emergency call data do not interest you, you may petition to choose a topic of your own provided you can find appropriate data.
