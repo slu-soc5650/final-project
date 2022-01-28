@@ -139,7 +139,6 @@ files are raw extracts derived from various data sources. The City of
 St. Louis is aware that errors exist in these datasets. Contact the
 originating department if questions/issues arise.*
 
-
 ### Download
 You can download these data from [GitHub](https://github.com/slu-soc5650/csb-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
 
@@ -521,7 +520,10 @@ The Vacancy Collaborative is "a coalition of partners dedicated to reducing the 
 ### License
 These data are not available under a specific license, but are provided for download from their [dashboard](https://www.stlvacancytools.com). 
 
-### Topical Categories
+### Download
+You can download these data from [GitHub](https://github.com/slu-soc5650/vacancy-data-sp22). Please read the `README.md` file carefully to learn which file you should use.
+
+### Topic Categories
 Unlike the other two pre-made data sets, it is not necessary to choose a specific category. Students are welcome to address vacancy as a whole, or focus on patterns that some of the variables highlight.
 
 ### Variables
