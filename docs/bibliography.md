@@ -10,18 +10,13 @@ topic.</p>
 students in <strong>SOC 5650</strong> only.</p>
 </div>
 
-<div class="rmdpre">
-<p><strong>Pre-requisites:</strong> Complete this vignette after
-receiving feedback from Chris on vignette 1.</p>
-</div>
-
 <div class="rmdskills">
 <p><strong>Skills:</strong> There are no course-specific skills for this
 vignette.</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> Meeting 05 (March 1st)</p>
+<p><strong>Due Date:</strong> Meeting 2-2 (February 21st)</p>
 </div>
 
 <div class="rmddeliver">

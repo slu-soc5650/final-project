@@ -18,7 +18,7 @@ vignette.</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Due Date:</strong> Meeting 1-2</p>
+<p><strong>Due Date:</strong> Meeting 1-2 (January 31)</p>
 </div>
 
 <div class="rmddeliver">
@@ -146,107 +146,250 @@ You can download these data from [GitHub](https://github.com/slu-soc5650/csb-dat
 ### Topic Categories
 If you want to select a topic from these data, you should pick several call types below. For example, I am interested in vacancy so I might select `Debris-Vacant Bldg` and `Debris-Vacant Lot` for my call types. My mapping would therefore focus on these two types of calls to the Citizens Service Bureau.
 
-#### Animal Related Calls
 
-|cat_animal           |
+|cat                  |
 |:--------------------|
+|12-28-2015 Flood     |
+|Actvt Court Warrant  |
+|Add Block Contact    |
+|Alter Hist No Permit |
 |Animal Abuse         |
-|Animal Bite          |
-|Animal(s) Surrender  |
+|APPEARANCE           |
+|Asbestos             |
+|Athletic Fields      |
+|Bad Condition        |
+|Bad Drain/Sewer, Ext |
+|Bad Drain/Sewer, Int |
+|Bagged Leaf Pickup   |
+|Ballfield Benches    |
 |Bats                 |
 |Bed Bugs             |
+|Bike Lane Issues     |
+|Billboard Inspection |
 |Birds-Food Cntrl     |
+|Broken/Hanging Limb  |
+|Building Collapse    |
+|Bulky items missed   |
 |Carriage Horses      |
-|Dangerous Animal     |
-|Dangerous Dog        |
-|Dead Animal          |
-|Dead Animal, Ext     |
-|Dead Dog-ACC         |
-|Injured Animal       |
-|Injured/Sick Animal  |
-|Leash Law            |
-|Misc-Animal Care     |
-|Mosquito Breeding    |
-|Mosquito Spraying    |
-|Over 4 Pets          |
-|Over 4 Pets, Ext     |
-|PEST CONTROL         |
-|Pets in restaurant   |
-|Prohibited Animal    |
-|Stray Animal         |
-|Stray Animal Cntnd   |
-|Stray Cat            |
-|Stray Dog At Large   |
-|Stray Dog Cntnd-ACC  |
-|Stray Dog Contained  |
-|StRes referl to ACC  |
-|Surrender Cat        |
-|Surrender Dog        |
-|Surrender Pet        |
-|Unsanitary Pets, Ext |
-
-#### Construction Calls
-
-|cat_construction     |
-|:--------------------|
+|Cart dumped incomplt |
+|Cave-Ins             |
+|Check Welfare        |
+|Child Center         |
+|Child Center, Ext    |
+|Child Center, Int    |
 |CHK-JOBSITE          |
+|City Tree Down       |
+|City Tree Limb Down  |
+|Clean Picnic Tables  |
+|Cntainr near window  |
+|Cntainr too heavy    |
+|Cntnr blocking       |
+|Cntnr knocking wires |
+|Cntnr out of postion |
+|Cntnr overflow/bulky |
+|Cntnr turned         |
+|Comml coll after hrs |
+|Comml Dumpster, Ext  |
 |Const Hist No Permit |
 |Const No Permit-Ext  |
 |Const No Permit-Int  |
-|Construction         |
-|Contract Bridge Work |
-|Contract Park Work   |
+|Containr damaged     |
+|Containr not level   |
+|Containr smells bad  |
 |Contract Pub Bldg Wk |
 |Contract Street Work |
-|Demo Blowing Dust    |
-|Demolition No Permit |
-|Dust/Dirt Emission   |
-|Electrical Insp      |
-|ELECTRICAL INSTALL   |
-|ELECTRICAL TRACE     |
-|Lead Insp            |
-|Mechanical Insp      |
-|Misc-Building Div    |
-|NEW CONSTRUCTION     |
-|PmtApp_Excavation    |
-|Renovation           |
-|RENOVATIONS          |
-|ROOF/TUCKPOINTING    |
-|Spray Painting       |
-
-#### Debries Related Calls
-
-|cat_debris           |
-|:--------------------|
-|Bagged Leaf Pickup   |
-|Bulky items missed   |
-|Debris - Street      |
+|Corrections          |
+|Critical Sign        |
+|Curb Painting        |
+|Curb Repair          |
+|Cut FnceLine/TreeLwn |
+|Cut Median-Pkwy      |
+|Dangerous Animal     |
+|Dangerous Dog        |
+|Dead Animal          |
+|Dead Dog-ACC         |
+|Dead Limbs in Park   |
 |Debris-alley/street  |
 |Debris-Occupied Bldg |
 |Debris-Vacant Bldg   |
 |Debris-Vacant Lot    |
-|Move cont/debrs dump |
-
-#### Degredation Related Calls
-
-|cat_degrade          |
-|:--------------------|
-|APPEARANCE           |
-|Bad Condition        |
-|Bad Condition ROW    |
-|Building Collapse    |
-|Cave-Ins             |
+|Defective Plumbing   |
+|Defective Toilet     |
+|Demo Blowing Dust    |
+|Demolition No Permit |
+|Derelict-Privt Ppty  |
+|Derelict-Rt of Way   |
+|Did not get cart     |
+|Disabled Parking     |
+|Electrical Insp      |
+|Enforce Ordinace     |
+|Evictions            |
+|FH-MAINTENANCE       |
+|FH-RUNNING           |
+|Fill Dirt Request    |
+|Fire Escapes-Exits   |
+|Fire Exit Insp       |
+|Fire Public Relation |
+|Food Estab. Problem  |
+|Food worker ill      |
+|Foodbourne Illness   |
+|Foodbrne Ill - Tweet |
+|Foodbrne Ill - Yelp  |
+|Foreman cntct citizn |
+|Fountains            |
+|Fumes/Smells/Odors   |
+|Graffiti-Illegal     |
 |Graffiti-Park Equip  |
 |Graffiti-Private     |
 |Graffiti-Prvt Dmpstr |
 |Graffiti-Public      |
+|Hazrds Waste         |
+|Hazrds Waste, Ext    |
+|Hazrds Waste, Int    |
+|High Grass in Park   |
+|Hole-bottom of cont  |
+|HOLE-DEPRESSION      |
+|Holiday Collct Schd  |
+|Homeless Call        |
+|Housing Discrim      |
+|Hsehld Wst Disposal  |
+|HYDRANT-HIT          |
+|Idling               |
+|Illegal dumpg report |
+|Illegal Food Estbt   |
+|Illegal Use          |
+|Illegl Use-Opn Storg |
+|Illgal Estbt-Com San |
+|Impropr resdnt displ |
+|Inaccessible Facilty |
+|Inaccessible Program |
+|Incorrect Bill       |
+|Industrial Haz, Ext  |
+|Injured Animal       |
+|Injured/Sick Animal  |
+|Inmate Complaint     |
+|Insects Food Ctrl    |
+|Insp Hotel, Int      |
+|Inspect City Tree    |
+|Inspect Private Tree |
+|Instructn hshld/blky |
+|Insufficient Heat    |
+|Intake Form          |
+|Investigatr Callback |
+|KINGSHIGHWAY CLOSURE |
+|LAWN-CAVEIN          |
+|Lead Hotline Call    |
+|Lead Insp            |
+|Leaf pick up         |
+|LEAKING-METER        |
+|Leash Law            |
+|Leaves in Park       |
+|Light Damaged        |
+|Light(s) Out         |
+|Lights ON Daytime    |
+|Litter Warning       |
+|Long Term Initiative |
+|Loop Trolley         |
+|LOOSE-COVER          |
 |LRA Board up         |
+|LRA Demo Submission  |
+|LRA Tree             |
+|Maintain Bike Trail  |
+|Mechanical Insp      |
+|Mice Infstation, Int |
+|Minimum Wage         |
+|Misc PrjConn Feedbck |
+|Misc-Animal Care     |
+|Misc-Assessor        |
+|Misc-Bd of Aldermen  |
+|Misc-Bd of Pub Svc   |
+|Misc-Building Div    |
+|Misc-City Counselor  |
+|Misc-City Courts     |
+|Misc-City Emrgcy Mng |
+|Misc-Civil Rights En |
+|Misc-Coll of Revenue |
+|Misc-Comm Dev Admin  |
+|Misc-Comm Sanitation |
+|Misc-Communications  |
+|Misc-Comptroller     |
+|Misc-Corrections     |
+|Misc-Dept Human Svc  |
+|Misc-Excise          |
+|Misc-Fire/EMS Dept   |
+|Misc-Food Control    |
+|Misc-License Coll    |
 |Misc-LRA             |
+|Misc-Mayors Ofc      |
+|Misc-Nbhd Stblizn Tm |
+|Misc-Ofc on Disabled |
 |Misc-Op Brightside   |
+|Misc-Parks Div       |
+|Misc-Plng Urban Dsgn |
+|Misc-PRF Dir Ofc     |
+|Misc-Public Safety   |
+|Misc-Recreation      |
+|Misc-Recycle Sectn   |
+|Misc-Refuse Div      |
+|Misc-Soulard Market  |
+|Misc-Stl Agncy Aging |
+|Misc-Street Dept     |
+|Misc-Street Div      |
+|Misc-Tow Lot         |
+|Misc-Traffic Div     |
+|Misc-Trash Task Frc  |
+|Misc-Treasurer       |
+|Misc-Water Div       |
+|Missed Cut - V Lot   |
+|Missed Cut - VBldg   |
 |MISSING-COVER        |
-|PAINT/PLASTER        |
+|MODOT Referral       |
+|Mold - Food Cntrl    |
+|Mold, Interior       |
+|Mosquito Breeding    |
+|Mosquito Spraying    |
+|Move container       |
+|New Account Insp Req |
+|New Sign Requested   |
+|No comml dumpster    |
+|No Heat, Int         |
+|No Hep A - Food Ctrl |
+|No Hot Water, Int    |
+|No Interpreter       |
+|No response from DNR |
+|No Smoke Detectors   |
+|No Water - Food Ctrl |
+|No Water Supply, Int |
+|Noise                |
+|Not enough cntnrs    |
+|NOWATER              |
+|NSO Block Request    |
+|Opt Out Applctn Req  |
+|Other Alley Repair   |
+|Other Street Repair  |
+|Over 4 Pets          |
+|Over 4 Pets, Ext     |
+|Overcrowding         |
+|Ovrflwng littr barel |
+|Park Lake            |
+|Park Restrooms       |
+|Park Sewer Problem   |
+|Parking Lot Cndition |
+|Parking Meter        |
+|Parking Ticket       |
+|Pets in restaurant   |
+|Playground Equipment |
+|Plumbing Insp        |
+|PmtApp_Tree          |
+|Potholes - Alley     |
+|Potholes - Major St  |
+|Potholes - Residnl   |
 |Ppty Maint Code-Ext  |
 |Ppty Maint Code-Int  |
+|PRESSURE             |
+|Privt Hauler Cnfirmd |
+|Problem with food    |
+|Prohibited Animal    |
 |Property Damage-FIRE |
 |Property Damage-FOR  |
 |Property Damage-LRA  |
@@ -256,318 +399,39 @@ If you want to select a topic from these data, you should pick several call type
 |Property Damage-SDV  |
 |Property Damage-TLD  |
 |Property Damage-TOW  |
-|STREET-CAVEIN        |
-|Traffic Graffiti     |
-|VACANT BLDG INITIV   |
-|Vacnt Bldg Unsecured |
-|Vcnt weed check-web  |
-|Graffiti-Illegal     |
-
-#### Disturbance Related Calls
-
-|cat_disturbance     |
-|:-------------------|
-|ALARM               |
-|CIVIL UNREST        |
-|Noise               |
-|Public Nuisance Rpt |
-
-#### Health Related Calls
-
-|cat_health           |
-|:--------------------|
-|Affordable Care Act  |
-|Asbestos             |
-|Check Welfare        |
-|Child Center         |
-|Child Center, Ext    |
-|Child Center, Int    |
-|Day Care/Childcare   |
-|Fire Escapes-Exits   |
-|Fire Exit Insp       |
-|Food Estab. Problem  |
-|Food worker ill      |
-|Foodbourne Illness   |
-|Foodbrne Ill - Tweet |
-|Foodbrne Ill - Yelp  |
-|Fumes/Smells/Odors   |
-|HAZ MAT              |
-|Health Center, Int   |
-|Idling               |
-|Illegal Food Estbt   |
-|Industrial Facility  |
-|Industrial Haz, Ext  |
-|Industrial Haz, Int  |
-|Insects Food Ctrl    |
-|Insp Hotel, Int      |
-|Insufficient Heat    |
-|Mice Infstation, Int |
-|Misc-Air Pollution   |
-|Misc-Dept Human Svc  |
-|Misc-Fire/EMS Dept   |
-|Misc-Food Control    |
-|Misc-Health Dir Ofc  |
-|Misc-Public Safety   |
-|Mold - Food Cntrl    |
-|Mold, Interior       |
-|No Heat, Int         |
-|No Hep A - Food Ctrl |
-|No Hot Water, Int    |
-|No Smoke Detectors   |
-|No tub, shower, sink |
-|No Water - Food Ctrl |
-|Open Burning/Smoke   |
-|Overcrowding         |
-|Problem with food    |
-|Rat Bite             |
+|Pub Accmdtn Discrim  |
+|Public Nuisance Rpt  |
+|Public Swim Pool     |
+|Pull Illegal Sign    |
 |Rat Infestation, Int |
 |Rats (Exterior)      |
 |Rats/Mice Food Ctrl  |
-|Roach Infestn, Int   |
-|Sirens Not Heard     |
-|Smoke Detectors      |
-|Smoke/CO Alarm Req   |
-|Swim Pool Insp, Ext  |
-|Swim Pool Insp, Int  |
-|Swine Flu Call       |
-|Swine Flu Psntn      |
-|TASTE/ODOR           |
-|Unsanitary Cond, Ext |
-|Unsanitary Cond, Int |
-
-#### Landscaping Related Calls
-
-|cat_landscape        |
-|:--------------------|
-|Broken/Hanging Limb  |
-|City Tree Down       |
-|City Tree Limb Down  |
-|Cut FnceLine/TreeLwn |
-|Cut Median-Pkwy      |
-|Dead Limbs in Park   |
-|Inspect City Tree    |
-|Inspect Private Tree |
-|LAWN-CAVEIN          |
-|LRA Tree             |
-|Misc-Forestry Debris |
-|Misc-Forestry Trees  |
-|Misc-PRF Dir Ofc     |
-|Missed Cut - V Lot   |
-|Missed Cut - VBldg   |
-|PmtApp_Tree          |
-|Reminder to Trim     |
-|Root Removal         |
-|Stump Removal        |
-|Tree Inquiry         |
-|Tree Planting requst |
-|Unsatisfy Cut - VLot |
-|Unsatisfy Cut -VBldg |
-|Weeds-Occupied Ppty  |
-|Weeds-Vacant Bldg    |
-|Weeds-Vacant Lot     |
-
-#### Legal Related Calls
-
-|cat_law              |
-|:--------------------|
-|Actvt Court Warrant  |
-|Alter Hist No Permit |
-|Employment Discrim   |
-|Enforce Ordinace     |
-|Evictions            |
-|Housing Discrim      |
-|HVAC Justice Ctr     |
-|Illegal dumpg report |
-|Illegal Use          |
-|Illegal Use in ROW   |
-|Illegl Use-Opn Storg |
-|Illgal Estbt-Com San |
-|Incorrect Bill       |
-|Incorrect Bill test  |
-|Inmate Complaint     |
-|Litter Toss frm Veh  |
-|Misc-Corrections     |
-|Pub Accmdtn Discrim  |
-|Pull Illegal Sign    |
-|SLMPD Referral       |
-|Smkng Ban Issue      |
-
-#### Maintainence Related Calls
-
-|cat_maintenance      |
-|:--------------------|
-|A/C REPAIRS          |
-|Athletic Fields      |
-|ATHLETIC LIGHTS      |
-|BACKFLOW PREVENTOR   |
-|BALLAST              |
-|Ballfield Benches    |
-|Billboard Inspection |
-|BOILER/FURNACE/RADIA |
-|BREAKER              |
-|Camera Malfunction   |
-|Camera Out           |
-|CLEAN AREA           |
-|Clean Picnic Tables  |
-|CLOCK                |
-|COMPRESSOR           |
-|DOOR REPAIR          |
-|ELEVATOR REPAIRS     |
-|EXHAUST              |
-|FH-MAINTENANCE       |
-|FH-RUNNING           |
-|Fill Dirt Request    |
-|FLAGS                |
-|FLOOR/WALL/CEILING   |
-|Fountains            |
-|FURNITURE REPAIR     |
-|GATE/FENCE           |
-|GENERATOR            |
-|GLASS/WINDOW         |
-|High Grass in Park   |
-|HYDRANT-HIT          |
-|ICE MACH./APPLIANCE  |
-|ICE MACHINE          |
-|Install Camera Equip |
-|Leaves in Park       |
-|Light Damaged        |
-|Light(s) Out         |
-|Lights ON Daytime    |
-|LOCK/KEYS            |
-|Maintain Bike Trail  |
-|Misc-Facilities Mgmt |
-|MISC. REPAIRS        |
-|MOVE                 |
-|Move Camera Equip    |
-|OVERHEAD DOOR        |
-|Park Lake            |
-|Park Restrooms       |
-|Playground Equipment |
-|POWER OUTAGE         |
-|PREVENTATIVE MAINTEN |
-|PROC FRAMING         |
-|Public Swim Pool     |
+|Raw Garbage, Ext     |
+|Rcy Delivery Missed  |
+|Rcy dropoff dumping  |
+|Rcy dropoff litter   |
+|Rcy dropoff no sign  |
+|Rcy dropoff overflow |
+|Rcy pick up svc info |
+|Rcy Presentation     |
 |Rec Bldg Maintenance |
 |Rec Equipment        |
 |Rec Housekeeping     |
-|Rec-Athletic Lights  |
-|RECEPTACLE/SWITCH    |
-|RELAMP/REPAIR        |
-|SIGN INSTALLATION    |
-|SIGN/PICTURES        |
-|SPRINKLER REPAIR     |
-|STEAM REPAIRS        |
-|TRANSFORMER REPAIR/R |
-|UPS REPAIR/REPLACEME |
-|WATER COOLER         |
-|Whole Blk Lights Out |
-
-#### Nature Related Calls
-
-|cat_nature           |
-|:--------------------|
-|07-21-2010 Flood     |
-|12-28-2015 Flood     |
-|No Don't Plow Residn |
-|Snow blkg dsabl acs  |
-|Snow/Ice - Major St  |
-|Snow/Ice - Residnl   |
-|Wildlife             |
-|Wildlife Issue       |
-|Yes Plow Residnl     |
-
-#### Roadway Related Calls
-
-|cat_road             |
-|:--------------------|
-|14th - Tucker Median |
-|BicycleRackApp       |
-|Bike Lane Issues     |
-|CONCRETE             |
-|Cons/Traffic Concern |
-|Curb Painting        |
-|Curb Repair          |
-|KINGSHIGHWAY CLOSURE |
-|Misc-Street Dept     |
-|Misc-Street Div      |
-|MODOT Referral       |
-|Other Alley Repair   |
-|Other Street Repair  |
-|PmtApp_Blocking      |
-|PmtApp_Busker        |
-|PmtApp_Driveway      |
-|PmtApp_mutli         |
-|PmtApp_Overdimnsnl   |
-|PmtApp_ResBlockParty |
-|PmtApp_Run-Ride      |
-|PmtApp_Sidewalk      |
-|PmtApp_SvcOps        |
-|PmtApp_ValetStand    |
-|PmtApp_Walk-in       |
-|Potholes - Alley     |
-|Potholes - Major St  |
-|Potholes - Resid'l   |
-|Potholes - Residnl   |
-|Run                  |
+|Rec Programming      |
+|Recycling not collec |
+|Refuse Info Call     |
+|Refuse not collected |
+|Refuse referl to SDV |
+|Refuse Svc Fee Call  |
+|Rehab-roll off cntnr |
+|Remove cntnr         |
+|Residnl Prvt Dmpstr  |
+|Roach Infestn, Int   |
+|Rollcart stolen/misg |
+|Sewer Lateral Defect |
+|Short Term Initiativ |
 |Sidewalk Ramp        |
 |Sidewalk Repair      |
-|Speed Bump Project   |
-|Street Cleaning      |
-|Street Painting Requ |
-
-#### Sewer Related Calls
-
-|cat_sewer            |
-|:--------------------|
-|Bad Drain/Sewer, Ext |
-|Bad Drain/Sewer, Int |
-|CLOGGED DRAIN        |
-|Defective Plumbing   |
-|Defective Toilet     |
-|HOLE-DEPRESSION      |
-|LEAK                 |
-|LEAKING-METER        |
-|LOOSE-COVER          |
-|Misc-Water Div       |
-|No Water Supply, Int |
-|NOWATER              |
-|Park Sewer Problem   |
-|PLUMBING FIXTURE REP |
-|Plumbing Insp        |
-|PRESSURE             |
-|Sewer Lateral Defect |
-|Sprinkler Systems    |
-|Stagnant Water       |
-|SUMP PUMP            |
-|WALK-CAVEIN          |
-|Wastewater, Basement |
-|Wastewater, Ext      |
-|Water Leak, Int      |
-|WATER-CITZN-PROP-DAM |
-|WTR-COMING-UP        |
-|WTR-VACANT-BLDG      |
-|WTRNBLDG-PIPE-REM    |
-
-#### Traffic Related Calls
-
-|cat_traffic          |
-|:--------------------|
-|Critical Sign        |
-|Derelict-Privt Ppty  |
-|Derelict-Rt of Way   |
-|Derelict-Veh PP      |
-|Derelict-Veh ROW     |
-|Disabled Parking     |
-|Handicapped Parking  |
-|Misc - TLD           |
-|Misc-Tow Lot         |
-|Misc-Traffic Div     |
-|Parking Lot Cndition |
-|Parking Meter        |
-|Parking Ticket       |
-|PmtApp_IntlPrkgDay   |
-|PmtApp_LoadingZone   |
-|PmtApp_Parking       |
 |Sign needs attention |
 |Signal Bulb Out      |
 |Signal Damaged       |
@@ -576,117 +440,119 @@ If you want to select a topic from these data, you should pick several call type
 |Signals Flashing     |
 |Signals out of sync  |
 |Single Light Out     |
-|Traffic Ticket       |
-|Vehicle Towing       |
-|Vehicle-Rt of Way    |
-
-#### Vacancy Related Calls
-
-|cat_vacant           |
-|:--------------------|
-|Vacant Unit Appeal   |
-|Vacant Unit Appeal t |
-|Debris-Vacant Bldg   |
-|Debris-Vacant Lot    |
-|Missed Cut - V Lot   |
-|Missed Cut - VBldg   |
-|Unsatisfy Cut - VLot |
-|Unsatisfy Cut -VBldg |
-|Weeds-Vacant Bldg    |
-|Weeds-Vacant Lot     |
-|WTR-VACANT-BLDG      |
-|VACANT BLDG INITIV   |
-|Vacnt Bldg Unsecured |
-|Vcnt weed check-web  |
-|LRA Board up         |
-|Misc-LRA             |
-|Misc-Op Brightside   |
-|Building Collapse    |
-|Property Damage-LRA  |
-
-#### Waste Related Calls
-
-|cat_waste            |
-|:--------------------|
-|Blitz Items          |
-|Cart dumped incomplt |
-|Cntainr near window  |
-|Cntainr too heavy    |
-|Cntnr blocking       |
-|Cntnr knocking wires |
-|Cntnr out of postion |
-|Cntnr overflow/bulky |
-|Cntnr turned         |
-|Comml Dumpster, Ext  |
-|Containr damaged     |
-|Containr not level   |
-|Containr smells bad  |
-|Did not get cart     |
-|Hazrds Waste         |
-|Hazrds Waste, Ext    |
-|Hazrds Waste, Int    |
-|Hole-bottom of cont  |
-|Hsehld Wst Disposal  |
-|Impropr resdnt displ |
-|Instructn hshld/blky |
-|Leaf pick up         |
-|Litter Warning       |
-|Misc-Comm Sanitation |
-|Misc-Recycle Sectn   |
-|Misc-Refuse Div      |
-|Misc-Trash Task Frc  |
-|Move container       |
-|No comml dumpster    |
-|Not enough cntnrs    |
-|Ovrflwng littr barel |
-|Privt Hauler Cnfirmd |
-|Raw Garbage, Ext     |
-|Rcy curb bin damage  |
-|Rcy curb bin missed  |
-|Rcy curb bin missing |
-|Rcy curb new address |
-|Rcy curbbin no deliv |
-|Rcy Curbside Cancel  |
-|Rcy curbside new add |
-|Rcy curbside new svc |
-|Rcy Delivery Missed  |
-|Rcy dropoff dumping  |
-|Rcy dropoff litter   |
-|Rcy dropoff no sign  |
-|Rcy dropoff overflow |
-|Recycling not collec |
-|Refuse not collected |
-|Rehab-roll off cntnr |
-|Remove cntnr         |
-|Residnl Prvt Dmpstr  |
-|Rollcart stolen/misg |
+|Sirens Not Heard     |
+|SLMPD Referral       |
+|Smkng Ban Issue      |
+|Smoke Detectors      |
+|Smoke/CO Alarm Req   |
+|Snow/Ice - Major St  |
+|Snow/Ice - Residnl   |
+|Soulard Mkt Vendor   |
 |Special Event Recycl |
+|Speed Bump Project   |
+|Sprinkler Systems    |
+|Stagnant Water       |
+|Stray Animal Cntnd   |
+|Stray Cat            |
+|Stray Dog At Large   |
+|Stray Dog Cntnd-ACC  |
+|Street Cleaning      |
+|Street Painting Requ |
+|STREET-CAVEIN        |
+|Stump Removal        |
+|Surrender Pet        |
+|Swim Pool Insp, Ext  |
+|TASTE/ODOR           |
+|Tent Encampment      |
 |Tire Storage, Ext    |
 |Too many cntnrs      |
+|Traffic Graffiti     |
+|Traffic Ticket       |
 |Trash in the Park    |
 |Trash/Grbage Fd Ctrl |
+|Tree Planting requst |
 |Truck dropped litter |
 |Unauthrz use contain |
+|Unsanitary Cond, Ext |
+|Unsanitary Pets, Ext |
+|Unsatisfy Cut - VLot |
+|Unsatisfy Cut -VBldg |
+|VACANT BLDG INITIV   |
+|Vacant Unit Appeal   |
+|Vacnt Bldg Unsecured |
+|Vcnt weed check-web  |
+|Vehicle Towing       |
+|Vehicle-Rt of Way    |
+|WALK-CAVEIN          |
+|Wastewater, Basement |
+|Wastewater, Ext      |
+|Water Leak, Int      |
+|WATER-CITZN-PROP-DAM |
+|Weeds-Alley          |
+|Weeds-Occupied Ppty  |
+|Weeds-Vacant Bldg    |
+|Weeds-Vacant Lot     |
+|Whole Blk Lights Out |
+|Wildlife Issue       |
+|WTR-COMING-UP        |
+|WTR-VACANT-BLDG      |
 |Yrd Wste Not Collect |
+|NA                   |
 
 ### Variables
 
 The following are some basic descriptions of what each variable in the Citizens Service Bureau data are supposed to measure:
 
 -   `requestid` - CSB assigned identification number for each request
+-   `datetimeinit` - date request made
+-   `probaddress` - address where problem is located
 -   `problemcode` - general description of the problem associated with
     the request
 -   `description` - (sometimes) more detailed description of the problem
     associated with the request
--   `probaddress` - address where problem is located
--   `probcity` - city where address is located
--   `probzip` - zipcode where address is located
--   `datetimeinit` - date request made
+-   `status` - status of request
+-   `datetimeclosed` - date request completed
 -   `srx` - x coordinate for address
 -   `sry` - y coordinate for address
--   `status` - status of request
--   `prjcompletedate` - date request completed
--   `reqyear` - year request made
+
+## Vacancy Data
+The Vacancy Collaborative is "a coalition of partners dedicated to reducing the negative impact of vacant property in the city of St. Louis." As part of that work they have spent several years creating a data set of vacant properties that is updated each month. The data are drawn from a variety of public sources, including tax data, data from the Citizens' Service Bureau, and operational data from the Building and Forestry divisions among other sources.
+
+### License
+These data are not available under a specific license, but are provided for download from their [dashboard](https://www.stlvacancytools.com). 
+
+### Topical Categories
+Unlike the other two pre-made data sets, it is not necessary to choose a specific category. Students are welcome to address vacancy as a whole, or focus on patterns that some of the variables highlight.
+
+### Variables
+
+-   `Handle` - Handle for parcel (unique ID for joining with other datasets)
+-   `ParcelId` - Parcel ID
+-   `StAddrNum` - Street Address, Number
+-   `StNameFull` - Street Address, remaining consolidated information - direction, street name, suffix
+-   `Zip` - Zip Code
+-   `Type` - Property Type (e.g. Commercial, Single Family, Vacant Lot, etc.)
+-   `ParcelSqFt` - Square footage of the parcel
+-   `OwnerName` - Name of Owner
+-   `OwnerName2` - Additional names or notes for owner
+-   `OwnerState` - Owner’s Address State
+-   `OwnerZip` - Owner’s Address Zip Code
+-   `BldgAge` - Age of Building
+-   `Vacancy` - Vacancy Score (Number - 10 to 30 is indeterminate, 30 to 70 is possibly vacant, greater than 70 is very likely vacant)
+-   `VacancyCat` - Vacancy Score Category (e.g. Indeterminate, Definitely, etc.)
+-   `Burden` - Burden Score
+-   `BurdenCat` - Burden Score Category (e.g. High, Very High, etc.)
+-   `BoardUp` - Board Up Provided (true) since last ownership change and after 2016 (due to when processes were modernized)
+-   `IsLRA` - Whether the property is owned by LRA or not (true)
+-   `TaxYrsDel` - Number of years the property has been tax delinquent
+-   `VacRegMonths` - Number of months on the Building Division’s Vacant Building Registry
+-   `VioMajor` - Number of major building code violations
+-   `CSBVacancy` - Property has CSB calls for vacancy since last change in ownership (true)
+-   `CSBNuisance` - Property has CSB calls for nuisance since last change in ownership (true)
+-   `Forestry` - Forestry services provided since last change in ownership (true)
+-   `Condemned` - Building has been structurally condemned (true)
+-   `Lat` - Latitude
+-   `Lng` - Longitude
 
 ## Another Data Set
 If the crime and non-emergency call data do not interest you, you may petition to choose a topic of your own provided you can find appropriate data.
@@ -696,9 +562,9 @@ Data sets for your final project will have a number of salient characteristics:
 
 1. They should be *spatial* data.
 2. They should numerous - there should be at least several hundred observations that vary over space and, ideally, over time as well. Several thousand observations will be ideal. 
-3. They must be countable - the number of 9-1-1 calls, resturants, or terrorist attacks, for example.
-4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, resturant locations across a city, state, or province, and crime scene locations.
-5. They should be able to be aggregated up to some sort of higher order construct. Think about how resturant locations could be aggregated up to neighborhoods, municipalities, or counties.
+3. They must be countable - the number of 9-1-1 calls, restaurants, or terrorist attacks, for example.
+4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, restaurant locations across a city, state, or province, and crime scene locations.
+5. They should be able to be aggregated up to some sort of higher order construct. Think about how restaurant locations could be aggregated up to neighborhoods, municipalities, or counties.
 
 ### Other Considerations
 There are a few other considerations to take into account. If you are a graduate student and have already identified a possible thesis topic, you may want pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).

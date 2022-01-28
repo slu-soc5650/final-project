@@ -8,16 +8,12 @@
 **Personnel:** This vignette should be completed by students in **SOC 5650** only.
 ```
 
-```{block, type = "rmdpre"}
-**Pre-requisites:** Complete this vignette after receiving feedback from Chris on vignette 1.
-```
-
 ```{block, type = "rmdskills"}
 **Skills:** There are no course-specific skills for this vignette.
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date:** Meeting 05 (March 1st) 
+**Due Date:** Meeting 2-2 (February 21st) 
 ```
 
 ```{block, type = "rmddeliver"}

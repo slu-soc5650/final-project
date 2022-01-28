@@ -12,33 +12,52 @@ mapping.</p>
 <strong>all</strong> students.</p>
 </div>
 
-<div class="rmdpre">
-<p><strong>Pre-requisites:</strong> This vignette should be started
-<em>after</em> Vignette 2’s initial completion.</p>
-</div>
-
 <div class="rmdskills">
 <p><strong>Skills:</strong> This vignette requires skills from both
-Module 2 (especially Meeting 04) and Module 3 (especially Meetings 06
-and 07)</p>
+Module 1 and 2</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date 1:</strong> Meeting 06 (March 8th) as part
-of <a href="index.html#waypoints">Waypoint 2</a>, specifically Section
-4.1</p>
-<p><strong>Required Due Date 2:</strong> Meeting 08 (March 22nd) as part
-of <a href="index.html#waypoints">Waypoint 4</a>, specifically Section
-4.2</p>
-<p><strong>Required Due Date 3:</strong> Final Submission (May 17th)</p>
+<p><strong>Due Date 1:</strong> Meeting 3-1 (February 28th)</p>
 </div>
 
 <div class="rmddeliver">
-<p><strong>Deliverables:</strong> A well-formatted notebook in the
-<code>docs/</code> folder that uses literate programming to produce a
-clean data set saved as two <code>.shp</code> files in the
-<code>data/</code> folder.</p>
+<p><strong>Deliverables:</strong> A well organized project repository
+with an appropriate folder structure, a plan implemented with GitHub
+Projects, a <code>README.md</code>, a <code>RESEARCH_LOG.md</code>, and
+a <code>.Rproj</code> file. These should all be <em>created</em> by the
+due date, but will continue to be updated afterwards. You will also need
+a well-formatted notebook in the <code>docs/</code> folder that uses
+literate programming to produce a clean data set saved as a
+<code>.csv</code> file in the <code>data/</code> folder.</p>
 </div>
+
+## Data Storage
+You will have a separate GitHub repository that is dedicated to the final project. This will facilitate some of the peer evaluation tasks you will be asked to complete over the course of the semester, allowing you to share a repository with a colleague without exposing all of your other work and grades in the process. 
+
+All final project materials should be stored in this repository, and it should be organized following the [project organization principles we've used this semester](https://slu-soc5650.github.io/docs/protecting-work/). This means that it should have subfolders for `data/`, `docs/`, `results/`, and `source/` as well as a `.Rproj` file.
+
+If subfolders are empty, they will not be tracked by GitHub. If you are using only one computer, the folder will remain visible locally and Git will start tracking it once you begin adding materials. If you are using multiple computers, you can create empty text files named `.gitkeep` using RStudio (`File > New File > Text File`) and keep one in each subfolder.
+
+Since you will be storing this repository on GitHub, you will be default be using version control for this project. You should make commits (like voting in Chicago!) early and often. Make sure that your commit messages are informative and clear. Remember, if you have to go back to an earlier version of your work, you will want to make it as easy as possible to do so.
+
+Also make sure that you are pushing to GitHub often and not just saving the work locally on your computer. This is *part* of your insurance against a catastrophic loss of your computer or a lab computer where you are working. You are strongly encouraged to use a more comprehensive backup solution!
+
+## Project Planning
+Use GitHub’s "Project Board" feature on your final project's GitHub repository to plan out the tasks you need to complete. Create a new project and assign each vignette to a column. Then assign specific tasks and deliverables related to that vignette to individual notes in that column. As you progress through the project, keep this updated so that you can track your progress. You can read more about [managing projects](https://help.github.com/articles/managing-project-boards-in-your-repository-or-organization/) and [tracking progress with a project board](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/) in GitHub's documentation.
+
+## Project Documentation
+There are two project-level documentation files that you will need to create and keep updated throughout the semester.
+
+### README.md
+You will need a read-me file in the top-level of your assignment repository. There will already be a file named `README.md` in the top-level of your repository. Please edit this and modify it as needed!
+
+### RESEARCH_LOG.md
+You will need to maintain a research log throughout the final project process. Before proceeding with the vignettes, create a well-formatted and organized research log in RStudio (`File > New File > Text File`) that is organized chronologically. The research log should use markdown syntax and be saved as a markdown file (`.md`). Keep this file updated and have it saved in the top-level of your assignment repository.
+
+For each day you work on the final project, there should be an entry that describes the work that you have done, what files you have created or modified, and how those modifications took place. Give as much detail as possible without directly replicating the notes you make in individual files using the literate programming approach. This will be particularly important for your mapmaking work in ArcGIS Pro, which is inherently not reproducible and thus good notes are imperative.
+
+Think of the research log as step-by-step instructions to yourself that would allow you to recreate all of your work should every final project file you work on be accidentally deleted or lost. For code, you can provide higher level details since, ideally, your literate programming approach means that your code is well annotated and described. For plots and your slides, you want to provide as much fine grained detail as possible down to specific font, color, and size choices for data and layout elements.
 
 ## Data Cleaning Overview
 
@@ -82,32 +101,4 @@ they were obtained from a geodatabase, export them to <code>.shp</code>
 and then import them into <code>R</code>. If you need to geocode the
 data (i.e. you have address or city identifiers but no spatial data for
 them), see Chris to discuss this process.</p>
-</div>
-
-## Spatial Data Creation
-Once you have cleaned your data, you will want to project it as an `sf` object and convert it to the appropriate projected coordinate system. If your data are already in shapefile form, ensure that they are in the appropriate projected coordinate system. 
-
-You will need two forms of your data: 
-
-1. The first should be a shapefile that contains the cleaned point data (i.e. all crimes that you have left after data cleaning, or all CSB calls). 
-2. The second should be these points aggregated to the census tract. You will need to use the `tigris` package to download these data, and then perform a spatial join and aggregate the points. Make sure you have a measurement of the square miles for each feature to use for normalization.
-
- Your final data sets should be stored as `.shp` files in the `data/` folder along with the original raw data.
-
-<div class="rmdwarning">
-<p><strong>For projects using a non-standard data set:</strong> If you
-are using data that cover more than one city in the United States, you
-may want to aggregate the data to a different areal unit. Chat with
-Chris about the appropriate level of aggregation for your research
-question.</p>
-<p>If you are using data that are not for the United States, you will
-want to aggregate them to a logical areal unit. For some projects, this
-may be the state or province. For others, it may be the local equivalent
-of Census geography. Chat with Chris about the appropriate level of
-aggregation for your research question.</p>
-<p>Ideally, the level of aggregation you select should be the
-<strong>same</strong> level of aggregation that census data are
-available for (see Vignette 5; i.e. if you have demographic data at the
-census tract level, aggregate your point data in Vignette 4 to the tract
-level as well). Again see Chris if you have questions about this.</p>
 </div>

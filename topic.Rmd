@@ -15,7 +15,7 @@
 ```
 
 ```{block, type = "rmddue"}
-**Due Date:** Meeting 1-2
+**Due Date:** Meeting 1-2 (January 31)
 ```
 
 ```{block, type = "rmddeliver"}
@@ -160,78 +160,43 @@ The following are some basic descriptions of what each variable in the Citizens 
 -   `sry` - y coordinate for address
 
 ## Vacancy Data
-The Vacancy Collaborative is "a coalition of partners dedicated to​reducing the negative impact of vacant property in the city of St. Louis." As part of that work they have spent several years creating a data set of vacant properties that is updated each month. The data are drawn from a variety of public sources, including tax data, data from the Citizens' Service Bureau, and operational data from the Building and Forestry divisions among other sources.
+The Vacancy Collaborative is "a coalition of partners dedicated to reducing the negative impact of vacant property in the city of St. Louis." As part of that work they have spent several years creating a data set of vacant properties that is updated each month. The data are drawn from a variety of public sources, including tax data, data from the Citizens' Service Bureau, and operational data from the Building and Forestry divisions among other sources.
 
 ### License
 These data are not available under a specific license, but are provided for download from their [dashboard](https://www.stlvacancytools.com). 
 
+### Topical Categories
+Unlike the other two pre-made data sets, it is not necessary to choose a specific category. Students are welcome to address vacancy as a whole, or focus on patterns that some of the variables highlight.
+
 ### Variables
 
 -   `Handle` - Handle for parcel (unique ID for joining with other datasets)
-ParcelId
-Parcel ID
-StAddrNum
-Street Address: Number
-
-
-StNameFull
-Street Address, remaining consolidated information: direction, street name, suffix
-
-
-Zip
-Zip Code
-Ward10
-Ward Number (2010 Ward Boundaries)
-NhdName
-Neighborhood Name
-CensTract10
-2010 Census Tract Number
-Lat
-Latitude
-Lng
-Longitude
-Type
-Property Type (e.g. Commercial, Single Family, Vacant Lot, etc.)
-ParcelSqFt
-Square footage of the parcel
-OwnerName
-Name of Owner
-OwnerName2
-Additional names or notes for owner
-OwnerState
-Owner’s Address State
-OwnerZip
-Owner’s Address Zip Code
-BldgAge
-Age of Building
-Vacancy
-Vacancy Score (Number - 10 to 30 is indeterminate, 30 to 70 is possibly vacant, greater than 70 is very likely vacant)
-VacancyCat
-Vacancy Score Category (e.g. Indeterminate, Definitely, etc.)
-Burden
-Burden Score
-BurdenCat
-Burden Score Category (e.g. High, Very High, etc.)
-BoardUp
-Board Up Provided (true) since last ownership change and after 2016 (due to when processes were modernized)
-IsLRA
-Whether the property is owned by LRA or not (true)
-TaxYrsDel
-Number of years the property has been tax delinquent
-VacRegMonths
-Number of months on the Building Division’s Vacant Building Registry
-VioMajor
-Number of major building code violations
-CSBVacancy
-Property has CSB calls for vacancy since last change in ownership (true)
-CSBNuisance
-Property has CSB calls for nuisance since last change in ownership (true)
-Forestry
-Forestry services provided since last change in ownership (true)
-Condemned
-Building has been structurally condemned (true)
-
-
+-   `ParcelId` - Parcel ID
+-   `StAddrNum` - Street Address, Number
+-   `StNameFull` - Street Address, remaining consolidated information - direction, street name, suffix
+-   `Zip` - Zip Code
+-   `Type` - Property Type (e.g. Commercial, Single Family, Vacant Lot, etc.)
+-   `ParcelSqFt` - Square footage of the parcel
+-   `OwnerName` - Name of Owner
+-   `OwnerName2` - Additional names or notes for owner
+-   `OwnerState` - Owner’s Address State
+-   `OwnerZip` - Owner’s Address Zip Code
+-   `BldgAge` - Age of Building
+-   `Vacancy` - Vacancy Score (Number - 10 to 30 is indeterminate, 30 to 70 is possibly vacant, greater than 70 is very likely vacant)
+-   `VacancyCat` - Vacancy Score Category (e.g. Indeterminate, Definitely, etc.)
+-   `Burden` - Burden Score
+-   `BurdenCat` - Burden Score Category (e.g. High, Very High, etc.)
+-   `BoardUp` - Board Up Provided (true) since last ownership change and after 2016 (due to when processes were modernized)
+-   `IsLRA` - Whether the property is owned by LRA or not (true)
+-   `TaxYrsDel` - Number of years the property has been tax delinquent
+-   `VacRegMonths` - Number of months on the Building Division’s Vacant Building Registry
+-   `VioMajor` - Number of major building code violations
+-   `CSBVacancy` - Property has CSB calls for vacancy since last change in ownership (true)
+-   `CSBNuisance` - Property has CSB calls for nuisance since last change in ownership (true)
+-   `Forestry` - Forestry services provided since last change in ownership (true)
+-   `Condemned` - Building has been structurally condemned (true)
+-   `Lat` - Latitude
+-   `Lng` - Longitude
 
 ## Another Data Set
 If the crime and non-emergency call data do not interest you, you may petition to choose a topic of your own provided you can find appropriate data.
@@ -241,9 +206,9 @@ Data sets for your final project will have a number of salient characteristics:
 
 1. They should be *spatial* data.
 2. They should numerous - there should be at least several hundred observations that vary over space and, ideally, over time as well. Several thousand observations will be ideal. 
-3. They must be countable - the number of 9-1-1 calls, resturants, or terrorist attacks, for example.
-4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, resturant locations across a city, state, or province, and crime scene locations.
-5. They should be able to be aggregated up to some sort of higher order construct. Think about how resturant locations could be aggregated up to neighborhoods, municipalities, or counties.
+3. They must be countable - the number of 9-1-1 calls, restaurants, or terrorist attacks, for example.
+4. They should be point data (or have the ability to be mapped as point data). Examples would be cities throughout a country or a region, restaurant locations across a city, state, or province, and crime scene locations.
+5. They should be able to be aggregated up to some sort of higher order construct. Think about how restaurant locations could be aggregated up to neighborhoods, municipalities, or counties.
 
 ### Other Considerations
 There are a few other considerations to take into account. If you are a graduate student and have already identified a possible thesis topic, you may want pick a data set that is either a possible candidate for inclusion in your thesis *or*, at the very least, is conceptually related. You want to maximize the impact that your coursework has, so even if you are not sure whether or not the data set itself will be helpful, picking something in the same topic area will mean that your literature search can be put to use on future assignments (such as in your Research Methods course).
