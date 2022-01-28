@@ -8,17 +8,17 @@ mapping.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by
+<p><strong>Personnel:</strong> This waypoint should be completed by
 <strong>all</strong> students.</p>
 </div>
 
 <div class="rmdskills">
-<p><strong>Skills:</strong> This vignette requires skills from both
+<p><strong>Skills:</strong> This waypoint requires skills from both
 Module 1 and 2</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Due Date 1:</strong> Meeting 3-1 (February 28th)</p>
+<p><strong>Due Date:</strong> Meeting 3-1 (February 28th)</p>
 </div>
 
 <div class="rmddeliver">
@@ -44,7 +44,7 @@ Since you will be storing this repository on GitHub, you will be default be usin
 Also make sure that you are pushing to GitHub often and not just saving the work locally on your computer. This is *part* of your insurance against a catastrophic loss of your computer or a lab computer where you are working. You are strongly encouraged to use a more comprehensive backup solution!
 
 ## Project Planning
-Use GitHub’s "Project Board" feature on your final project's GitHub repository to plan out the tasks you need to complete. Create a new project and assign each vignette to a column. Then assign specific tasks and deliverables related to that vignette to individual notes in that column. As you progress through the project, keep this updated so that you can track your progress. You can read more about [managing projects](https://help.github.com/articles/managing-project-boards-in-your-repository-or-organization/) and [tracking progress with a project board](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/) in GitHub's documentation.
+Use GitHub’s "Project Board" feature on your final project's GitHub repository to plan out the tasks you need to complete. Create a new project and assign each waypoint to a column. Then assign specific tasks and deliverables related to that waypoint to individual notes in that column. As you progress through the project, keep this updated so that you can track your progress. You can read more about [managing projects](https://help.github.com/articles/managing-project-boards-in-your-repository-or-organization/) and [tracking progress with a project board](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/) in GitHub's documentation.
 
 ## Project Documentation
 There are two project-level documentation files that you will need to create and keep updated throughout the semester.
@@ -53,7 +53,7 @@ There are two project-level documentation files that you will need to create and
 You will need a read-me file in the top-level of your assignment repository. There will already be a file named `README.md` in the top-level of your repository. Please edit this and modify it as needed!
 
 ### RESEARCH_LOG.md
-You will need to maintain a research log throughout the final project process. Before proceeding with the vignettes, create a well-formatted and organized research log in RStudio (`File > New File > Text File`) that is organized chronologically. The research log should use markdown syntax and be saved as a markdown file (`.md`). Keep this file updated and have it saved in the top-level of your assignment repository.
+You will need to maintain a research log throughout the final project process. Before proceeding with the waypoints, create a well-formatted and organized research log in RStudio (`File > New File > Text File`) that is organized chronologically. The research log should use markdown syntax and be saved as a markdown file (`.md`). Keep this file updated and have it saved in the top-level of your assignment repository.
 
 For each day you work on the final project, there should be an entry that describes the work that you have done, what files you have created or modified, and how those modifications took place. Give as much detail as possible without directly replicating the notes you make in individual files using the literate programming approach. This will be particularly important for your mapmaking work in ArcGIS Pro, which is inherently not reproducible and thus good notes are imperative.
 
