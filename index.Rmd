@@ -20,9 +20,9 @@ The final project corresponds to the fifth course learning outcome, which is des
 All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS StoryMap. 
 
 ### Overview {-}
-Broadly speaking, all students will create an ArcGIS StoryMap to present a series of interactive maps about their chosen topic as well as approximately 800 to 1,000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. 
+Broadly speaking, all students will create an **ArcGIS StoryMap** to present a series of interactive maps about their chosen topic as well as approximately 800 to 1,000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results. 
 
-Students enrolled in SOC 5650 will also write a 3,000 final paper in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from your maps.
+Students enrolled in SOC 5650 will also write a 3,000 word **final paper** in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from your maps.
 
 ### How are these instructions organized? {-}
 These instructions are organized into **waypoints**. These are meant to create "bite sized" modules that break down the final project into discrete phases. Each waypoint has a set of indicators on the top-level page for the waypoint that provide you with some general information about what the waypoint entails. These indicators will help you quickly navigate the instructions.

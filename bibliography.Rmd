@@ -5,11 +5,11 @@
 ```
 
 ```{block, type = "rmdpersonnel"}
-**Personnel:** This vignette should be completed by students in **SOC 5650** only.
+**Personnel:** This waypoint should be completed by students in **SOC 5650** only.
 ```
 
 ```{block, type = "rmdskills"}
-**Skills:** There are no course-specific skills for this vignette.
+**Skills:** There are no course-specific skills for this waypoint.
 ```
 
 ```{block, type = "rmddue"}

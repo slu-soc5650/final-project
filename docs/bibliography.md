@@ -6,13 +6,13 @@ topic.</p>
 </div>
 
 <div class="rmdpersonnel">
-<p><strong>Personnel:</strong> This vignette should be completed by
+<p><strong>Personnel:</strong> This waypoint should be completed by
 students in <strong>SOC 5650</strong> only.</p>
 </div>
 
 <div class="rmdskills">
 <p><strong>Skills:</strong> There are no course-specific skills for this
-vignette.</p>
+waypoint.</p>
 </div>
 
 <div class="rmddue">
