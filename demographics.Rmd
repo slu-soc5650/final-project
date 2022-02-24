@@ -1,4 +1,4 @@
-# Demographic Data
+# WP-3 - Combining Data Sources
 
 ```{block, type = "rmdgoal"}
 **Goal:** Create a demographic data set for your analysis.

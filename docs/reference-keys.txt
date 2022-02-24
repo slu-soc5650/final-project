@@ -38,3 +38,5 @@ research_log.md
 data-cleaning-overview
 analysis-development-1
 general-approach
+wp-3---combining-data-sources
+demographic-data-overview
