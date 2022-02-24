@@ -1,0 +1,33 @@
+# Demographic Data
+
+```{block, type = "rmdgoal"}
+**Goal:** Create a demographic data set for your analysis.
+```
+
+```{block, type = "rmdpersonnel"}
+**Personnel:** This vignette should be completed by **all** students. 
+```
+
+```{block, type = "rmdskills"}
+**Skills:** This vignette requires skills from Module 2
+```
+
+```{block, type = "rmddue"}
+**Due Date:** Meeting 3-2 (March 4th) 
+```
+
+```{block, type = "rmddeliver"}
+**Deliverables:** A well-formatted notebook in the `docs/` folder that uses literate programming to produce a clean data set saved as a `.geojson` file in the `data/` folder. Make sure you also remember to update your project documentation files!
+```
+
+## Demographic Data Overview
+You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the `tidycensus` package's `load_variables()` function (see the [`tidycensus` website](https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables) and the [Meeting 2-2](https://slu-soc5650.github.io/docs/module-2-combining-sources/) materials for details) to search for the relevant concepts. 
+
+Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior to export as a `.geojson` file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a `demographics.geojson` file and exported with `sf::st_write()`.
+
+```{block, type = "rmdwarning"}
+**For projects using a non-standard data set:**
+Ideally, the level of aggregation you choose here should match the level of aggregation applied to your point data in Vignette 4 (i.e. if you have demographic data at the census tract level, aggregate your point data in Vignette 4 to the tract level as well). For most projects, then, these data will be collected at the census tract level. See Chris if you have questions about this.
+
+In terms of identifying demographic data, most countries have some form of annual census that can be used to obtain the needed demographic data. Again, see Chris if you have trouble finding these data.
+```
