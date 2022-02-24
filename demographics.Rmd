@@ -20,10 +20,13 @@
 **Deliverables:** A well-formatted notebook in the `docs/` folder that uses literate programming to produce a clean data set saved as a `.geojson` file in the `data/` folder. Make sure you also remember to update your project documentation files!
 ```
 
-## Demographic Data Overview
+## Selecting a Spatial Unit of Analysis
+Data on demographics are available at many different levels of aggregation, from very small (e.g. Census block groups in the United States) to very large (e.g. states or countries). You will need to select a spatial unit that is appropriate for your data and research question. For reference, you can find a list of available spatial units in the [`tidycensus` package's documentation](https://walker-data.com/tidycensus/articles/basic-usage.html). For most students working on local St. Louis projects, Census tracts will be the most appropriate.
+
+## Demographic Data
 You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the `tidycensus` package's `load_variables()` function (see the [`tidycensus` website](https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables) and the [Meeting 2-2](https://slu-soc5650.github.io/docs/module-2-combining-sources/) materials for details) to search for the relevant concepts. 
 
-Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior to export as a `.geojson` file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a `demographics.geojson` file and exported with `sf::st_write()`.
+Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior *along with the geometry for your spatial unit of analysis* to export as a `.geojson` file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a `demographics.geojson` file and exported with `sf::st_write()`.
 
 ```{block, type = "rmdwarning"}
 **For projects using a non-standard data set:**

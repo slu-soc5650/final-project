@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.1 Demographic Data Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
+  <title>4.2 Demographic Data | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.1 Demographic Data Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="4.2 Demographic Data | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.1 Demographic Data Overview | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="4.2 Demographic Data | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   
@@ -31,7 +31,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="wp-3---combining-data-sources.html"/>
+<link rel="prev" href="selecting-a-spatial-unit-of-analysis.html"/>
 
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -142,7 +142,8 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="wp-3---combining-data-sources.html"><a href="wp-3---combining-data-sources.html"><i class="fa fa-check"></i><b>4</b> WP-3 - Combining Data Sources</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="demographic-data-overview.html"><a href="demographic-data-overview.html"><i class="fa fa-check"></i><b>4.1</b> Demographic Data Overview</a></li>
+<li class="chapter" data-level="4.1" data-path="selecting-a-spatial-unit-of-analysis.html"><a href="selecting-a-spatial-unit-of-analysis.html"><i class="fa fa-check"></i><b>4.1</b> Selecting a Spatial Unit of Analysis</a></li>
+<li class="chapter" data-level="4.2" data-path="demographic-data.html"><a href="demographic-data.html"><i class="fa fa-check"></i><b>4.2</b> Demographic Data</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
@@ -164,10 +165,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="demographic-data-overview" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Demographic Data Overview</h2>
+<div id="demographic-data" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Demographic Data</h2>
 <p>You will need to present two demographic variables of your choosing. Think of these broadly (i.e. poverty rates and the percentage of a particular racial group, or median income and population density). The demographic measures you select should be related to your outcomes, so think critically about what possible socio-demographic factors might be related to what you are interested in. You should use the <code>tidycensus</code> package’s <code>load_variables()</code> function (see the <a href="https://walkerke.github.io/tidycensus/articles/basic-usage.html#searching-for-variables"><code>tidycensus</code> website</a> and the <a href="https://slu-soc5650.github.io/docs/module-2-combining-sources/">Meeting 2-2</a> materials for details) to search for the relevant concepts.</p>
-<p>Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior to export as a <code>.geojson</code> file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a <code>demographics.geojson</code> file and exported with <code>sf::st_write()</code>.</p>
+<p>Each demographic data point (i.e. population density or median income or poverty rate) should be combined into a single file prior <em>along with the geometry for your spatial unit of analysis</em> to export as a <code>.geojson</code> file. For example, if you were to access data on race and poverty, these two measures would need to be joined together into a <code>demographics.geojson</code> file and exported with <code>sf::st_write()</code>.</p>
 <div class="rmdwarning">
 <p>
 <strong>For projects using a non-standard data set:</strong> Ideally,
@@ -192,7 +193,7 @@ data. Again, see Chris if you have trouble finding these data.
           </div>
         </div>
       </div>
-<a href="wp-3---combining-data-sources.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="selecting-a-spatial-unit-of-analysis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
