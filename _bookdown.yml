@@ -13,5 +13,6 @@ rmd_files: [
   "bibliography.Rmd",
   
   "cleaning.Rmd",
-  "demographics.Rmd"
+  "demographics.Rmd",
+  "spatial.Rmd"
 ]

@@ -41,3 +41,7 @@ general-approach
 wp-3---combining-data-sources
 selecting-a-spatial-unit-of-analysis
 demographic-data
+wp-4---projecting-data
+projecting-points
+identifying-additional-layers
+st.-louis-specific-sources

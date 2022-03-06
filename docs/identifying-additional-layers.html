@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
+  <title>5.2 Identifying Additional Layers | SOC 4650 &amp; 5650: Intro to GIS Final Project</title>
   <meta name="description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta property="og:title" content="5.2 Identifying Additional Layers | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="slu-soc5650/syllabus" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="SOC 4650 &amp; 5650: Intro to GIS Final Project" />
+  <meta name="twitter:title" content="5.2 Identifying Additional Layers | SOC 4650 &amp; 5650: Intro to GIS Final Project" />
   
   <meta name="twitter:description" content="These are the final project instructions for Chris’s sections of SOC 4650 and 5650." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="projecting-points.html"/>
 
-<link rel="next" href="license.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -173,97 +173,48 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">SOC 4650 &amp; 5650: Intro to GIS Final Project</h1>
-<p class="author"><em>Christopher Prener, Ph.D.</em></p>
-<p class="date"><em>2022-03-06</em></p>
-</div>
-<div id="basics" class="section level1 unnumbered">
-<h1>Basics</h1>
-<p>The final project corresponds to the fifth course learning outcome, which is described in the <a href="https://slu-soc5650.github.io/syllabus">syllabus</a> as:</p>
-<blockquote>
-<ol start="5" style="list-style-type: decimal">
-<li><em>Research synthesis</em>: Plan and implement a spatial data analysis project that utilizes the techniques described throughout the course.</li>
+<div id="identifying-additional-layers" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Identifying Additional Layers</h2>
+<p>Think carefully about what other spatial data would be useful for mapping (bodies of water, building footprints, parks, etc.). This will vary based on the geographic scale for your project, but use the Brewer cartography book and the other course materials as inspiration - think about what ground features and contextual layers you might want to see along side your project-specific data.</p>
+<p>All data you download should be cataloged in your <code>RESEARCH_LOG.md</code> and stored in a well-organized manner within the <code>data/</code> sub-directory. Each file should be projected in the WGS 1984 coordinate system, and should be cleaned to remove unnecessary columns. Raw data can be stored in <code>data/raw/</code> as part of your project folder system. At least one data source should be downloaded using <code>tigris</code>. Different projects will have different data needs. There is no other defined minimum or maximum value for the number of data sources you need to work with. <strong>For the purposes of this waypoint, however, you need to modify two additional layers.</strong></p>
+<div id="st.-louis-specific-sources" class="section level3" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> St. Louis Specific Sources</h3>
+<p>These are possible data sources for St. Louis based projects. You do not need to download and process all of these data - pick which ones are necessary for your project and the scale you are mapping. Many St. Louis projects will make use of highway, bridge, hydrology, street, park, and major land area (Belfontaine/Calvary Cemetery and MOBOT) shape files. <strong>This list is not exhaustive, but is meant to be inspirational.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>City of St. Louis Boundary</strong> - this can be obtained via the <code>tigris</code> package - download the county data for the State of Missouri, and subset out the City of St. Louis (our FIPS code is <code>510</code>).</p></li>
+<li><p><strong>Illinois Hydrology</strong> - The Census TIGER hydrology data is released by county, so bodies of water that lie between jurisdictions end up split. This shape file contains data on the extent of the Mississippi River in Madison and St. Clair counties for the length of the City of St. Louis. You can obtain the shape file <a href="https://github.com/slu-openGIS/IL_HYDRO_Mississippi">here</a>.</p></li>
+<li><p><strong>Illinois River Islands</strong> - The north side of the City sits opposite a group of islands on the Illinois side of the Mississippi, some of which are included in the <strong>Illinois Hydrology</strong> layer. The largest of these islands, Mosenthein Island, is described by <a href="https://github.com/slu-openGIS/IL_HYDRO_Islands">this shapefile</a>.</p></li>
+<li><p><strong>St. Louis Hydrology</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>Regional Hydrology</strong> - Combine the Illinois Hydrology and St. Louis Hydrology data together, and merge the Mississippi River features into a single Mississippi River feature.</p></li>
+<li><p><strong>City of St. Louis Neighborhoods</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>Belfontaine/Calvary Cemetery</strong> - Using your re-projected neighborhood data (see #6 above), select neighborhood <code>86</code>, which covers two large cemeteries in North St. Louis - the Belfontaine Cemetery and the Calvary Cemetery. These are park-like areas that should be noted on any maps of the city as a whole.</p></li>
+<li><p><strong>Missouri Botanical Garden</strong> - Using your re-projected neighborhood data (see #6 above), select neighborhood <code>87</code>, which covers MOBOT.</p></li>
+<li><p><strong>City of St. Louis Street Centerlines</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>City of St. Louis Blocks</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>. They’re useful for very local-level maps of neighborhoods since they outline the sides of streets instead of their centerlines.</p></li>
+<li><p><strong>Gateway Arch National Park</strong> - Using the National Park Service’s <a href="https://irma.nps.gov/DataStore/">Data Store website</a>, download the park boundary data and extra only the features for Gateway Arch National <em>on the west side of the Mississippi River</em>. These data may be identified as Jefferson Expansion National Memorial as well. Export only this feature.</p></li>
+<li><p><strong>City of St. Louis Landmarks</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>City of St. Louis Railroad Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>Illinois Railroad Bridges</strong> - Using the same data as step 13, geoprocess them so that railroads that do not overlap with the Illinois Hydrology data are removed.</p></li>
+<li><p><strong>City of St. Louis Parks</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>State of Missouri Boundary</strong> - this can be obtained via the <code>tigris</code> package</p></li>
+<li><p><strong>State of Missouri Interstate Highway Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>City of St. Louis Interstate Highway Centerlines</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed</p></li>
+<li><p><strong>Illinois Street Bridges</strong> - this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed to isolate specific bridges. For Madison County, this should include three bridges (from north to south) for I-270 (New Chain of Rocks Bridge), the Chain of Rocks Pedestrian Bridge, and McKinley Street (McKinley Bridge). For St. Clair County, this should include four bridges (from north to south) for I-70 (Stan Musial Veterans Memorial Bridge), the Martin Luther King Bridge, Washington Avenue (the Eads Bridge), and I-64/I-55 (Poplar Street Bridge).</p></li>
+<li><p><strong>Illinois Interstate Highway Bridges</strong> this can be obtained via the <code>tigris</code> package, but will need to be geoprocessed to isolate specific bridges: I-270 (New Chain of Rocks Bridge), I-70 (Stan Musial Veterans Memorial Bridge), and I-64/I-55 (Poplar Street Bridge).</p></li>
+<li><p><strong>City of St. Louis Precincts</strong> - These can be downloaded from the City of St. Louis’s <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
+<li><p><strong>City of St. Louis Wards</strong> - These can be geoprocessed from the City of St. Louis’s precinct data, which is available on their <a href="https://www.stlouis-mo.gov/data/types/gis.cfm">open data website</a>.</p></li>
 </ol>
-</blockquote>
-<p>All students will select a data set and perform an original data analysis culminating in a series of maps displayed on an ArcGIS StoryMap.</p>
-<div id="overview" class="section level3 unnumbered">
-<h3>Overview</h3>
-<p>Broadly speaking, all students will create an <strong>ArcGIS StoryMap</strong> to present a series of interactive maps about their chosen topic as well as approximately 800 to 1,000 words of narrative text providing some background, describing the maps, and drawing some basic, descriptive conclusions. You will be responsible for selecting a specific topic, cleaning their data, creating maps of their topic, and presenting the results.</p>
-<p>Students enrolled in SOC 5650 will also write a 3,000 word <strong>final paper</strong> in the style of an empirical journal article describing the academic literature your data are related to, how you prepared and mapped the data, and what you learned from your maps.</p>
-</div>
-<div id="how-are-these-instructions-organized" class="section level3 unnumbered">
-<h3>How are these instructions organized?</h3>
-<p>These instructions are organized into <strong>waypoints</strong>. These are meant to create “bite sized” modules that break down the final project into discrete phases. Each waypoint has a set of indicators on the top-level page for the waypoint that provide you with some general information about what the waypoint entails. These indicators will help you quickly navigate the instructions.</p>
-<div id="what-do-i-have-to-do" class="section level4 unnumbered">
-<h4>What do I have to do?</h4>
-<p>Each waypoint includes an indicator that describes <em>what</em> the goal of the waypoint is:</p>
-<div class="rmdgoal">
-<p>
-<strong>Goal:</strong> create a quick summary of your project for
-Chris.
-</p>
-</div>
-<p>The instructions will vary at different points based on whether you are enrolled in SOC 4615 or SOC 5650. Look for this indicator for information about <em>who</em> the waypoint is designed for:</p>
-<div class="rmdpersonnel">
-<p>
-<strong>Personnel:</strong> This waypoint should be completed by
-<strong>all</strong> students.
-</p>
-</div>
-<p>If the instructions are only for one of the sections, they will look like this:</p>
-<div class="rmdpersonnel">
-<p>
-<strong>Personnel:</strong> This waypoint should be completed by
-students in <strong>SOC 5650</strong> only.
-</p>
+
 </div>
 </div>
-<div id="what-do-i-need-to-know-how-to-do" class="section level4 unnumbered">
-<h4>What do I need to know how to do?</h4>
-<p>Some of the waypoint require technical skills that will be covered as the semester progresses. If that is the case, those meetings will be identified with this indicator:</p>
-<div class="rmdskills">
-<p>
-<strong>Skills:</strong> Meetings 1-1 and 1-2
-</p>
-</div>
-</div>
-<div id="when-are-vignettes-due" class="section level4 unnumbered">
-<h4>When are vignettes due?</h4>
-<p>Deadlines will be provided in an indicator at the top of each vignette that looks like this:</p>
-<div class="rmddue">
-<p>
-<strong>Due Date:</strong> This waypoint must be completed by Meeting
-3-1.
-</p>
-</div>
-</div>
-<div id="what-do-i-have-to-submit" class="section level4 unnumbered">
-<h4>What do I have to submit?</h4>
-<p>All of the vignettes require you to produce <em>something</em>. A quick description of the deliverables associated with the vignette will be included in this indicator:</p>
-<div class="rmddeliver">
-<p>
-<strong>Deliverables:</strong> A knit <code>.Rmd</code> notebook with
-the appropriate <code>.md</code> output that uses a literate programming
-approach to document your data cleaning efforts should be included in
-your final project repository.
-</p>
-</div>
-</div>
-</div>
-<div id="data-analysis-is-not-linear" class="section level3 unnumbered">
-<h3>Data Analysis is not Linear</h3>
-<p>The organization of these instructions implies a linear path - complete one vignette and then go on to the next. I want to remind you that data analysis is never a linear process. You are going to have to iterate over waypoints, often several times. You’ll perhaps do some initial data cleaning and move onto geoprocessing only to discover you need to alter how you’ve cleaned your data. So you’ll have to go back and do some additional cleaning. This process of iteration is the norm for data analysis. Even the most experienced analysts do this - it is not a function of inexperience so much as it is the nature of doing analytic work.</p>
-<p>One of the reasons that a plain-text approach to programming and statistics is so powerful is that this iteration becomes easy. You won’t have to remember the series of menu selections and check boxes you chose to produce a particular output as you would with a GUI-driven statistical application. Rather, recalculating descriptive statistics is as easy as making a small change to the source code for the data cleaning notebook, knitting that notebook, and then re-knitting the descriptive statistics notebook. Working in this way gives you the freedom to explore and experiment as much as you’d like!</p>
-</div>
-</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
+<a href="projecting-points.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="license.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
