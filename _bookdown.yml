@@ -14,5 +14,9 @@ rmd_files: [
   
   "cleaning.Rmd",
   "demographics.Rmd",
-  "spatial.Rmd"
+  "spatial.Rmd",
+  "geoprocessing.Rmd",
+  
+  "storymap.Rmd",
+  "paper.Rmd"
 ]
