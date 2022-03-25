@@ -18,7 +18,9 @@ media, and narrative content</p>
 </div>
 
 <div class="rmddue">
-<p><strong>Required Due Date:</strong> Meeting 4-4 (April 25th)</p>
+<p><strong>Required Due Date, Draft (WP-6):</strong> Meeting 4-4 (April
+25th)</p>
+<p><strong>Required Due Date, Final StoryMap:</strong> May 16th</p>
 </div>
 
 <div class="rmddeliver">

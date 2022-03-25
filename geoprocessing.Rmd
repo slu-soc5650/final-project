@@ -1,4 +1,4 @@
-# Geoprocessing
+# WP-5 - Geoprocessing
 
 ```{block, type = "rmdgoal"}
 **Goal:** Complete a spatial join of your main outcome data so that you have counts of your data for the areal unit you obtained demographic data for.

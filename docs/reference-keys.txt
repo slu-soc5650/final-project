@@ -45,7 +45,7 @@ wp-4---projecting-data
 projecting-points
 identifying-additional-layers
 st.-louis-specific-sources
-geoprocessing
+wp-5---geoprocessing
 general-notes
 arcgis-storymap
 web-maps

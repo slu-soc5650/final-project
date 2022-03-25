@@ -15,7 +15,9 @@
 ```
 
 ```{block, type = "rmddue"}
-**Required Due Date:** Meeting 4-4 (April 25th)
+**Required Due Date, Draft (WP-6):** Meeting 4-4 (April 25th)
+
+**Required Due Date, Final StoryMap:** May 16th
 ```
 
 ```{block, type = "rmddeliver"}
